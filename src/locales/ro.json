@@ -1,0 +1,105 @@
+{
+    "nav": {
+        "home": "Acasă",
+        "catalog": "Catalog",
+        "about": "Despre",
+        "contact": "Contact",
+        "book_now": "Rezervă Acum",
+        "language": "Limbă",
+        "theme": "Temă"
+    },
+    "hero": {
+        "badge": "Premium Experience",
+        "title": "Închirieri auto în Moldova",
+        "description": "Cele mai bune mașini la prețuri accesibile. De la sedanuri economice la SUV-uri premium.",
+        "cta_choose": "Alege Mașina",
+        "cta_vip": "Contact VIP"
+    },
+    "car_details": {
+        "not_found": "Mașină negăsită",
+        "back_home": "Acasă",
+        "back": "Înapoi"
+    },
+    "filters": {
+        "all": "Toate",
+        "hybrid": "Hibrid",
+        "electric": "Electric",
+        "petrol": "Benzină",
+        "diesel": "Diesel",
+        "engine_type": "Tip Motor"
+    },
+    "class_filters": {
+        "label": "Clasă",
+        "all": "Toate",
+        "economy": "Economic",
+        "standard": "Standard",
+        "premium": "Premium"
+    },
+    "sort": {
+        "label": "Sortare",
+        "price_asc": "Ieftine",
+        "price_desc": "Scumpe"
+    },
+    "car": {
+        "price_per_day": "Preț / Zi",
+        "engine": "Motor",
+        "seats": "Locuri",
+        "transmission": "Transmisie",
+        "power": "Putere",
+        "day": "zi",
+        "reserve": "Rezervă",
+        "details": "Detalii",
+        "seats_count": "locuri"
+    },
+    "footer": {
+        "description": "Închirieri premium de automobile în Moldova. O gamă largă de sedanuri până la SUV-uri.",
+        "nav_title": "Navigare",
+        "contacts_title": "Contacte",
+        "address": "Chișinău, Moldova",
+        "rights": "Toate drepturile rezervate.",
+        "privacy": "Politica de confidențialitate"
+    },
+    "contact_page": {
+        "title": "Contacte",
+        "subtitle": "Contactați-ne în orice mod convenabil. Lucrăm zilnic de la 8:00 la 20:00.",
+        "phone": "Telefon",
+        "address": "Adresa",
+        "address_value": "Chișinău, str. Ștefan cel Mare 1",
+        "working_hours": "Program",
+        "working_hours_value": "Zilnic: 08:00 - 20:00"
+    },
+    "about_page": {
+        "title": "Despre noi",
+        "subtitle": "AutoRent — serviciu sigur de închirieri auto în Moldova din 2015.",
+        "feature1_title": "Fiabilitate",
+        "feature1_text": "Toate mașinile trec prin întreținere regulată și sunt asigurate.",
+        "feature2_title": "Calitate",
+        "feature2_text": "Doar automobile moderne de la branduri mondiale de top.",
+        "feature3_title": "Suport 24/7",
+        "feature3_text": "Echipa noastră este mereu disponibilă să vă ajute.",
+        "feature4_title": "Selecție mare",
+        "feature4_text": "Peste 50 de automobile de diferite clase în flota noastră."
+    },
+    "privacy_page": {
+        "title": "Politica de confidențialitate",
+        "last_update": "Ultima actualizare: Ianuarie 2024",
+        "section1_title": "1. Dispoziții generale",
+        "section1_text": "Această Politică de confidențialitate definește procedura de prelucrare și protecție a datelor personale ale utilizatorilor serviciului AutoRent.",
+        "section2_title": "2. Colectarea informațiilor",
+        "section2_text": "Colectăm următoarele informații:",
+        "section2_list": [
+            "Numele și datele de contact",
+            "Datele permisului de conducere",
+            "Informații despre rezervare",
+            "Date de plată"
+        ],
+        "section3_title": "3. Utilizarea datelor",
+        "section3_text": "Datele colectate sunt utilizate exclusiv pentru procesarea comenzilor, comunicarea cu clienții și îmbunătățirea calității serviciilor.",
+        "section4_title": "4. Protecția datelor",
+        "section4_text": "Aplicăm metode moderne de protecție a informațiilor și nu transmitem date personale terților fără consimțământul utilizatorului.",
+        "section5_title": "5. Fișiere cookie",
+        "section5_text": "Site-ul utilizează fișiere cookie pentru a îmbunătăți experiența utilizatorului și a analiza traficul.",
+        "section6_title": "6. Contacte",
+        "section6_text": "Pentru întrebări privind confidențialitatea, contactați:"
+    }
+}

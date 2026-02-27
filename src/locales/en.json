@@ -1,0 +1,105 @@
+{
+    "nav": {
+        "home": "Home",
+        "catalog": "Catalog",
+        "about": "About",
+        "contact": "Contact",
+        "book_now": "Book Now",
+        "language": "Language",
+        "theme": "Theme"
+    },
+    "hero": {
+        "badge": "Premium Experience",
+        "title": "Car Rental in Moldova",
+        "description": "The best cars at affordable prices. From economical sedans to premium SUVs.",
+        "cta_choose": "Choose a Car",
+        "cta_vip": "VIP Contact"
+    },
+    "car_details": {
+        "not_found": "Car not found",
+        "back_home": "Back to Home",
+        "back": "Back"
+    },
+    "filters": {
+        "all": "All",
+        "hybrid": "Hybrid",
+        "electric": "Electric",
+        "petrol": "Petrol",
+        "diesel": "Diesel",
+        "engine_type": "Engine Type"
+    },
+    "class_filters": {
+        "label": "Class",
+        "all": "All",
+        "economy": "Economy",
+        "standard": "Standard",
+        "premium": "Premium"
+    },
+    "sort": {
+        "label": "Sort",
+        "price_asc": "Lowest price",
+        "price_desc": "Highest price"
+    },
+    "car": {
+        "price_per_day": "Price / Day",
+        "engine": "Engine",
+        "seats": "Seats",
+        "transmission": "Transmission",
+        "power": "Power",
+        "day": "day",
+        "reserve": "Reserve",
+        "details": "Details",
+        "seats_count": "seats"
+    },
+    "footer": {
+        "description": "Premium car rental in Moldova. A wide range of vehicles from sedans to SUVs.",
+        "nav_title": "Navigation",
+        "contacts_title": "Contacts",
+        "address": "Chișinău, Moldova",
+        "rights": "All rights reserved.",
+        "privacy": "Privacy Policy"
+    },
+    "contact_page": {
+        "title": "Contact",
+        "subtitle": "Get in touch in any convenient way. We work daily from 8:00 to 20:00.",
+        "phone": "Phone",
+        "address": "Address",
+        "address_value": "Chișinău, Ștefan cel Mare 1",
+        "working_hours": "Working Hours",
+        "working_hours_value": "Daily: 08:00 - 20:00"
+    },
+    "about_page": {
+        "title": "About Us",
+        "subtitle": "AutoRent is a trusted car rental service in Moldova since 2015.",
+        "feature1_title": "Reliability",
+        "feature1_text": "All cars go through regular maintenance and are fully insured.",
+        "feature2_title": "Quality",
+        "feature2_text": "Only modern vehicles from leading global brands.",
+        "feature3_title": "24/7 Support",
+        "feature3_text": "Our team is always available and ready to help.",
+        "feature4_title": "Large Selection",
+        "feature4_text": "More than 50 cars of different classes in our fleet."
+    },
+    "privacy_page": {
+        "title": "Privacy Policy",
+        "last_update": "Last updated: January 2024",
+        "section1_title": "1. General Provisions",
+        "section1_text": "This Privacy Policy defines how AutoRent processes and protects users' personal data.",
+        "section2_title": "2. Information Collection",
+        "section2_text": "We collect the following information:",
+        "section2_list": [
+            "Name and contact details",
+            "Driver's license details",
+            "Booking information",
+            "Payment details"
+        ],
+        "section3_title": "3. Use of Data",
+        "section3_text": "Collected data is used only for order processing, communication with clients, and service improvement.",
+        "section4_title": "4. Data Protection",
+        "section4_text": "We use modern security methods and do not transfer personal data to third parties without user consent.",
+        "section5_title": "5. Cookies",
+        "section5_text": "The website uses cookies to improve user experience and analyze traffic.",
+        "section6_title": "6. Contacts",
+        "section6_text": "For privacy-related questions, contact:"
+    }
+}

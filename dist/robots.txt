@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Add SITE_URL to generate absolute sitemap URLs

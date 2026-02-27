@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/ro</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru" />
+  </url>
+  <url>
+    <loc>/ru</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru" />
+  </url>
+  <url>
+    <loc>/en</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru" />
+  </url>
+  <url>
+    <loc>/ro/about</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/about" />
+  </url>
+  <url>
+    <loc>/ru/about</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/about" />
+  </url>
+  <url>
+    <loc>/en/about</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/about" />
+  </url>
+  <url>
+    <loc>/ro/contact</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/contact" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/contact" />
+  </url>
+  <url>
+    <loc>/ru/contact</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/contact" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/contact" />
+  </url>
+  <url>
+    <loc>/en/contact</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/contact" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/contact" />
+  </url>
+  <url>
+    <loc>/ro/privacy</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/privacy" />
+  </url>
+  <url>
+    <loc>/ru/privacy</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/privacy" />
+  </url>
+  <url>
+    <loc>/en/privacy</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/privacy" />
+  </url>
+  <url>
+    <loc>/ro/car/bmw-x5-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/bmw-x5-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/bmw-x5-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/bmw-x5-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/bmw-x5-2023" />
+  </url>
+  <url>
+    <loc>/ru/car/bmw-x5-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/bmw-x5-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/bmw-x5-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/bmw-x5-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/bmw-x5-2023" />
+  </url>
+  <url>
+    <loc>/en/car/bmw-x5-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/bmw-x5-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/bmw-x5-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/bmw-x5-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/bmw-x5-2023" />
+  </url>
+  <url>
+    <loc>/ro/car/lexus-rx-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/lexus-rx-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/lexus-rx-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/lexus-rx-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/lexus-rx-2024" />
+  </url>
+  <url>
+    <loc>/ru/car/lexus-rx-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/lexus-rx-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/lexus-rx-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/lexus-rx-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/lexus-rx-2024" />
+  </url>
+  <url>
+    <loc>/en/car/lexus-rx-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/lexus-rx-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/lexus-rx-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/lexus-rx-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/lexus-rx-2024" />
+  </url>
+  <url>
+    <loc>/ro/car/audi-e-tron-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/audi-e-tron-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/audi-e-tron-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/audi-e-tron-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/audi-e-tron-2023" />
+  </url>
+  <url>
+    <loc>/ru/car/audi-e-tron-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/audi-e-tron-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/audi-e-tron-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/audi-e-tron-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/audi-e-tron-2023" />
+  </url>
+  <url>
+    <loc>/en/car/audi-e-tron-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/audi-e-tron-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/audi-e-tron-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/audi-e-tron-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/audi-e-tron-2023" />
+  </url>
+  <url>
+    <loc>/ro/car/range-rover-sport-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/range-rover-sport-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/range-rover-sport-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/range-rover-sport-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/range-rover-sport-2024" />
+  </url>
+  <url>
+    <loc>/ru/car/range-rover-sport-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/range-rover-sport-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/range-rover-sport-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/range-rover-sport-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/range-rover-sport-2024" />
+  </url>
+  <url>
+    <loc>/en/car/range-rover-sport-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/range-rover-sport-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/range-rover-sport-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/range-rover-sport-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/range-rover-sport-2024" />
+  </url>
+  <url>
+    <loc>/ro/car/bmw-330e-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/bmw-330e-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/bmw-330e-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/bmw-330e-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/bmw-330e-2023" />
+  </url>
+  <url>
+    <loc>/ru/car/bmw-330e-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/bmw-330e-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/bmw-330e-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/bmw-330e-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/bmw-330e-2023" />
+  </url>
+  <url>
+    <loc>/en/car/bmw-330e-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/bmw-330e-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/bmw-330e-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/bmw-330e-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/bmw-330e-2023" />
+  </url>
+  <url>
+    <loc>/ro/car/tesla-model-3-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/tesla-model-3-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/tesla-model-3-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/tesla-model-3-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/tesla-model-3-2024" />
+  </url>
+  <url>
+    <loc>/ru/car/tesla-model-3-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/tesla-model-3-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/tesla-model-3-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/tesla-model-3-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/tesla-model-3-2024" />
+  </url>
+  <url>
+    <loc>/en/car/tesla-model-3-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/tesla-model-3-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/tesla-model-3-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/tesla-model-3-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/tesla-model-3-2024" />
+  </url>
+  <url>
+    <loc>/ro/car/mercedes-c-class-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/mercedes-c-class-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/mercedes-c-class-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/mercedes-c-class-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/mercedes-c-class-2023" />
+  </url>
+  <url>
+    <loc>/ru/car/mercedes-c-class-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/mercedes-c-class-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/mercedes-c-class-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/mercedes-c-class-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/mercedes-c-class-2023" />
+  </url>
+  <url>
+    <loc>/en/car/mercedes-c-class-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/mercedes-c-class-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/mercedes-c-class-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/mercedes-c-class-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/mercedes-c-class-2023" />
+  </url>
+  <url>
+    <loc>/ro/car/honda-cr-v-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/honda-cr-v-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/honda-cr-v-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/honda-cr-v-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/honda-cr-v-2024" />
+  </url>
+  <url>
+    <loc>/ru/car/honda-cr-v-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/honda-cr-v-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/honda-cr-v-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/honda-cr-v-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/honda-cr-v-2024" />
+  </url>
+  <url>
+    <loc>/en/car/honda-cr-v-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/honda-cr-v-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/honda-cr-v-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/honda-cr-v-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/honda-cr-v-2024" />
+  </url>
+  <url>
+    <loc>/ro/car/hyundai-ioniq-5-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/hyundai-ioniq-5-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/hyundai-ioniq-5-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/hyundai-ioniq-5-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/hyundai-ioniq-5-2023" />
+  </url>
+  <url>
+    <loc>/ru/car/hyundai-ioniq-5-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/hyundai-ioniq-5-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/hyundai-ioniq-5-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/hyundai-ioniq-5-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/hyundai-ioniq-5-2023" />
+  </url>
+  <url>
+    <loc>/en/car/hyundai-ioniq-5-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/hyundai-ioniq-5-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/hyundai-ioniq-5-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/hyundai-ioniq-5-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/hyundai-ioniq-5-2023" />
+  </url>
+  <url>
+    <loc>/ro/car/audi-q8-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/audi-q8-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/audi-q8-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/audi-q8-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/audi-q8-2024" />
+  </url>
+  <url>
+    <loc>/ru/car/audi-q8-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/audi-q8-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/audi-q8-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/audi-q8-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/audi-q8-2024" />
+  </url>
+  <url>
+    <loc>/en/car/audi-q8-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/audi-q8-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/audi-q8-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/audi-q8-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/audi-q8-2024" />
+  </url>
+  <url>
+    <loc>/ro/car/toyota-prius-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/toyota-prius-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/toyota-prius-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/toyota-prius-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/toyota-prius-2023" />
+  </url>
+  <url>
+    <loc>/ru/car/toyota-prius-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/toyota-prius-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/toyota-prius-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/toyota-prius-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/toyota-prius-2023" />
+  </url>
+  <url>
+    <loc>/en/car/toyota-prius-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/toyota-prius-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/toyota-prius-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/toyota-prius-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/toyota-prius-2023" />
+  </url>
+  <url>
+    <loc>/ro/car/porsche-taycan-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/porsche-taycan-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/porsche-taycan-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/porsche-taycan-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/porsche-taycan-2024" />
+  </url>
+  <url>
+    <loc>/ru/car/porsche-taycan-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/porsche-taycan-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/porsche-taycan-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/porsche-taycan-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/porsche-taycan-2024" />
+  </url>
+  <url>
+    <loc>/en/car/porsche-taycan-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/porsche-taycan-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/porsche-taycan-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/porsche-taycan-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/porsche-taycan-2024" />
+  </url>
+  <url>
+    <loc>/ro/car/toyota-camry-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/toyota-camry-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/toyota-camry-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/toyota-camry-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/toyota-camry-2023" />
+  </url>
+  <url>
+    <loc>/ru/car/toyota-camry-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/toyota-camry-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/toyota-camry-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/toyota-camry-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/toyota-camry-2023" />
+  </url>
+  <url>
+    <loc>/en/car/toyota-camry-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/toyota-camry-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/toyota-camry-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/toyota-camry-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/toyota-camry-2023" />
+  </url>
+  <url>
+    <loc>/ro/car/volvo-xc90-recharge-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/volvo-xc90-recharge-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/volvo-xc90-recharge-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/volvo-xc90-recharge-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/volvo-xc90-recharge-2024" />
+  </url>
+  <url>
+    <loc>/ru/car/volvo-xc90-recharge-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/volvo-xc90-recharge-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/volvo-xc90-recharge-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/volvo-xc90-recharge-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/volvo-xc90-recharge-2024" />
+  </url>
+  <url>
+    <loc>/en/car/volvo-xc90-recharge-2024</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/volvo-xc90-recharge-2024" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/volvo-xc90-recharge-2024" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/volvo-xc90-recharge-2024" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/volvo-xc90-recharge-2024" />
+  </url>
+  <url>
+    <loc>/ro/car/mercedes-eqs-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/mercedes-eqs-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/mercedes-eqs-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/mercedes-eqs-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/mercedes-eqs-2023" />
+  </url>
+  <url>
+    <loc>/ru/car/mercedes-eqs-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/mercedes-eqs-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/mercedes-eqs-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/mercedes-eqs-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/mercedes-eqs-2023" />
+  </url>
+  <url>
+    <loc>/en/car/mercedes-eqs-2023</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="/ro/car/mercedes-eqs-2023" />
+    <xhtml:link rel="alternate" hreflang="ru" href="/ru/car/mercedes-eqs-2023" />
+    <xhtml:link rel="alternate" hreflang="en" href="/en/car/mercedes-eqs-2023" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="/ru/car/mercedes-eqs-2023" />
+  </url>
+</urlset>
