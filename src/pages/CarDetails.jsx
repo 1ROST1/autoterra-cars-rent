@@ -1,13 +1,14 @@
 import { useParams, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, Activity, Users, Gauge, Settings, X, ChevronLeft, ChevronRight } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Activity, Users, Gauge, Settings, X, ChevronLeft, ChevronRight } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { getCarBySlug } from '../data/cars'
+import { getCarBySlug, getCarStartingRate } from '../data/cars'
 import { useLanguage } from '../hooks/useLanguage'
 import SEO from '../components/SEO'
-import { SITE_URL } from '../constants/seo'
+import { SITE_URL, PAGE_KEYWORDS } from '../constants/seo'
+import { BUSINESS_PHONE_RAW } from '../constants/contact'
 
 export default function CarDetails() {
     const { slug } = useParams()
@@ -40,36 +41,68 @@ export default function CarDetails() {
     }, [isLightboxOpen])
 
     // Swipe Handling
-    const [touchStart, setTouchStart] = useState(null)
-    const [touchEnd, setTouchEnd] = useState(null)
-    const [swipeOffset, setSwipeOffset] = useState(0)
+    const [touchStart, setTouchStart] = useState({ x: null, y: null })
+    const [touchEnd, setTouchEnd] = useState({ x: null, y: null })
+    const [swipeOffset, setSwipeOffset] = useState({ x: 0, y: 0 })
 
     const minSwipeDistance = 50
 
     const onTouchStart = (e) => {
-        setTouchEnd(null)
-        setTouchStart(e.targetTouches[0].clientX)
-        setSwipeOffset(0)
+        setTouchEnd({ x: null, y: null })
+        setTouchStart({ x: e.targetTouches[0].clientX, y: e.targetTouches[0].clientY })
+        setSwipeOffset({ x: 0, y: 0 })
     }
 
     const onTouchMove = (e) => {
+        if (!touchStart.x || !touchStart.y) return
+
         const currentX = e.targetTouches[0].clientX
-        setTouchEnd(currentX)
-        if (touchStart) {
-            setSwipeOffset(currentX - touchStart)
+        const currentY = e.targetTouches[0].clientY
+        setTouchEnd({ x: currentX, y: currentY })
+
+        const diffX = currentX - touchStart.x
+        const diffY = currentY - touchStart.y
+
+        // Calculate absolute distances
+        const absDiffX = Math.abs(diffX)
+        const absDiffY = Math.abs(diffY)
+
+        // Lock onto an axis once we have moved at least 5 pixels
+        // If we haven't locked yet, just wait until we reach the threshold
+        if (absDiffX > 5 || absDiffY > 5) {
+            // If already set to scroll X or Y, keep to that axis
+            if (swipeOffset.y === 0 && absDiffX > absDiffY) {
+                setSwipeOffset(prev => ({ ...prev, x: diffX, y: 0 }))
+            } else if (swipeOffset.x === 0 && absDiffY > absDiffX) {
+                setSwipeOffset(prev => ({ ...prev, x: 0, y: diffY }))
+            } else {
+                // If neither is locked yet, do nothing until the next tick to lock it safely
+                if (absDiffX > absDiffY) {
+                    setSwipeOffset(prev => ({ ...prev, x: diffX, y: 0 }))
+                } else {
+                    setSwipeOffset(prev => ({ ...prev, x: 0, y: diffY }))
+                }
+            }
         }
     }
 
     const onTouchEndEvent = () => {
-        if (!touchStart || !touchEnd) {
-            setSwipeOffset(0)
+        if (touchStart.x === null || touchEnd.x === null) {
+            setSwipeOffset({ x: 0, y: 0 })
             return
         }
-        const distance = touchStart - touchEnd
-        const isLeftSwipe = distance > minSwipeDistance
-        const isRightSwipe = distance < -minSwipeDistance
 
-        if (isLeftSwipe || isRightSwipe) {
+        const distanceX = touchStart.x - touchEnd.x
+        const distanceY = touchStart.y - touchEnd.y
+
+        const isLeftSwipe = distanceX > minSwipeDistance
+        const isRightSwipe = distanceX < -minSwipeDistance
+        const isVerticalSwipe = Math.abs(distanceY) > minSwipeDistance * 1.5
+
+        // Strictly check which axis was locked during swipe
+        if (swipeOffset.y !== 0 && isVerticalSwipe) {
+            setIsLightboxOpen(false)
+        } else if (swipeOffset.x !== 0 && (isLeftSwipe || isRightSwipe)) {
             if (car.images && car.images.length > 1) {
                 if (isLeftSwipe) {
                     setActiveImageIndex(prev => (prev === car.images.length - 1 ? 0 : prev + 1))
@@ -79,9 +112,10 @@ export default function CarDetails() {
                 }
             }
         }
-        setTouchStart(null)
-        setTouchEnd(null)
-        setSwipeOffset(0)
+
+        setTouchStart({ x: null, y: null })
+        setTouchEnd({ x: null, y: null })
+        setSwipeOffset({ x: 0, y: 0 })
     }
 
     // Lightbox Navigation Controls
@@ -120,42 +154,70 @@ export default function CarDetails() {
     }
 
     const typeLabels = {
-        ice: { label: t('filters.ice'), color: 'bg-amber-500' },
-        hybrid: { label: t('filters.hybrid'), color: 'bg-green-500' },
-        electric: { label: t('filters.electric'), color: 'bg-blue-500' }
+        petrol: { label: t('filters.petrol'), color: 'bg-amber-500' },
+        diesel: { label: t('filters.diesel'), color: 'bg-slate-500' },
+        hybrid: { label: t('filters.hybrid'), color: 'bg-green-500' }
     }
 
-    const type = typeLabels[car.type] || typeLabels.ice // Fallback to avoid crash
+    const type = typeLabels[car.type] || typeLabels.petrol // Fallback to avoid crash
     const localizedDescription = car.description[lang] || car.description.ru
     const localizedCarUrl = `${SITE_URL}/${lang}/car/${car.slug}`
+    const { key: startingRateKey, price: startingPrice } = getCarStartingRate(car)
+    const startingRateNote = startingRateKey ? t(`car.starting_rate_note.${startingRateKey}`) : t('car.price_per_day')
 
     // Safety check
     const activeImage = car.images ? car.images[activeImageIndex] : car.image
 
-    const carStructuredData = {
-        '@context': 'https://schema.org',
-        '@type': 'Product',
-        name: `${car.make} ${car.model} ${car.year}`,
-        description: localizedDescription,
-        image: car.images ? car.images.map(imagePath => imagePath.startsWith('http') ? imagePath : `${SITE_URL}${imagePath}`) : [],
-        brand: {
-            '@type': 'Brand',
-            name: car.make
+    const carStructuredData = [
+        {
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            name: `${car.make} ${car.model} ${car.year}`,
+            description: localizedDescription,
+            image: car.images ? car.images.map(imagePath => imagePath.startsWith('http') ? imagePath : `${SITE_URL}${imagePath}`) : [],
+            brand: {
+                '@type': 'Brand',
+                name: car.make
+            },
+            offers: {
+                '@type': 'Offer',
+                priceCurrency: 'EUR',
+                price: String(startingPrice),
+                availability: 'https://schema.org/InStock',
+                url: localizedCarUrl
+            },
+            vehicleConfiguration: `${typeof car.specs.engine === 'object' ? (car.specs.engine[lang] || car.specs.engine.en) : car.specs.engine}, ${car.specs.power}`,
+            vehicleTransmission: typeof car.specs.transmission === 'object' ? (car.specs.transmission[lang] || car.specs.transmission.en) : car.specs.transmission,
+            seatingCapacity: car.specs.seats
         },
-        offers: {
-            '@type': 'Offer',
-            priceCurrency: 'USD',
-            price: String(car.price),
-            availability: 'https://schema.org/InStock',
-            url: localizedCarUrl
+        {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+                {
+                    '@type': 'ListItem',
+                    position: 1,
+                    name: t('nav.home'),
+                    item: `${SITE_URL}/${lang}`
+                },
+                {
+                    '@type': 'ListItem',
+                    position: 2,
+                    name: `${car.make} ${car.model}`,
+                    item: localizedCarUrl
+                }
+            ]
         }
-    }
+    ]
+
+    const carKeywords = `${car.make} ${car.model}, ${PAGE_KEYWORDS.carDetails[lang] || PAGE_KEYWORDS.carDetails.ru}, ${car.make} ${car.year}`
 
     return (
         <div className="min-h-screen text-slate-900 relative z-10 flex flex-col">
             <SEO
                 title={`${car.make} ${car.model}`}
-                description={`${t('car.price_per_day')}: $${car.price}. ${car.specs.power}, ${typeof car.specs.transmission === 'object' ? (car.specs.transmission[lang] || car.specs.transmission.en) : car.specs.transmission}, ${car.specs.seats} ${t('car.seats_count')}.`}
+                description={`${t('car.from')} ${startingPrice}€/${t('car.day')}. ${car.specs.power}, ${typeof car.specs.transmission === 'object' ? (car.specs.transmission[lang] || car.specs.transmission.en) : car.specs.transmission}, ${car.specs.seats} ${t('car.seats_count')}.`}
+                keywords={carKeywords}
                 image={activeImage}
                 ogType="product"
                 structuredData={carStructuredData}
@@ -164,49 +226,63 @@ export default function CarDetails() {
 
             {/* LIGHTBOX MODAL */}
             {isLightboxOpen && (
-                <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black/95 backdrop-blur-sm">
+                <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black/95 backdrop-blur-sm select-none touch-none">
                     {/* Top Controls */}
-                    <div className="absolute top-0 right-0 p-4 md:p-6 flex justify-end w-full z-10 pointer-events-none">
+                    <div className="absolute top-0 right-0 p-4 md:p-6 flex justify-end w-full z-20 pointer-events-none">
                         <button
                             onClick={() => setIsLightboxOpen(false)}
-                            className="p-2 text-white/70 hover:text-white bg-black/20 hover:bg-black/40 rounded-full backdrop-blur-md transition-all pointer-events-auto"
+                            className="p-3 text-white/70 hover:text-white bg-black/20 hover:bg-black/40 rounded-full backdrop-blur-md transition-all pointer-events-auto active:scale-90"
                         >
-                            <X size={32} />
+                            <X size={28} />
                         </button>
                     </div>
 
                     {/* Main Lightbox Image View */}
                     <div
-                        className="relative w-full flex-1 flex items-center justify-center overflow-hidden px-4 select-none"
+                        className="relative w-full max-w-7xl mx-auto flex-1 flex items-center justify-center overflow-hidden"
                         onTouchStart={onTouchStart}
                         onTouchMove={onTouchMove}
                         onTouchEnd={onTouchEndEvent}
+                        onClick={(e) => {
+                            // Only close if clicking exactly on this container (the background), not on arrows or images
+                            if (e.target === e.currentTarget) {
+                                setIsLightboxOpen(false);
+                            }
+                        }}
                     >
-                        {car.images && car.images.length > 1 && (
+                        {car.images && car.images.length > 1 ? (
                             <div
-                                className="flex w-full h-[80vh] items-center"
+                                className="flex w-full h-full items-center cursor-ew-resize"
+                                onClick={(e) => e.stopPropagation()}
                                 style={{
-                                    transform: `translateX(calc(-${activeImageIndex * 100}% + ${swipeOffset}px))`,
-                                    transition: touchStart ? 'none' : 'transform 0.3s ease-out'
+                                    transform: `translate(calc(-${activeImageIndex * 100}% + ${swipeOffset.x}px), ${swipeOffset.y}px)`,
+                                    transition: touchStart.x ? 'none' : 'transform 0.3s cubic-bezier(0.25, 1, 0.5, 1)'
                                 }}
                             >
                                 {car.images.map((img, i) => (
-                                    <div key={i} className="min-w-full h-full flex items-center justify-center flex-shrink-0 px-2 lg:px-16">
+                                    <div key={i} className="min-w-full w-full h-full flex items-center justify-center flex-shrink-0 p-2 sm:p-4 lg:p-8">
                                         <img
                                             src={img}
-                                            alt={`${car.make} ${car.model}`}
-                                            className="max-w-full max-h-full object-contain pointer-events-none drop-shadow-2xl"
+                                            alt={t('car.alt_detail', { make: car.make, model: car.model })}
+                                            className={`max-w-full max-h-full object-contain pointer-events-none ${activeImageIndex === i ? '' : 'opacity-80 scale-95'} transition-all duration-300 md:drop-shadow-2xl`}
                                         />
                                     </div>
                                 ))}
                             </div>
-                        )}
-                        {!car.images || car.images.length <= 1 && (
-                            <img
-                                src={activeImage}
-                                alt={`${car.make} ${car.model}`}
-                                className="max-w-full max-h-[80vh] object-contain drop-shadow-2xl"
-                            />
+                        ) : (
+                            <div className="w-full h-full flex items-center justify-center p-2 sm:p-4 lg:p-8 cursor-default"
+                                onClick={(e) => e.stopPropagation()}
+                                style={{
+                                    transform: `translate(${swipeOffset.x}px, ${swipeOffset.y}px)`,
+                                    transition: touchStart.x ? 'none' : 'transform 0.3s cubic-bezier(0.25, 1, 0.5, 1)'
+                                }}
+                            >
+                                <img
+                                    src={activeImage}
+                                    alt={t('car.alt_detail', { make: car.make, model: car.model })}
+                                    className="max-w-full max-h-full object-contain pointer-events-none md:drop-shadow-2xl"
+                                />
+                            </div>
                         )}
 
                         {/* Desktop Side Navigation Arrows */}
@@ -230,12 +306,12 @@ export default function CarDetails() {
 
                     {/* Bottom Thumbnail Strip */}
                     {car.images && car.images.length > 1 && (
-                        <div className="w-full pb-6 pt-4 px-4 flex justify-center gap-2 overflow-x-auto">
+                        <div className="w-full pb-8 pt-4 px-4 flex justify-center gap-3 overflow-x-auto z-20">
                             {car.images.map((img, idx) => (
                                 <button
                                     key={idx}
                                     onClick={(e) => { e.stopPropagation(); setActiveImageIndex(idx); }}
-                                    className={`relative flex-shrink-0 h-16 w-24 rounded-lg overflow-hidden border-2 transition-all duration-300 ${activeImageIndex === idx ? 'border-white scale-110 z-10 shadow-lg shadow-white/20' : 'border-transparent opacity-40 hover:opacity-100'} bg-black`}
+                                    className={`relative flex-shrink-0 h-16 w-24 sm:h-20 sm:w-28 rounded-xl overflow-hidden border-2 transition-all duration-300 ${activeImageIndex === idx ? 'border-white scale-105 z-10 shadow-lg shadow-white/20' : 'border-transparent opacity-50 hover:opacity-100'} bg-black`}
                                 >
                                     <img src={img} className="w-full h-full object-cover" />
                                 </button>
@@ -254,39 +330,30 @@ export default function CarDetails() {
                     </Link>
 
                     {/* Card */}
-                    <div className="glass-panel rounded-2xl overflow-hidden">
+                    <div className="glass-card rounded-2xl overflow-hidden">
                         <div className="grid md:grid-cols-2">
                             {/* Image */}
                             <div className="flex flex-col">
                                 <div
                                     className="aspect-[4/3] overflow-hidden relative cursor-pointer group"
                                     onClick={() => setIsLightboxOpen(true)}
-                                    onTouchStart={(e) => {
-                                        onTouchStart(e)
-                                    }}
-                                    onTouchMove={(e) => {
-                                        onTouchMove(e)
-                                    }}
-                                    onTouchEnd={(e) => {
-                                        if (Math.abs(swipeOffset) >= 10 && e.cancelable) {
-                                            e.preventDefault()
-                                        }
-                                        onTouchEndEvent()
-                                    }}
+                                    onTouchStart={onTouchStart}
+                                    onTouchMove={onTouchMove}
+                                    onTouchEnd={onTouchEndEvent}
                                 >
                                     {car.images && car.images.length > 1 ? (
                                         <div
                                             className="flex w-full h-full"
                                             style={{
-                                                transform: `translateX(calc(-${activeImageIndex * 100}% + ${swipeOffset}px))`,
-                                                transition: touchStart ? 'none' : 'transform 0.3s ease-out'
+                                                transform: `translateX(calc(-${activeImageIndex * 100}% + ${swipeOffset.x}px))`,
+                                                transition: touchStart.x ? 'none' : 'transform 0.3s ease-out'
                                             }}
                                         >
                                             {car.images.map((img, i) => (
                                                 <div key={i} className="min-w-full h-full flex-shrink-0">
                                                     <img
                                                         src={img}
-                                                        alt={`${car.make} ${car.model}`}
+                                                        alt={t('car.alt_detail', { make: car.make, model: car.model })}
                                                         className="w-full h-full object-cover pointer-events-none group-hover:scale-105 transition-transform duration-700"
                                                     />
                                                 </div>
@@ -295,13 +362,13 @@ export default function CarDetails() {
                                     ) : (
                                         <img
                                             src={activeImage}
-                                            alt={`${car.make} ${car.model}`}
+                                            alt={t('car.alt_detail', { make: car.make, model: car.model })}
                                             className="w-full h-full object-cover pointer-events-none group-hover:scale-105 transition-transform duration-700"
                                         />
                                     )}
                                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center pointer-events-none">
                                         <span className="opacity-0 group-hover:opacity-100 bg-black/50 text-white px-4 py-2 rounded-full backdrop-blur-md transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 text-sm font-medium">
-                                            Click to enlarge
+                                            {t('car_details.click_to_enlarge')}
                                         </span>
                                     </div>
                                 </div>
@@ -332,38 +399,107 @@ export default function CarDetails() {
                                 <p className="text-slate-600 mb-6">{localizedDescription}</p>
 
                                 {/* Specs */}
-                                <div className="grid grid-cols-2 gap-3 mb-6">
-                                    <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
-                                        <Activity className="text-blue-600 mb-1" size={18} />
-                                        <p className="text-slate-500 text-xs">{t('car.engine')}</p>
-                                        <p className="font-medium text-slate-900">{car.specs.engine}</p>
+                                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6 bg-slate-100/80 backdrop-blur-md border border-slate-200/50 rounded-2xl p-4 shadow-inner">
+                                    <div className="flex flex-col">
+                                        <Activity className="text-blue-600 mb-1.5" size={20} />
+                                        <p className="text-slate-500 text-[10px] uppercase font-bold tracking-wider mb-0.5">{t('car.engine')}</p>
+                                        <p className="font-semibold text-slate-900 text-sm">{typeof car.specs.engine === 'object' ? (car.specs.engine[lang] || car.specs.engine.en) : car.specs.engine}</p>
                                     </div>
-                                    <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
-                                        <Gauge className="text-blue-600 mb-1" size={18} />
-                                        <p className="text-slate-500 text-xs">{t('car.power')}</p>
-                                        <p className="font-medium text-slate-900">{car.specs.power}</p>
+                                    <div className="flex flex-col">
+                                        <Gauge className="text-blue-600 mb-1.5" size={20} />
+                                        <p className="text-slate-500 text-[10px] uppercase font-bold tracking-wider mb-0.5">{t('car.power')}</p>
+                                        <p className="font-semibold text-slate-900 text-sm">{car.specs.power}</p>
                                     </div>
-                                    <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
-                                        <Settings className="text-blue-600 mb-1" size={18} />
-                                        <p className="text-slate-500 text-xs">{t('car.transmission')}</p>
-                                        <p className="font-medium text-slate-900">{typeof car.specs.transmission === 'object' ? (car.specs.transmission[lang] || car.specs.transmission.en) : car.specs.transmission}</p>
+                                    <div className="flex flex-col">
+                                        <Settings className="text-blue-600 mb-1.5" size={20} />
+                                        <p className="text-slate-500 text-[10px] uppercase font-bold tracking-wider mb-0.5">{t('car.transmission')}</p>
+                                        <p className="font-semibold text-slate-900 text-sm">{typeof car.specs.transmission === 'object' ? (car.specs.transmission[lang] || car.specs.transmission.en) : car.specs.transmission}</p>
                                     </div>
-                                    <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
-                                        <Users className="text-blue-600 mb-1" size={18} />
-                                        <p className="text-slate-500 text-xs">{t('car.seats')}</p>
-                                        <p className="font-medium text-slate-900">{car.specs.seats}</p>
+                                    <div className="flex flex-col">
+                                        <Users className="text-blue-600 mb-1.5" size={20} />
+                                        <p className="text-slate-500 text-[10px] uppercase font-bold tracking-wider mb-0.5">{t('car.seats')}</p>
+                                        <p className="font-semibold text-slate-900 text-sm">{car.specs.seats}</p>
                                     </div>
                                 </div>
 
-                                {/* Price & CTA */}
-                                <div className="flex items-center justify-between pt-4 border-t border-slate-100">
-                                    <div>
-                                        <span className="text-2xl font-bold text-slate-900">${car.price}</span>
-                                        <span className="text-slate-500 text-sm">/{t('car.day')}</span>
+                            </div>
+                        </div>
+
+                        {/* Unified Clean Pricing Segmented Table */}
+                        <div className="border-t border-slate-100 bg-white/90 backdrop-blur-2xl rounded-b-2xl overflow-hidden">
+                            {/* CTA Header Line */}
+                            <div className="px-5 py-6 sm:px-8 sm:py-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-slate-100 bg-slate-50/50">
+                                <div>
+                                    <div className="flex items-center gap-3 mb-2">
+                                        <span className="w-1.5 h-6 bg-gradient-to-b from-blue-500 to-blue-700 rounded-full"></span>
+                                        <h3 className="text-xl sm:text-2xl font-bold text-slate-900">{t('car.pricing.title')}</h3>
                                     </div>
-                                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg font-medium transition-colors shadow-lg shadow-blue-200">
+                                    <p className="text-slate-500 text-sm sm:text-[15px]">{startingRateNote}</p>
+                                </div>
+                                <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 w-full md:w-auto">
+                                    <div className="flex flex-col w-full sm:w-auto text-left sm:text-right">
+                                        <span className="text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-0.5 sm:mb-1">{t('car.price_per_day')}</span>
+                                        <div className="flex items-end gap-2 justify-start sm:justify-end">
+                                            <span className="text-[13px] sm:text-sm font-semibold text-slate-500 pb-1 sm:pb-1.5">{t('car.from')}</span>
+                                            <span className="text-4xl sm:text-5xl font-black text-slate-900 leading-none tracking-tight">{startingPrice}€</span>
+                                        </div>
+                                    </div>
+                                    <a href={`tel:${BUSINESS_PHONE_RAW}`} className="w-full sm:w-auto flex items-center justify-center gap-2 bg-slate-900 hover:bg-blue-600 text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-xl hover:shadow-blue-600/20 active:scale-95">
                                         {t('car.reserve')}
-                                    </button>
+                                        <ArrowRight size={18} />
+                                    </a>
+                                </div>
+                            </div>
+
+                            {/* Mobile Swipe Hint */}
+                            <div className="flex md:hidden items-center justify-end px-5 pt-3 pb-1 bg-white border-b border-slate-50">
+                                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] flex items-center gap-1">
+                                    Листайте тарифы
+                                    <ArrowRight size={12} className="animate-pulse" />
+                                </span>
+                            </div>
+
+                            {/* Rates Segmented Timeline */}
+                            <div className="relative">
+                                {/* Gradient fade on the right side for mobile to indicate scrollable content */}
+                                <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-white to-transparent pointer-events-none z-10 md:hidden"></div>
+
+                                <div className="flex flex-nowrap overflow-x-auto touch-pan-x snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] divide-x divide-slate-100">
+                                    {Object.entries(car.rates || {}).map(([key, value], idx) => {
+                                        const isBase = idx === 0;
+                                        const discount = !isBase && value ? Math.round((1 - value / car.rates.days_1) * 100) : 0;
+
+                                        return (
+                                            <div
+                                                key={key}
+                                                // min-w-[42vw] ensures exactly ~2.3 items are visible on standard phones, creating a natural vertical cut-off
+                                                className={`snap-start min-w-[42vw] sm:min-w-0 sm:flex-1 p-5 sm:p-6 md:p-8 flex flex-col justify-between transition-colors hover:bg-slate-50/50 cursor-default ${isBase ? 'bg-blue-50/40' : 'bg-white'}`}
+                                            >
+                                                <div className="mb-6 sm:mb-8">
+                                                    <span className={`text-[10px] sm:text-[11px] font-extrabold uppercase tracking-widest ${isBase ? 'text-blue-600' : 'text-slate-400'}`}>
+                                                        {t(`car.pricing.${key}`)}
+                                                    </span>
+                                                </div>
+
+                                                <div className="flex flex-col">
+                                                    <div className="flex items-baseline gap-1 mb-2 sm:mb-3">
+                                                        <span className={`text-2xl sm:text-3xl font-black tracking-tight ${isBase ? 'text-blue-900' : 'text-slate-900'}`}>
+                                                            {value ? `${value}€` : t('car.pricing.negotiable')}
+                                                        </span>
+                                                        {value && <span className="text-[11px] sm:text-xs font-medium text-slate-400">/{t('car.day')}</span>}
+                                                    </div>
+
+                                                    <div className="h-6 flex items-center">
+                                                        {!isBase && discount > 0 ? (
+                                                            <span className="inline-flex items-center px-2 py-1 rounded bg-emerald-50 text-emerald-600 text-[10px] sm:text-[11px] font-bold border border-emerald-100/50">
+                                                                -{discount}%
+                                                            </span>
+                                                        ) : null}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         </div>

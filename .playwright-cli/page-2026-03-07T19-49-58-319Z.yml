@@ -1,0 +1,148 @@
+- generic [ref=e1011]:
+  - banner [ref=e1012]:
+    - generic [ref=e1013]:
+      - link "AutoRent Logo" [ref=e1164] [cursor=pointer]:
+        - /url: /en
+        - img "AutoRent Logo" [ref=e1165]
+      - navigation [ref=e1017]:
+        - generic [ref=e1018]:
+          - link "Home" [ref=e1166] [cursor=pointer]:
+            - /url: /en
+          - link "About" [ref=e1167] [cursor=pointer]:
+            - /url: /en/about
+          - link "Contact" [ref=e1168] [cursor=pointer]:
+            - /url: /en/contact
+      - generic [ref=e1022]:
+        - generic [ref=e1024]:
+          - button "RO" [ref=e1025]
+          - button "RU" [ref=e1026]
+          - button "EN" [active] [ref=e1027]
+        - link "Book Now" [ref=e1169] [cursor=pointer]:
+          - /url: /en
+  - generic [ref=e1031]:
+    - link "Back" [ref=e1170] [cursor=pointer]:
+      - /url: /en
+      - img [ref=e1033]
+      - text: Back
+    - generic [ref=e1035]:
+      - generic [ref=e1036]:
+        - generic [ref=e1037]:
+          - generic [ref=e1038] [cursor=pointer]:
+            - generic [ref=e1039]:
+              - generic [ref=e1040]:
+                - img "Škoda Kodiaq vRS"
+              - generic [ref=e1041]:
+                - img "Škoda Kodiaq vRS"
+              - generic [ref=e1042]:
+                - img "Škoda Kodiaq vRS"
+              - generic [ref=e1043]:
+                - img "Škoda Kodiaq vRS"
+              - generic [ref=e1044]:
+                - img "Škoda Kodiaq vRS"
+            - generic:
+              - generic: Click to enlarge
+          - generic [ref=e1045]:
+            - button [ref=e1046]:
+              - img [ref=e1047]
+            - button [ref=e1048]:
+              - img [ref=e1049]
+            - button [ref=e1050]:
+              - img [ref=e1051]
+            - button [ref=e1052]:
+              - img [ref=e1053]
+            - button [ref=e1054]:
+              - img [ref=e1055]
+        - generic [ref=e1056]:
+          - generic [ref=e1057]: Petrol
+          - heading "Škoda Kodiaq vRS" [level=1] [ref=e1058]
+          - paragraph [ref=e1059]: "2024"
+          - paragraph [ref=e1060]: Sporty crossover with a powerful 2.0 TSI and signature vRS tuning. The spacious 5-seater cabin and high ground clearance make it comfortable for both the city and long trips.
+          - generic [ref=e1061]:
+            - generic [ref=e1062]:
+              - img [ref=e1063]
+              - paragraph [ref=e1065]: Engine
+              - paragraph [ref=e1066]: 2.0 Petrol Turbo
+            - generic [ref=e1067]:
+              - img [ref=e1068]
+              - paragraph [ref=e1071]: Power
+              - paragraph [ref=e1072]: 265 HP
+            - generic [ref=e1073]:
+              - img [ref=e1074]
+              - paragraph [ref=e1077]: Transmission
+              - paragraph [ref=e1078]: Automatic
+            - generic [ref=e1079]:
+              - img [ref=e1080]
+              - paragraph [ref=e1085]: Seats
+              - paragraph [ref=e1086]: "5"
+          - generic [ref=e1087]:
+            - generic [ref=e1088]:
+              - generic [ref=e1089]: 85€
+              - generic [ref=e1090]: /day
+            - button "Reserve" [ref=e1171]
+      - generic [ref=e1092]:
+        - heading "Rental Pricing" [level=3] [ref=e1172]
+        - generic [ref=e1096]:
+          - generic [ref=e1099]:
+            - generic [ref=e1100]: 1 day
+            - generic [ref=e1101]:
+              - generic [ref=e1102]: 85€
+              - generic [ref=e1103]: /day
+          - generic [ref=e1105]:
+            - generic [ref=e1106]: 2-3 days
+            - generic [ref=e1107]:
+              - generic [ref=e1108]: 75€
+              - generic [ref=e1109]: /day
+            - generic [ref=e1110]: "-12% discount"
+          - generic [ref=e1112]:
+            - generic [ref=e1113]: 4-7 days
+            - generic [ref=e1114]:
+              - generic [ref=e1115]: 65€
+              - generic [ref=e1116]: /day
+            - generic [ref=e1117]: "-24% discount"
+          - generic [ref=e1119]:
+            - generic [ref=e1120]: 8-15 days
+            - generic [ref=e1121]:
+              - generic [ref=e1122]: 55€
+              - generic [ref=e1123]: /day
+            - generic [ref=e1124]: "-35% discount"
+          - generic [ref=e1126]:
+            - generic [ref=e1127]: 16+ days
+            - generic [ref=e1128]:
+              - generic [ref=e1129]: 45€
+              - generic [ref=e1130]: /day
+            - generic [ref=e1131]: "-47% discount"
+  - contentinfo [ref=e1132]:
+    - generic [ref=e1133]:
+      - generic [ref=e1134]:
+        - generic [ref=e1135]:
+          - link "AutoRent Logo" [ref=e1173] [cursor=pointer]:
+            - /url: /en
+            - img "AutoRent Logo" [ref=e1174]
+          - paragraph [ref=e1139]: Premium car rental in Moldova. A wide range of vehicles from sedans to SUVs.
+        - generic [ref=e1140]:
+          - heading "Navigation" [level=4] [ref=e1175]
+          - navigation [ref=e1142]:
+            - link "Home" [ref=e1176] [cursor=pointer]:
+              - /url: /en
+            - link "About" [ref=e1177] [cursor=pointer]:
+              - /url: /en/about
+            - link "Contact" [ref=e1178] [cursor=pointer]:
+              - /url: /en/contact
+        - generic [ref=e1146]:
+          - heading "Contacts" [level=4] [ref=e1179]
+          - generic [ref=e1148]:
+            - link "+373 60 123 456" [ref=e1149] [cursor=pointer]:
+              - /url: tel:+37360123456
+              - img [ref=e1150]
+              - text: +373 60 123 456
+            - link "info@autorent.md" [ref=e1152] [cursor=pointer]:
+              - /url: mailto:info@autorent.md
+              - img [ref=e1153]
+              - text: info@autorent.md
+            - generic [ref=e1156]:
+              - img [ref=e1157]
+              - text: Chișinău, Moldova
+      - generic [ref=e1160]:
+        - paragraph [ref=e1161]: © 2024 AutoRent. All rights reserved.
+        - link "Privacy Policy" [ref=e1180] [cursor=pointer]:
+          - /url: /en/privacy

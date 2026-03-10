@@ -1,110 +1,54 @@
-import bmwX5 from '../assets/cars/bmw_x5_1.webp';
-import bmwX5_2 from '../assets/cars/bmw_x5_2.png';
-import bmwX5_3 from '../assets/cars/bmw_x5_3.png';
-import mercedesCClass from '../assets/cars/mercedes_c_class.png';
-import toyotaCamry from '../assets/cars/toyota_camry.png';
-import rangeRoverSport from '../assets/cars/range_rover_sport.png';
-import audiQ8 from '../assets/cars/audi_q8.png';
-import toyotaPrius from '../assets/cars/toyota_prius.png';
-import lexusRX from '../assets/cars/lexus_rx.png';
-import hondaCRV from '../assets/cars/honda_cr_v.png';
-import volvoXC90 from '../assets/cars/volvo_xc90_recharge.png';
-import bmw330e from '../assets/cars/bmw_330e.png';
-import teslaModel3 from '../assets/cars/tesla_model_3.png';
-import porscheTaycan from '../assets/cars/porsche_taycan.png';
-import audiEtron from '../assets/cars/audi_e_tron.png';
-import hyundaiIoniq5 from '../assets/cars/hyundai_ioniq_5.png';
-import mercedesEQS from '../assets/cars/mercedes_eqs.png';
 import skodaSide1 from '../assets/cars/skoda_side1.webp';
 import skodaBack from '../assets/cars/skoda_back.webp';
 import skodaSalonSeat from '../assets/cars/skoda_salon_seat.webp';
 import skodaSalonWheel from '../assets/cars/skoda_salon_wheel.webp';
 import skodaSalonWheelSide from '../assets/cars/skoda_salon_wheel_side.webp';
-import mercedesSide from '../assets/cars/mercedes_side.webp';
-import mercedesBack from '../assets/cars/mercedes_back.webp';
-import mercedesSalonWheel from '../assets/cars/mercedes_salon_wheel.webp';
-import mercedesSalonSide from '../assets/cars/mercedes_salon_side.webp';
-import cooperSide from '../assets/cars/cooper_side.webp';
-import cooperBack from '../assets/cars/cooper_back.webp';
-import cooperSalonWheel from '../assets/cars/cooper_salon_wheel.webp';
-import cooperSalonSide from '../assets/cars/cooper_salon_side.webp';
-import bmwSide from '../assets/cars/bmw_side.webp';
-import bmwBack from '../assets/cars/bmw_back.webp';
-import bmwSalonWheel from '../assets/cars/bmw_salon_wheel.webp';
-import bmwSalonSide from '../assets/cars/bmw_salon_side.webp';
 
-// Helper to generate URL-friendly slug
+// New generated images (converted to WebP for performance)
+import bmwX5_2018 from '../assets/cars/bmw_x5_2018.webp';
+import bmw530i_2018 from '../assets/cars/bmw_530i_2018.webp';
+import vwJetta2020 from '../assets/cars/vw_jetta_2020_red.webp';
+import vwPassat2014 from '../assets/cars/vw_passat_2014.webp';
+
+import benzSFront from '../assets/cars/benz_S_front.webp';
+import benzSBack from '../assets/cars/benz_S_back.webp';
+import benzSSide from '../assets/cars/benz_S_side.webp';
+import benzSSalonFull from '../assets/cars/benz_S_salon_full.webp';
+import benzSSalonWheel from '../assets/cars/benz_S_salon_wheel.webp';
+
+import cabriFront from '../assets/cars/cabri_front.webp';
+import cabriBack from '../assets/cars/cabri_back.webp';
+import cabriSide from '../assets/cars/cabri_side.webp';
+import cabriSalonFull from '../assets/cars/cabri_salon_full.webp';
+import cabriSalonWheel from '../assets/cars/cabri_salon_wheel.webp';
+
+import cooperDFront from '../assets/cars/cooper_front.webp';
+import cooperDBack from '../assets/cars/cooper_back.webp';
+import cooperDSide from '../assets/cars/cooper_side.webp';
+import cooperDSalonFull from '../assets/cars/cooper_salon_full.webp';
+import cooperDSalonWheel from '../assets/cars/cooper_salon_wheel.webp';
+
+import bmwGGFront from '../assets/cars/bmw_GG_front.webp';
+import bmwGGBack from '../assets/cars/bmw_GG_back.webp';
+import bmwGGSide from '../assets/cars/bmw_GG_side.webp';
+import bmwGGSalonFull from '../assets/cars/bmw_GG_salon_full.webp';
+import bmwGGSalonWheel from '../assets/cars/bmw_GG_salon_wheel.webp';
+
+import bmwXFront from '../assets/cars/bmw_X_front.webp';
+import bmwXBack from '../assets/cars/bmw_X_back.webp';
+import bmwXSide from '../assets/cars/bmw_X_side.webp';
+import bmwXSalonFull from '../assets/cars/bmw_X_salon_full.webp';
+import bmwXSalonWheel from '../assets/cars/bmw_X_salon_wheel.webp';
+
+import vwJettaFront from '../assets/cars/vw_JETTA_front.webp';
+import vwJettaBack from '../assets/cars/vw_JETTA_back.webp';
+import vwJettaSide from '../assets/cars/vw_JETTA_side.webp';
+import vwJettaSalonFull from '../assets/cars/vw_JETTA_salon_full.webp';
+import vwJettaSalonWheel from '../assets/cars/vw_JETTA_salon_wheel.webp';
+
 const generateSlug = (name, year) => {
     return `${name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}-${year}`;
 };
-
-const generatedCars = Array.from({ length: 15 }, (_, i) => {
-    const types = ['petrol', 'diesel', 'hybrid', 'electric'];
-    const type = types[i % 4];
-
-    // Map models to their image imports
-    const models = {
-        petrol: [
-            { name: 'Mercedes C-Class', image: mercedesCClass },
-            { name: 'Toyota Camry', image: toyotaCamry },
-            { name: 'BMW 330e', image: bmw330e } // Reusing some images for demo
-        ],
-        diesel: [
-            { name: 'BMW X5', image: bmwX5 },
-            { name: 'Range Rover Sport', image: rangeRoverSport },
-            { name: 'Audi Q8', image: audiQ8 },
-            { name: 'Volvo XC90 Recharge', image: volvoXC90 } // Reusing some images for demo
-        ],
-        hybrid: [
-            { name: 'Toyota Prius', image: toyotaPrius },
-            { name: 'Lexus RX', image: lexusRX },
-            { name: 'Honda CR-V', image: hondaCRV }
-        ],
-        electric: [
-            { name: 'Tesla Model 3', image: teslaModel3 },
-            { name: 'Porsche Taycan', image: porscheTaycan },
-            { name: 'Audi e-tron', image: audiEtron },
-            { name: 'Hyundai Ioniq 5', image: hyundaiIoniq5 },
-            { name: 'Mercedes EQS', image: mercedesEQS }
-        ]
-    };
-
-    // Ensure we don't go out of bounds if arrays have different lengths
-    const modelList = models[type];
-    const modelData = modelList[i % modelList.length];
-    const name = modelData.name;
-    const year = 2023 + (i % 2);
-    const price = 50 + (i * 5);
-    const carClass = price >= 95 ? 'premium' : price >= 70 ? 'standard' : 'economy';
-
-    return {
-        id: i + 1,
-        slug: generateSlug(name, year),
-        make: name.split(' ')[0],
-        model: name.split(' ').slice(1).join(' '),
-        year: year,
-        type: type, // 'petrol', 'diesel', 'hybrid', 'electric'
-        class: carClass, // 'economy', 'standard', 'premium'
-        image: modelData.image,
-        images: name === 'BMW X5' ? [bmwX5, bmwX5_2, bmwX5_3] : [modelData.image],
-        price: price,
-        description: {
-            ro: "O mașină excelentă pentru călătoriile tale. Confort și performanță garantate.",
-            ru: "Отличный автомобиль для ваших поездок. Комфорт и производительность гарантированы.",
-            en: "An excellent car for your trips. Comfort and performance guaranteed."
-        },
-        specs: {
-            engine: type === 'electric' ? 'Dual Motor' : '2.0L Turbo',
-            power: `${200 + i * 10} HP`,
-            transmission: {
-                en: 'Automatic',
-                ru: 'Автомат',
-                ro: 'Automată'
-            },
-            seats: 5
-        }
-    };
-});
 
 export const cars = [
     {
@@ -115,135 +59,276 @@ export const cars = [
         year: 2024,
         type: 'petrol',
         class: 'premium',
-        image: skodaSide1, // Main Photo
-        images: [skodaSide1, skodaBack, skodaSalonSeat, skodaSalonWheel, skodaSalonWheelSide], // Gallery Photos
+        image: skodaSide1,
+        images: [skodaSide1, skodaBack, skodaSalonSeat, skodaSalonWheel, skodaSalonWheelSide],
         price: 85,
+        rates: { days_1: 85, days_2_3: 75, days_4_7: 65, days_8_15: 55, days_16_plus: 45 },
         description: {
-            ro: "A doua generație Kodiaq vRS cu 2.0 TSI (265 CP). Un SUV excelent, spațios, cu 7 locuri, ideal pentru oraș și călătorii.",
-            ru: "Второе поколение Kodiaq vRS с 2.0 TSI (265 л.с.). Отличный вместительный 7-местный кроссовер, идеален для города и путешествий.",
-            en: "Second generation Kodiaq vRS with 2.0 TSI (265 HP). An excellent, spacious 7-seater SUV, ideal for city and travel."
+            ro: "Crossover sportiv cu un puternic motor 2.0 TSI și setări vRS specifice. Habitaclul spațios cu 5 locuri și garda la sol înaltă îl fac confortabil atât pentru oraș, cât și pentru călătorii lungi.",
+            ru: "Спортивный кроссовер с мощным 2.0 TSI и фирменной настройкой vRS. Вместительный 5‑местный салон и высокий клиренс делают его удобным как для города, так и для дальних путешествий.",
+            en: "Sporty crossover with a powerful 2.0 TSI and signature vRS tuning. The spacious 5-seater cabin and high ground clearance make it comfortable for both the city and long trips."
         },
         specs: {
-            engine: '2.0 TSI',
+            engine: { en: '2.0 Petrol Turbo', ru: '2.0 Бензин Турбо', ro: '2.0 Benzină Turbo' },
             power: '265 HP',
-            transmission: {
-                en: '7-speed DSG',
-                ru: '7-ст. DSG',
-                ro: 'DSG 7 trepte'
-            },
-            seats: 7
+            transmission: { en: 'Automatic', ru: 'Автомат', ro: 'Automată' },
+            seats: 5
         }
     },
     {
         id: 101,
-        slug: generateSlug('Mercedes S550e W222', 2017),
-        make: 'Mercedes-Benz',
-        model: 'S 550e W222',
-        year: 2017,
-        type: 'hybrid',
-        class: 'premium',
-        image: mercedesSide,
-        images: [mercedesSide, mercedesBack, mercedesSalonWheel, mercedesSalonSide],
-        price: 150,
+        slug: generateSlug('MINI Cooper D', 2023),
+        make: 'MINI',
+        model: 'Cooper D',
+        year: 2023,
+        type: 'diesel',
+        class: 'standard',
+        image: cooperDSide,
+        images: [cooperDSide, cooperDFront, cooperDBack, cooperDSalonFull, cooperDSalonWheel],
+        price: 90,
+        rates: { days_1: 90, days_2_3: 60, days_4_7: 50, days_8_15: 45, days_16_plus: 40 },
         description: {
-            ro: "Plug-in hybrid (PHEV) cu 3.0L V6 Biturbo și motor electric (436 CP). Un sedan de lux cu un confort spectaculos și dinamică excepțională.",
-            ru: "Плагин-гибрид (PHEV) с 3.0L V6 Biturbo + электромотор (436 л.с.). Роскошный седан с исключительным комфортом и отличной динамикой.",
-            en: "Plug-in hybrid (PHEV) with a 3.0L V6 Biturbo and electric motor (436 HP). A luxury sedan with spectacular comfort and exceptional dynamics."
+            ro: "Hatchback/crossover premium compact cu un motor diesel economic. Agil și stilat, perfect pentru o viață urbană activă și scurte ieșiri din oraș.",
+            ru: "Компактный премиальный хэтчбек/кроссовер с экономичным дизельным мотором. Манёвренный и стильный, идеально подходит для активной городской жизни и коротких выездов за город.",
+            en: "Compact premium hatchback/crossover with an economical diesel engine. Agile and stylish, perfectly suited for an active city life and short trips out of town."
         },
         specs: {
-            engine: '3.0 V6 PHEV',
-            power: '436 HP',
-            transmission: {
-                en: '7G-TRONIC',
-                ru: '7G-TRONIC',
-                ro: '7G-TRONIC'
-            },
+            engine: { en: '2.0 Diesel', ru: '2.0 Дизель', ro: '2.0 Diesel' },
+            power: '150 HP',
+            transmission: { en: 'Automatic', ru: 'Автомат', ro: 'Automată' },
             seats: 5
         }
     },
     {
         id: 102,
-        slug: generateSlug('MINI Countryman U25', 2024),
-        make: 'MINI',
-        model: 'Countryman U25 2.0D',
+        slug: generateSlug('BMW 330e G20 LCI', 2024),
+        make: 'BMW',
+        model: '330e G20 LCI',
         year: 2024,
-        type: 'diesel',
+        type: 'hybrid',
         class: 'premium',
-        image: cooperSide,
-        images: [cooperSide, cooperBack, cooperSalonWheel, cooperSalonSide],
-        price: 80,
+        image: bmwGGSide,
+        images: [bmwGGSide, bmwGGFront, bmwGGBack, bmwGGSalonFull, bmwGGSalonWheel],
+        price: 90,
+        rates: { days_1: 90, days_2_3: 70, days_4_7: 60, days_8_15: 55, days_16_plus: 50 },
         description: {
-            ro: "Cel mai nou MINI Countryman D cu turbodiesel de 2.0 litri și sistem mild-hybrid (163 CP). Practic, eficient și economic.",
-            ru: "Новейший MINI Countryman D с 2.0-литровым турбодизелем и системой mild-hybrid (163 л.с.). Практичный, современный и экономичный.",
-            en: "The newest MINI Countryman D with a 2.0-liter turbodiesel and a mild-hybrid system (163 HP). Practical, modern, and economical."
+            ro: "Sedan hibrid modern care combină dinamica BMW cu posibilitatea de a conduce silențios pe electricitate. O alegere excelentă pentru cei care doresc o mașină premium cu 5 locuri, cu un consum redus și o accelerație rapidă.",
+            ru: "Современный гибридный седан, сочетающий динамику BMW и возможность тихой езды на электротяге. Отличный выбор для тех, кто хочет премиальный 5‑местный автомобиль с низким расходом и бодрым разгоном.",
+            en: "Modern hybrid sedan combining BMW dynamics with the ability to drive quietly on electric power. An excellent choice for those who want a premium 5-seater with low consumption and brisk acceleration."
         },
         specs: {
-            engine: '2.0 Diesel MHEV',
-            power: '163 HP',
-            transmission: {
-                en: '7-speed DKG',
-                ru: '7-ст. DKG',
-                ro: 'DKG 7 trepte'
-            },
+            engine: { en: '2.0 Plug‑in Hybrid', ru: '2.0 Гибрид', ro: '2.0 Hibrid' },
+            power: '292 HP',
+            transmission: { en: 'Automatic', ru: 'Автомат', ro: 'Automată' },
             seats: 5
         }
     },
     {
         id: 103,
-        slug: generateSlug('BMW 330e G20', 2022),
-        make: 'BMW',
-        model: '330e G20 M Sport',
-        year: 2022,
+        slug: generateSlug('Mercedes S550e', 2017),
+        make: 'Mercedes-Benz',
+        model: 'S 550e',
+        year: 2017,
         type: 'hybrid',
         class: 'premium',
-        image: bmwSide,
-        images: [bmwSide, bmwBack, bmwSalonWheel, bmwSalonSide],
-        price: 110,
+        image: benzSSide,
+        images: [benzSSide, benzSFront, benzSBack, benzSSalonFull, benzSSalonWheel],
+        price: 150,
+        rates: { days_1: 150, days_2_3: 100, days_4_7: 90, days_8_15: 80, days_16_plus: 70 },
         description: {
-            ro: "Sedan sportiv plug-in hybrid (PHEV) pe platforma G20. Putere combinată de 292 CP și dinamică excelentă de condus.",
-            ru: "Спортивный седан, подключаемый гибрид (PHEV) на платформе G20. Суммарная мощность 292 л.с. и отличная динамика.",
-            en: "A sporty plug-in hybrid (PHEV) sedan based on the G20 platform. Combined output of 292 HP and excellent driving dynamics."
+            ro: "Sedan executiv cu propulsie hibridă, creat pentru confort maxim. Mersul silențios, suspensia moale și spațiul generos îl fac opțiunea ideală pentru călătorii de afaceri și transferuri de nivel înalt.",
+            ru: "Представительский седан с гибридной установкой, созданный для максимального комфорта. Тихий ход, мягкая подвеска и огромный запас места делают его идеальным вариантом для деловых поездок и трансферов высокого уровня.",
+            en: "Executive hybrid sedan designed for maximum comfort. Quiet ride, soft suspension, and huge reserves of space make it the ideal option for business trips and high-level transfers."
         },
         specs: {
-            engine: '2.0 Turbo PHEV',
-            power: '292 HP',
-            transmission: {
-                en: '8-speed Steptronic',
-                ru: '8-ст. Steptronic',
-                ro: 'Steptronic 8 trepte'
-            },
+            engine: { en: '3.0 V6 Plug‑in Hybrid', ru: '3.0 V6 Гибрид', ro: '3.0 V6 Hibrid' },
+            power: '436 HP',
+            transmission: { en: 'Automatic', ru: 'Автомат', ro: 'Automată' },
             seats: 5
         }
     },
     {
         id: 104,
-        slug: generateSlug('BMW X5', 2023),
+        slug: generateSlug('BMW X5 xDrive25d', 2018),
         make: 'BMW',
-        model: 'X5',
-        year: 2023,
+        model: 'X5 F15 xDrive25d',
+        year: 2018,
         type: 'diesel',
         class: 'premium',
-        image: bmwX5,
-        images: [bmwX5, bmwX5_2, bmwX5_3],
-        price: 130,
+        image: bmwX5_2018,
+        images: [bmwX5_2018],
+        price: 100,
+        rates: { days_1: 100, days_2_3: 80, days_4_7: 70, days_8_15: 60, days_16_plus: 50 },
         description: {
-            ro: "Un SUV robust, premium, gata de orice provocare.",
-            ru: "Премиальный и мощный внедорожник на каждый день.",
-            en: "A robust, premium SUV ready for any challenge."
+            ro: "Crossover premium mare, cu tracțiune integrală xDrive și un motor diesel eficient. Habitaclul spațios cu 5 locuri și nivelul ridicat de confort îl fac o opțiune excelentă pentru familie și trasee lungi.",
+            ru: "Крупный премиальный кроссовер с полным приводом xDrive и экономичным, но мощным дизельным мотором. Просторный 5‑местный салон и высокий уровень комфорта делают его отличным вариантом для семьи и дальних маршрутов.",
+            en: "Large premium crossover with xDrive all-wheel drive and an efficient diesel engine. The spacious 5-seater cabin and high level of comfort make it an excellent option for the family and long routes."
         },
         specs: {
-            engine: '3.0 Diesel',
-            power: '286 HP',
-            transmission: {
-                en: 'Automatic',
-                ru: 'Автомат',
-                ro: 'Automată'
-            },
+            engine: { en: '2.0 Diesel Turbo', ru: '2.0 Дизель Турбо', ro: '2.0 Diesel Turbo' },
+            power: '231 HP',
+            transmission: { en: 'Automatic', ru: 'Автомат', ro: 'Automată' },
             seats: 5
         }
     },
-    ...generatedCars
+    {
+        id: 105,
+        slug: generateSlug('BMW 530i xDrive G30', 2018),
+        make: 'BMW',
+        model: '530i xDrive G30',
+        year: 2018,
+        type: 'petrol',
+        class: 'premium',
+        image: bmw530i_2018,
+        images: [bmw530i_2018],
+        price: 130,
+        rates: { days_1: 130, days_2_3: 90, days_4_7: 80, days_8_15: 70, days_16_plus: 60 },
+        description: {
+            ro: "Sedan de afaceri elegant, echipat cu pachetul original M, inclusiv un body kit agresiv și un interior premium în două culori. Combină confortul suprem, tracțiunea integrală xDrive și o dinamică încrezătoare a motorului pe benzină.",
+            ru: "Стильный бизнес‑седан в оригинальном М‑пакете с эффектным обвесом и премиальным двухцветным салоном. Сочетает максимальный комфорт, полный привод xDrive и уверенную динамику бензинового мотора.",
+            en: "A stylish business sedan equipped with the original M Sport package, featuring an aggressive body kit and a premium two-tone interior. It combines maximum comfort, xDrive all-wheel drive, and the confident dynamics of a petrol engine."
+        },
+        specs: {
+            engine: { en: '2.0 Petrol Turbo', ru: '2.0 Бензин Турбо', ro: '2.0 Benzină Turbo' },
+            power: '252 HP',
+            transmission: { en: 'Automatic', ru: 'Автомат', ro: 'Automată' },
+            seats: 5
+        }
+    },
+    {
+        id: 106,
+        slug: generateSlug('VW Jetta 1.4 TSI', 2017),
+        make: 'Volkswagen',
+        model: 'Jetta 1.4 TSI',
+        year: 2017,
+        type: 'petrol',
+        class: 'economy',
+        image: vwJettaSide,
+        images: [vwJettaSide, vwJettaFront, vwJettaBack, vwJettaSalonFull, vwJettaSalonWheel],
+        price: 50,
+        rates: { days_1: 50, days_2_3: 35, days_4_7: 30, days_8_15: 27, days_16_plus: 25 },
+        description: {
+            ro: "Sedan practic cu un motor turbo economic, convenabil în utilizarea zilnică. Habitaclul confortabil cu 5 locuri și portbagajul spațios îl fac o alegere bună pentru oraș și călătorii de weekend.",
+            ru: "Практичный седан с экономичным турбомотором, удобный в повседневной эксплуатации. Комфортный 5‑местный салон и вместительный багажник делают его хорошим выбором для города и поездок на выходные.",
+            en: "Practical sedan with an economical turbo engine, convenient for daily use. The comfortable 5-seater cabin and spacious trunk make it a good choice for the city and weekend trips."
+        },
+        specs: {
+            engine: { en: '1.4 Petrol Turbo', ru: '1.4 Бензин Турбо', ro: '1.4 Benzină Turbo' },
+            power: '150 HP',
+            transmission: { en: 'Automatic', ru: 'Автомат', ro: 'Automată' },
+            seats: 5
+        }
+    },
+    {
+        id: 107,
+        slug: generateSlug('VW Jetta 1.4 TSI', 2020),
+        make: 'Volkswagen',
+        model: 'Jetta 1.4 TSI',
+        year: 2020,
+        type: 'petrol',
+        class: 'standard',
+        image: vwJetta2020,
+        images: [vwJetta2020],
+        price: 60,
+        rates: { days_1: 60, days_2_3: 45, days_4_7: 40, days_8_15: 35, days_16_plus: 30 },
+        description: {
+            ro: "Sedan actualizat, cu un design modern și o ergonomie îmbunătățită. Motorul economic, suspensia confortabilă și interiorul intuitiv se potrivesc celor care caută o mașină fiabilă cu 5 locuri pentru fiecare zi.",
+            ru: "Обновлённый седан с современным дизайном и улучшенной эргономикой. Экономичный двигатель, комфортная подвеска и понятный интерьер подойдут тем, кто ищет надёжный 5‑местный автомобиль на каждый день.",
+            en: "Updated sedan with a modern design and improved ergonomics. An economical engine, comfortable suspension, and intuitive interior will suit those looking for a reliable 5-seater car for every day."
+        },
+        specs: {
+            engine: { en: '1.4 Petrol Turbo', ru: '1.4 Бензин Турбо', ro: '1.4 Benzină Turbo' },
+            power: '150 HP',
+            transmission: { en: 'Automatic', ru: 'Автомат', ro: 'Automată' },
+            seats: 5
+        }
+    },
+    {
+        id: 108,
+        slug: generateSlug('VW Passat 2.0 TDI', 2014),
+        make: 'Volkswagen',
+        model: 'Passat 2.0 TDI',
+        year: 2014,
+        type: 'diesel',
+        class: 'standard',
+        image: vwPassat2014,
+        images: [vwPassat2014],
+        price: 60,
+        rates: { days_1: 60, days_2_3: 40, days_4_7: 35, days_8_15: 33, days_16_plus: 30 },
+        description: {
+            ro: "Automobil de familie clasic, cu un motor diesel economic. Habitaclul spațios, portbagajul mare și suspensia confortabilă îl fac o opțiune excelentă pentru călătorii lungi și muncă.",
+            ru: "Классический семейный автомобиль с экономичным дизельным мотором. Просторный салон, большой багажник и комфортная подвеска делают его отличным вариантом для дальних поездок и работы.",
+            en: "Classic family car with an economical diesel engine. A spacious cabin, large trunk, and comfortable suspension make it an excellent option for long trips and work."
+        },
+        specs: {
+            engine: { en: '2.0 Diesel TDI', ru: '2.0 Дизель TDI', ro: '2.0 Diesel TDI' },
+            power: '150 HP',
+            transmission: { en: 'Automatic', ru: 'Автомат', ro: 'Automată' },
+            seats: 5
+        }
+    },
+    {
+        id: 109,
+        slug: generateSlug('Mercedes E220 Cabrio', 2013),
+        make: 'Mercedes-Benz',
+        model: 'E 220 Cabrio',
+        year: 2013,
+        type: 'diesel',
+        class: 'standard',
+        image: cabriSide,
+        images: [cabriSide, cabriFront, cabriBack, cabriSalonFull, cabriSalonWheel],
+        price: 120,
+        rates: { days_1: 120, days_2_3: 70, days_4_7: 55, days_8_15: 50, days_16_plus: null },
+        description: {
+            ro: "Decapotabilă elegantă pentru cei cărora le place să conducă cu acoperișul deschis și apreciază confortul Mercedes. Potrivită pentru călătorii relaxate prin oraș și pe trasee pitorești în sezonul cald.",
+            ru: "Элегантный кабриолет для тех, кто любит ездить с открытой крышей и ценит комфорт Mercedes. Подходит для расслабленных поездок по городу и красивых маршрутов в тёплое время года.",
+            en: "Elegant convertible for those who love driving with the roof down and value Mercedes comfort. Built for relaxed city trips and beautiful routes in the warm season."
+        },
+        specs: {
+            engine: { en: '2.2 Diesel CDI', ru: '2.2 Дизель CDI', ro: '2.2 Diesel CDI' },
+            power: '170 HP',
+            transmission: { en: 'Automatic', ru: 'Автомат', ro: 'Automată' },
+            seats: 4
+        }
+    },
+    {
+        id: 110,
+        slug: generateSlug('BMW X6 xDrive30d', 2018),
+        make: 'BMW',
+        model: 'X6 xDrive30d',
+        year: 2018,
+        type: 'diesel',
+        class: 'premium',
+        image: bmwXSide,
+        images: [bmwXSide, bmwXFront, bmwXBack, bmwXSalonFull, bmwXSalonWheel],
+        price: 100,
+        rates: { days_1: 100, days_2_3: 90, days_4_7: 80, days_8_15: 70, days_16_plus: 60 },
+        description: {
+            ro: "Coupé-crossover spectaculos, cu un motor diesel puternic și tracțiune integrală. Atrage atenția prin designul său, rămânând în același timp un automobil confortabil cu 5 locuri pentru deplasări zilnice și călătorii.",
+            ru: "Эффектный купе‑кроссовер с мощным дизельным мотором и полным приводом. Привлекает внимание дизайном и при этом остаётся комфортным 5‑местным автомобилем для ежедневных поездок и путешествий.",
+            en: "Striking coupe-crossover with a powerful diesel engine and all-wheel drive. Attracts attention with its design while remaining a comfortable 5-seater car for daily drives and travel."
+        },
+        specs: {
+            engine: { en: '3.0 Diesel', ru: '3.0 Дизель', ro: '3.0 Diesel' },
+            power: '258 HP',
+            transmission: { en: 'Automatic', ru: 'Автомат', ro: 'Automată' },
+            seats: 5
+        }
+    }
 ];
+
+export const getCarStartingRate = (car) => {
+    const availableRates = Object.entries(car.rates || {}).filter(([, value]) => typeof value === 'number');
+
+    if (availableRates.length > 0) {
+        const [key, price] = availableRates[availableRates.length - 1];
+        return { key, price };
+    }
+
+    return { key: null, price: car.price };
+};
+
+export const getCarStartingPrice = (car) => getCarStartingRate(car).price;
 
 // Helper to find car by slug
 export const getCarBySlug = (slug) => cars.find(car => car.slug === slug);

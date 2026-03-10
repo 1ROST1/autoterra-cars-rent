@@ -1,0 +1,382 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Логотип AutoRent" [ref=e6] [cursor=pointer]:
+        - /url: /ru
+        - img "Логотип AutoRent" [ref=e8]
+      - navigation [ref=e9]:
+        - generic [ref=e10]:
+          - link "Главная" [ref=e11] [cursor=pointer]:
+            - /url: /ru
+          - link "О нас" [ref=e12] [cursor=pointer]:
+            - /url: /ru/about
+          - link "Контакты" [ref=e13] [cursor=pointer]:
+            - /url: /ru/contact
+      - generic [ref=e14]:
+        - generic [ref=e16]:
+          - button "RO" [ref=e17]
+          - button "RU" [ref=e18]
+          - button "EN" [ref=e19]
+        - link "Забронировать" [ref=e21] [cursor=pointer]:
+          - /url: /ru
+  - generic [ref=e23]:
+    - heading "Аренда авто в Молдове" [level=1] [ref=e24]
+    - paragraph [ref=e25]: Лучшие автомобили по доступным ценам. От экономичных седанов до премиум внедорожников.
+  - generic [ref=e27]:
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e31]: "Тип мотора:"
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - button "Бензин" [ref=e36]
+            - button "Дизель" [ref=e37]
+            - button "Гибрид" [ref=e38]
+          - button "×"
+      - generic [ref=e39]:
+        - generic [ref=e41]: "Класс:"
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - button "Эконом" [ref=e46]
+            - button "Стандарт" [ref=e47]
+            - button "Премиум" [ref=e48]
+          - button "×"
+      - generic [ref=e49]:
+        - generic [ref=e51]: "Сортировка:"
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - button "Сначала дешевые" [ref=e56]
+            - button "Сначала дорогие" [ref=e57]
+          - button "×"
+    - generic [ref=e58]:
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - img "Škoda Kodiaq vRS" [ref=e61]
+          - generic [ref=e62]: Бензин
+          - generic [ref=e63]: Премиум
+        - generic [ref=e64]:
+          - heading "Škoda Kodiaq vRS" [level=3] [ref=e65]
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - img [ref=e68]
+              - generic [ref=e70]: "2024"
+            - generic [ref=e71]:
+              - img [ref=e72]
+              - generic [ref=e75]: 2.0 Бензин Турбо
+            - generic [ref=e76]:
+              - img [ref=e77]
+              - generic [ref=e80]: Автомат
+            - generic [ref=e81]:
+              - img [ref=e82]
+              - generic [ref=e87]: 5 мест
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - generic [ref=e90]: от
+              - generic [ref=e91]: 45€
+              - generic [ref=e92]: /день
+            - link "Детали" [ref=e93] [cursor=pointer]:
+              - /url: /ru/car/skoda-kodiaq-vrs-2024
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - img "MINI Cooper D" [ref=e96]
+          - generic [ref=e97]: Дизель
+          - generic [ref=e98]: Стандарт
+        - generic [ref=e99]:
+          - heading "MINI Cooper D" [level=3] [ref=e100]
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - img [ref=e103]
+              - generic [ref=e105]: "2023"
+            - generic [ref=e106]:
+              - img [ref=e107]
+              - generic [ref=e110]: 2.0 Дизель
+            - generic [ref=e111]:
+              - img [ref=e112]
+              - generic [ref=e115]: Автомат
+            - generic [ref=e116]:
+              - img [ref=e117]
+              - generic [ref=e122]: 5 мест
+          - generic [ref=e123]:
+            - generic [ref=e124]:
+              - generic [ref=e125]: от
+              - generic [ref=e126]: 40€
+              - generic [ref=e127]: /день
+            - link "Детали" [ref=e128] [cursor=pointer]:
+              - /url: /ru/car/mini-cooper-d-2023
+      - generic [ref=e129]:
+        - generic [ref=e130]:
+          - img "BMW 330e G20 LCI" [ref=e131]
+          - generic [ref=e132]: Гибрид
+          - generic [ref=e133]: Премиум
+        - generic [ref=e134]:
+          - heading "BMW 330e G20 LCI" [level=3] [ref=e135]
+          - generic [ref=e136]:
+            - generic [ref=e137]:
+              - img [ref=e138]
+              - generic [ref=e140]: "2024"
+            - generic [ref=e141]:
+              - img [ref=e142]
+              - generic [ref=e145]: 2.0 Гибрид
+            - generic [ref=e146]:
+              - img [ref=e147]
+              - generic [ref=e150]: Автомат
+            - generic [ref=e151]:
+              - img [ref=e152]
+              - generic [ref=e157]: 5 мест
+          - generic [ref=e158]:
+            - generic [ref=e159]:
+              - generic [ref=e160]: от
+              - generic [ref=e161]: 50€
+              - generic [ref=e162]: /день
+            - link "Детали" [ref=e163] [cursor=pointer]:
+              - /url: /ru/car/bmw-330e-g20-lci-2024
+      - generic [ref=e164]:
+        - generic [ref=e165]:
+          - img "Mercedes-Benz S 550e" [ref=e166]
+          - generic [ref=e167]: Гибрид
+          - generic [ref=e168]: Премиум
+        - generic [ref=e169]:
+          - heading "Mercedes-Benz S 550e" [level=3] [ref=e170]
+          - generic [ref=e171]:
+            - generic [ref=e172]:
+              - img [ref=e173]
+              - generic [ref=e175]: "2017"
+            - generic [ref=e176]:
+              - img [ref=e177]
+              - generic [ref=e180]: 3.0 V6 Гибрид
+            - generic [ref=e181]:
+              - img [ref=e182]
+              - generic [ref=e185]: Автомат
+            - generic [ref=e186]:
+              - img [ref=e187]
+              - generic [ref=e192]: 5 мест
+          - generic [ref=e193]:
+            - generic [ref=e194]:
+              - generic [ref=e195]: от
+              - generic [ref=e196]: 70€
+              - generic [ref=e197]: /день
+            - link "Детали" [ref=e198] [cursor=pointer]:
+              - /url: /ru/car/mercedes-s550e-2017
+      - generic [ref=e199]:
+        - generic [ref=e200]:
+          - img "BMW X5 xDrive40e" [ref=e201]
+          - generic [ref=e202]: Гибрид
+          - generic [ref=e203]: Премиум
+        - generic [ref=e204]:
+          - heading "BMW X5 xDrive40e" [level=3] [ref=e205]
+          - generic [ref=e206]:
+            - generic [ref=e207]:
+              - img [ref=e208]
+              - generic [ref=e210]: "2018"
+            - generic [ref=e211]:
+              - img [ref=e212]
+              - generic [ref=e215]: 2.0 Гибрид
+            - generic [ref=e216]:
+              - img [ref=e217]
+              - generic [ref=e220]: Автомат
+            - generic [ref=e221]:
+              - img [ref=e222]
+              - generic [ref=e227]: 5 мест
+          - generic [ref=e228]:
+            - generic [ref=e229]:
+              - generic [ref=e230]: от
+              - generic [ref=e231]: 50€
+              - generic [ref=e232]: /день
+            - link "Детали" [ref=e233] [cursor=pointer]:
+              - /url: /ru/car/bmw-x5-xdrive40e-2018
+      - generic [ref=e234]:
+        - generic [ref=e235]:
+          - img "BMW 530i G30" [ref=e236]
+          - generic [ref=e237]: Бензин
+          - generic [ref=e238]: Премиум
+        - generic [ref=e239]:
+          - heading "BMW 530i G30" [level=3] [ref=e240]
+          - generic [ref=e241]:
+            - generic [ref=e242]:
+              - img [ref=e243]
+              - generic [ref=e245]: "2018"
+            - generic [ref=e246]:
+              - img [ref=e247]
+              - generic [ref=e250]: 2.0 Бензин Турбо
+            - generic [ref=e251]:
+              - img [ref=e252]
+              - generic [ref=e255]: Автомат
+            - generic [ref=e256]:
+              - img [ref=e257]
+              - generic [ref=e262]: 5 мест
+          - generic [ref=e263]:
+            - generic [ref=e264]:
+              - generic [ref=e265]: от
+              - generic [ref=e266]: 60€
+              - generic [ref=e267]: /день
+            - link "Детали" [ref=e268] [cursor=pointer]:
+              - /url: /ru/car/bmw-530i-g30-2018
+      - generic [ref=e269]:
+        - generic [ref=e270]:
+          - img "Volkswagen Jetta 1.4 TSI" [ref=e271]
+          - generic [ref=e272]: Бензин
+          - generic [ref=e273]: Эконом
+        - generic [ref=e274]:
+          - heading "Volkswagen Jetta 1.4 TSI" [level=3] [ref=e275]
+          - generic [ref=e276]:
+            - generic [ref=e277]:
+              - img [ref=e278]
+              - generic [ref=e280]: "2017"
+            - generic [ref=e281]:
+              - img [ref=e282]
+              - generic [ref=e285]: 1.4 Бензин Турбо
+            - generic [ref=e286]:
+              - img [ref=e287]
+              - generic [ref=e290]: Автомат
+            - generic [ref=e291]:
+              - img [ref=e292]
+              - generic [ref=e297]: 5 мест
+          - generic [ref=e298]:
+            - generic [ref=e299]:
+              - generic [ref=e300]: от
+              - generic [ref=e301]: 25€
+              - generic [ref=e302]: /день
+            - link "Детали" [ref=e303] [cursor=pointer]:
+              - /url: /ru/car/vw-jetta-14-tsi-2017
+      - generic [ref=e304]:
+        - generic [ref=e305]:
+          - img "Volkswagen Jetta 1.4 TSI" [ref=e306]
+          - generic [ref=e307]: Бензин
+          - generic [ref=e308]: Стандарт
+        - generic [ref=e309]:
+          - heading "Volkswagen Jetta 1.4 TSI" [level=3] [ref=e310]
+          - generic [ref=e311]:
+            - generic [ref=e312]:
+              - img [ref=e313]
+              - generic [ref=e315]: "2020"
+            - generic [ref=e316]:
+              - img [ref=e317]
+              - generic [ref=e320]: 1.4 Бензин Турбо
+            - generic [ref=e321]:
+              - img [ref=e322]
+              - generic [ref=e325]: Автомат
+            - generic [ref=e326]:
+              - img [ref=e327]
+              - generic [ref=e332]: 5 мест
+          - generic [ref=e333]:
+            - generic [ref=e334]:
+              - generic [ref=e335]: от
+              - generic [ref=e336]: 30€
+              - generic [ref=e337]: /день
+            - link "Детали" [ref=e338] [cursor=pointer]:
+              - /url: /ru/car/vw-jetta-14-tsi-2020
+      - generic [ref=e339]:
+        - generic [ref=e340]:
+          - img "Volkswagen Passat 2.0 TDI" [ref=e341]
+          - generic [ref=e342]: Дизель
+          - generic [ref=e343]: Стандарт
+        - generic [ref=e344]:
+          - heading "Volkswagen Passat 2.0 TDI" [level=3] [ref=e345]
+          - generic [ref=e346]:
+            - generic [ref=e347]:
+              - img [ref=e348]
+              - generic [ref=e350]: "2014"
+            - generic [ref=e351]:
+              - img [ref=e352]
+              - generic [ref=e355]: 2.0 Дизель TDI
+            - generic [ref=e356]:
+              - img [ref=e357]
+              - generic [ref=e360]: Автомат
+            - generic [ref=e361]:
+              - img [ref=e362]
+              - generic [ref=e367]: 5 мест
+          - generic [ref=e368]:
+            - generic [ref=e369]:
+              - generic [ref=e370]: от
+              - generic [ref=e371]: 30€
+              - generic [ref=e372]: /день
+            - link "Детали" [ref=e373] [cursor=pointer]:
+              - /url: /ru/car/vw-passat-20-tdi-2014
+      - generic [ref=e374]:
+        - generic [ref=e375]:
+          - img "Mercedes-Benz E 220 Cabrio" [ref=e376]
+          - generic [ref=e377]: Дизель
+          - generic [ref=e378]: Стандарт
+        - generic [ref=e379]:
+          - heading "Mercedes-Benz E 220 Cabrio" [level=3] [ref=e380]
+          - generic [ref=e381]:
+            - generic [ref=e382]:
+              - img [ref=e383]
+              - generic [ref=e385]: "2013"
+            - generic [ref=e386]:
+              - img [ref=e387]
+              - generic [ref=e390]: 2.2 Дизель CDI
+            - generic [ref=e391]:
+              - img [ref=e392]
+              - generic [ref=e395]: Автомат
+            - generic [ref=e396]:
+              - img [ref=e397]
+              - generic [ref=e402]: 5 мест
+          - generic [ref=e403]:
+            - generic [ref=e404]:
+              - generic [ref=e405]: от
+              - generic [ref=e406]: 50€
+              - generic [ref=e407]: /день
+            - link "Детали" [ref=e408] [cursor=pointer]:
+              - /url: /ru/car/mercedes-e220-cabrio-2013
+      - generic [ref=e409]:
+        - generic [ref=e410]:
+          - img "BMW X6 xDrive30d" [ref=e411]
+          - generic [ref=e412]: Дизель
+          - generic [ref=e413]: Премиум
+        - generic [ref=e414]:
+          - heading "BMW X6 xDrive30d" [level=3] [ref=e415]
+          - generic [ref=e416]:
+            - generic [ref=e417]:
+              - img [ref=e418]
+              - generic [ref=e420]: "2018"
+            - generic [ref=e421]:
+              - img [ref=e422]
+              - generic [ref=e425]: 3.0 Дизель
+            - generic [ref=e426]:
+              - img [ref=e427]
+              - generic [ref=e430]: Автомат
+            - generic [ref=e431]:
+              - img [ref=e432]
+              - generic [ref=e437]: 5 мест
+          - generic [ref=e438]:
+            - generic [ref=e439]:
+              - generic [ref=e440]: от
+              - generic [ref=e441]: 60€
+              - generic [ref=e442]: /день
+            - link "Детали" [ref=e443] [cursor=pointer]:
+              - /url: /ru/car/bmw-x6-xdrive30d-2018
+  - contentinfo [ref=e444]:
+    - generic [ref=e445]:
+      - generic [ref=e446]:
+        - generic [ref=e447]:
+          - link "Логотип AutoRent" [ref=e448] [cursor=pointer]:
+            - /url: /ru
+            - img "Логотип AutoRent" [ref=e450]
+          - paragraph [ref=e451]: Премиальная аренда автомобилей в Молдове. Широкий выбор от седанов до внедорожников.
+        - generic [ref=e452]:
+          - heading "Навигация" [level=4] [ref=e453]
+          - navigation [ref=e454]:
+            - link "Главная" [ref=e455] [cursor=pointer]:
+              - /url: /ru
+            - link "О нас" [ref=e456] [cursor=pointer]:
+              - /url: /ru/about
+            - link "Контакты" [ref=e457] [cursor=pointer]:
+              - /url: /ru/contact
+        - generic [ref=e458]:
+          - heading "Контакты" [level=4] [ref=e459]
+          - generic [ref=e460]:
+            - link "+373 60 123 456" [ref=e461] [cursor=pointer]:
+              - /url: tel:+37360123456
+              - img [ref=e462]
+              - text: +373 60 123 456
+            - link "info@autorent.md" [ref=e464] [cursor=pointer]:
+              - /url: mailto:info@autorent.md
+              - img [ref=e465]
+              - text: info@autorent.md
+            - generic [ref=e468]:
+              - img [ref=e469]
+              - text: Кишинёв, Молдова
+      - generic [ref=e472]:
+        - paragraph [ref=e473]: © 2024 AutoRent. Все права защищены.
+        - link "Политика конфиденциальности" [ref=e475] [cursor=pointer]:
+          - /url: /ru/privacy

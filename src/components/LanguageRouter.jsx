@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useLayoutEffect } from 'react'
 import { useParams, Navigate, Outlet, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from '../constants/languages'
@@ -19,6 +19,10 @@ export default function LanguageRouter() {
             i18n.changeLanguage(lang)
         }
     }, [lang, i18n])
+
+    useLayoutEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+    }, [location.pathname])
 
     return <Outlet />
 }

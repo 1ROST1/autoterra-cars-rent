@@ -1,12 +1,12 @@
 import { useEffect, useRef } from 'react'
 
 const PARTICLE_CONFIG = {
-    count: 100,
-    connectionDistance: 200,
+    count: 60,
+    mobileCount: 25,
+    connectionDistance: 150,
     speed: 0.4, // Коэффициент скорости
     colors: {
         particle: 'rgba(255, 255, 255, 0.7)',
-        connection: 'rgba(255, 255, 255, 0.3)',
         mouseConnection: 'rgba(59, 130, 246, 0.9)'
     }
 }
@@ -20,6 +20,9 @@ export default function ParticleNetwork() {
         let animationId
         let mouse = { x: null, y: null }
         const particles = []
+
+        // Cache touch detection once instead of every frame
+        const isTouch = window.innerWidth <= 1024 || window.matchMedia('(pointer: coarse)').matches
 
         const resize = () => {
             canvas.width = window.innerWidth
@@ -54,65 +57,69 @@ export default function ParticleNetwork() {
                 if (this.x < 0 || this.x > canvas.width) this.vx *= -1
                 if (this.y < 0 || this.y > canvas.height) this.vy *= -1
             }
-
-            draw() {
-                ctx.beginPath()
-                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
-                ctx.fillStyle = PARTICLE_CONFIG.colors.particle
-                ctx.fill()
-            }
         }
 
-        const isTouch = window.innerWidth <= 1024 || window.matchMedia('(pointer: coarse)').matches
-        const particleCount = isTouch ? 40 : PARTICLE_CONFIG.count
+        const particleCount = isTouch ? PARTICLE_CONFIG.mobileCount : PARTICLE_CONFIG.count
 
         for (let i = 0; i < particleCount; i++) {
             particles.push(new Particle())
         }
 
-        const drawConnections = () => {
-            const isTouch = window.innerWidth <= 1024 || window.matchMedia('(pointer: coarse)').matches
+        const connDistSq = (PARTICLE_CONFIG.connectionDistance * 0.7) ** 2
+        const mouseDistSq = PARTICLE_CONFIG.connectionDistance ** 2
+
+        const animate = () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+            // Update & draw all particles in one batch
+            ctx.fillStyle = PARTICLE_CONFIG.colors.particle
+            ctx.beginPath()
             for (let i = 0; i < particles.length; i++) {
-                // Отрисовываем линии к курсору только на десктопе
-                if (!isTouch && mouse.x !== null && mouse.y !== null) {
+                const p = particles[i]
+                p.update()
+                ctx.moveTo(p.x + p.radius, p.y)
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2)
+            }
+            ctx.fill()
+
+            // Draw mouse connections (desktop only) — batched by opacity groups
+            if (!isTouch && mouse.x !== null && mouse.y !== null) {
+                for (let i = 0; i < particles.length; i++) {
                     const dx = particles[i].x - mouse.x
                     const dy = particles[i].y - mouse.y
-                    const distance = Math.sqrt(dx * dx + dy * dy)
+                    const distSq = dx * dx + dy * dy
 
-                    if (distance < PARTICLE_CONFIG.connectionDistance) {
+                    if (distSq < mouseDistSq) {
+                        const distance = Math.sqrt(distSq)
                         const opacity = 1 - distance / PARTICLE_CONFIG.connectionDistance
                         ctx.beginPath()
                         ctx.moveTo(particles[i].x, particles[i].y)
                         ctx.lineTo(mouse.x, mouse.y)
-                        ctx.strokeStyle = PARTICLE_CONFIG.colors.mouseConnection.replace('0.9', (opacity * 0.9).toFixed(2))
+                        ctx.strokeStyle = `rgba(59, 130, 246, ${(opacity * 0.9).toFixed(2)})`
                         ctx.lineWidth = opacity * 2.5
                         ctx.stroke()
                     }
                 }
+            }
 
+            // Draw inter-particle connections — batch all in one path
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.15)'
+            ctx.lineWidth = 1
+            ctx.beginPath()
+            for (let i = 0; i < particles.length; i++) {
                 for (let j = i + 1; j < particles.length; j++) {
                     const dx = particles[i].x - particles[j].x
                     const dy = particles[i].y - particles[j].y
-                    const distance = Math.sqrt(dx * dx + dy * dy)
-                    const connDistance = PARTICLE_CONFIG.connectionDistance * 0.7
+                    const distSq = dx * dx + dy * dy
 
-                    if (distance < connDistance) {
-                        const opacity = 1 - distance / connDistance
-                        ctx.beginPath()
+                    if (distSq < connDistSq) {
                         ctx.moveTo(particles[i].x, particles[i].y)
                         ctx.lineTo(particles[j].x, particles[j].y)
-                        ctx.strokeStyle = PARTICLE_CONFIG.colors.connection.replace('0.3', (opacity * 0.3).toFixed(2))
-                        ctx.lineWidth = 1
-                        ctx.stroke()
                     }
                 }
             }
-        }
+            ctx.stroke()
 
-        const animate = () => {
-            ctx.clearRect(0, 0, canvas.width, canvas.height)
-            particles.forEach(p => { p.update(); p.draw() })
-            drawConnections()
             animationId = requestAnimationFrame(animate)
         }
 

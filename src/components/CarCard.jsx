@@ -3,40 +3,35 @@ import { useTranslation } from 'react-i18next'
 import { Calendar, Gauge, Settings, Users } from 'lucide-react'
 import { useTilt } from '../hooks/useTilt'
 import { useLanguage } from '../hooks/useLanguage'
+import { getCarStartingPrice } from '../data/cars'
 
-export default function CarCard({ car }) {
+const TYPE_COLORS = { petrol: '#f59e0b', diesel: '#64748b', hybrid: '#22c55e' }
+const CLASS_COLORS = { economy: '#0ea5e9', standard: '#64748b', premium: '#a855f7' }
+
+export default function CarCard({ car, index = 0 }) {
     const { t } = useTranslation()
     const { ref, handleMouseMove, handleMouseLeave } = useTilt(8)
     const { lang } = useLanguage()
+    const startingPrice = getCarStartingPrice(car)
 
-    const typeLabels = {
-        petrol: { label: t('filters.petrol'), color: '#f59e0b' },
-        diesel: { label: t('filters.diesel'), color: '#64748b' },
-        hybrid: { label: t('filters.hybrid'), color: '#22c55e' },
-        electric: { label: t('filters.electric'), color: '#3b82f6' }
-    }
-
-    const type = typeLabels[car.type]
-    const classLabels = {
-        economy: { label: t('class_filters.economy'), color: '#0ea5e9' },
-        standard: { label: t('class_filters.standard'), color: '#64748b' },
-        premium: { label: t('class_filters.premium'), color: '#a855f7' }
-    }
-    const carClass = classLabels[car.class]
+    const type = { label: t(`filters.${car.type}`), color: TYPE_COLORS[car.type] }
+    const carClass = car.class ? { label: t(`class_filters.${car.class}`), color: CLASS_COLORS[car.class] } : null
 
     return (
         <div
             ref={ref}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            className="glass-panel !rounded-2xl overflow-hidden hover:border-blue-400/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10"
+            className="glass-card !rounded-2xl overflow-hidden hover:border-blue-400/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10"
             style={{ transformStyle: 'preserve-3d', transition: 'transform 0.1s ease-out' }}
         >
             {/* Image */}
             <div className="relative aspect-[4/3] overflow-hidden">
                 <img
                     src={car.image}
-                    alt={`${car.make} ${car.model}`}
+                    alt={t('car.alt_card', { make: car.make, model: car.model })}
+                    loading={index < 6 ? "eager" : "lazy"}
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <span
@@ -62,29 +57,30 @@ export default function CarCard({ car }) {
                 </h3>
 
                 {/* Specs Grid */}
-                <div className="grid grid-cols-2 gap-y-2 gap-x-2 text-xs text-slate-500 mb-4 bg-slate-50/50 p-3 rounded-xl border border-slate-100">
-                    <div className="flex items-center gap-1.5">
-                        <Calendar size={14} className="text-blue-500" />
-                        <span>{car.year}</span>
+                <div className="grid grid-cols-2 gap-y-3 gap-x-2 text-sm text-slate-600 mb-4 bg-slate-100/80 backdrop-blur-md border border-slate-200/50 rounded-xl p-4 shadow-inner">
+                    <div className="flex items-center gap-2">
+                        <Calendar size={16} className="text-blue-600" />
+                        <span className="font-medium">{car.year}</span>
                     </div>
-                    <div className="flex items-center gap-1.5">
-                        <Gauge size={14} className="text-blue-500" />
-                        <span>{car.specs.engine}</span>
+                    <div className="flex items-center gap-2">
+                        <Gauge size={16} className="text-blue-600" />
+                        <span className="font-medium">{typeof car.specs.engine === 'object' ? (car.specs.engine[lang] || car.specs.engine.en) : car.specs.engine}</span>
                     </div>
-                    <div className="flex items-center gap-1.5">
-                        <Settings size={14} className="text-blue-500" />
-                        <span>{typeof car.specs.transmission === 'object' ? (car.specs.transmission[lang] || car.specs.transmission.en) : car.specs.transmission}</span>
+                    <div className="flex items-center gap-2">
+                        <Settings size={16} className="text-blue-600" />
+                        <span className="font-medium">{typeof car.specs.transmission === 'object' ? (car.specs.transmission[lang] || car.specs.transmission.en) : car.specs.transmission}</span>
                     </div>
-                    <div className="flex items-center gap-1.5">
-                        <Users size={14} className="text-blue-500" />
-                        <span>{car.specs.seats} {t('car.seats_count')}</span>
+                    <div className="flex items-center gap-2">
+                        <Users size={16} className="text-blue-600" />
+                        <span className="font-medium">{car.specs.seats} {t('car.seats_count')}</span>
                     </div>
                 </div>
 
                 {/* Price & CTA */}
                 <div className="flex items-center justify-between pt-3 border-t border-slate-200/50">
-                    <div>
-                        <span className="text-xl font-bold text-slate-900">${car.price}</span>
+                    <div className="flex items-baseline gap-1">
+                        <span className="text-sm font-medium text-slate-500">{t('car.from')}</span>
+                        <span className="text-xl font-bold text-slate-900">{startingPrice}€</span>
                         <span className="text-slate-500 text-sm">/{t('car.day')}</span>
                     </div>
                     <Link

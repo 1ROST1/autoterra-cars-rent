@@ -1,36 +1,31 @@
 {
     "nav": {
         "home": "Home",
-        "catalog": "Catalog",
         "about": "About",
         "contact": "Contact",
         "book_now": "Book Now",
-        "language": "Language",
-        "theme": "Theme"
+        "open_menu": "Open menu",
+        "close_menu": "Close menu"
     },
     "hero": {
-        "badge": "Premium Experience",
         "title": "Car Rental in Moldova",
-        "description": "The best cars at affordable prices. From economical sedans to premium SUVs.",
-        "cta_choose": "Choose a Car",
-        "cta_vip": "VIP Contact"
+        "description": "The best cars at affordable prices. From economical sedans to premium SUVs."
     },
     "car_details": {
         "not_found": "Car not found",
         "back_home": "Back to Home",
-        "back": "Back"
+        "back": "Back",
+        "click_to_enlarge": "Click to enlarge"
     },
     "filters": {
-        "all": "All",
         "hybrid": "Hybrid",
-        "electric": "Electric",
         "petrol": "Petrol",
         "diesel": "Diesel",
-        "engine_type": "Engine Type"
+        "engine_type": "Engine Type",
+        "reset": "Reset"
     },
     "class_filters": {
         "label": "Class",
-        "all": "All",
         "economy": "Economy",
         "standard": "Standard",
         "premium": "Premium"
@@ -49,28 +44,52 @@
         "day": "day",
         "reserve": "Reserve",
         "details": "Details",
-        "seats_count": "seats"
+        "from": "from",
+        "seats_count": "seats",
+        "starting_rate_note": {
+            "days_1": "per day for a 1-day rental",
+            "days_2_3": "per day for 2-3 day rentals",
+            "days_4_7": "per day for 4-7 day rentals",
+            "days_8_15": "per day for 8-15 day rentals",
+            "days_16_plus": "per day for rentals from 16 days"
+        },
+        "pricing": {
+            "title": "Rental Pricing",
+            "days_1": "1 day",
+            "days_2_3": "2-3 days",
+            "days_4_7": "4-7 days",
+            "days_8_15": "8-15 days",
+            "days_16_plus": "16+ days",
+            "negotiable": "Negotiable"
+        },
+        "discount": "discount",
+        "alt_detail": "Rent {{make}} {{model}} in Moldova - AutoTerra",
+        "alt_card": "{{make}} {{model}} car for rent in Chisinau"
     },
     "footer": {
         "description": "Premium car rental in Moldova. A wide range of vehicles from sedans to SUVs.",
         "nav_title": "Navigation",
         "contacts_title": "Contacts",
+        "popular_searches": "Popular Searches",
         "address": "Chișinău, Moldova",
         "rights": "All rights reserved.",
         "privacy": "Privacy Policy"
     },
     "contact_page": {
         "title": "Contact",
-        "subtitle": "Get in touch in any convenient way. We work daily from 8:00 to 20:00.",
+        "subtitle": "Get in touch in any convenient way. We work 24/7.",
         "phone": "Phone",
+        "email": "Email",
         "address": "Address",
-        "address_value": "Chișinău, Ștefan cel Mare 1",
+        "address_value": "Motif Restaurant, Chișinău, Moldova",
         "working_hours": "Working Hours",
-        "working_hours_value": "Daily: 08:00 - 20:00"
+        "working_hours_value": "24/7, around the clock",
+        "google_maps": "Google Maps",
+        "map_title": "AutoTerra temporary address map"
     },
     "about_page": {
         "title": "About Us",
-        "subtitle": "AutoRent is a trusted car rental service in Moldova since 2015.",
+        "subtitle": "AutoTerra — your trusted car rental partner in Chisinau and across Moldova since 2016. We offer free airport delivery and the best rates in the city.",
         "feature1_title": "Reliability",
         "feature1_text": "All cars go through regular maintenance and are fully insured.",
         "feature2_title": "Quality",
@@ -78,13 +97,13 @@
         "feature3_title": "24/7 Support",
         "feature3_text": "Our team is always available and ready to help.",
         "feature4_title": "Large Selection",
-        "feature4_text": "More than 50 cars of different classes in our fleet."
+        "feature4_text": "More than {{count}} cars of different classes in our fleet."
     },
     "privacy_page": {
         "title": "Privacy Policy",
         "last_update": "Last updated: January 2024",
         "section1_title": "1. General Provisions",
-        "section1_text": "This Privacy Policy defines how AutoRent processes and protects users' personal data.",
+        "section1_text": "This Privacy Policy defines how AutoTerra processes and protects users' personal data.",
         "section2_title": "2. Information Collection",
         "section2_text": "We collect the following information:",
         "section2_list": [
@@ -101,5 +120,19 @@
         "section5_text": "The website uses cookies to improve user experience and analyze traffic.",
         "section6_title": "6. Contacts",
         "section6_text": "For privacy-related questions, contact:"
+    },
+    "logo": {
+        "alt": "AutoTerra Logo"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "q1": "What documents are needed for rental?",
+        "a1": "Passport and driver's license. Minimum age — 21 years, driving experience — at least 2 years.",
+        "q2": "Can I rent a car without a deposit?",
+        "a2": "The deposit depends on the vehicle class. For economy class, the deposit is minimal. Contact us for details.",
+        "q3": "Is airport car delivery available?",
+        "a3": "Yes, we deliver the car to Chișinău airport and anywhere in the city for free.",
+        "q4": "What are the car rental prices?",
+        "a4": "Prices start from €25/day for economy class. The longer the rental period, the lower the daily rate. Premium cars from €45/day."
     }
 }

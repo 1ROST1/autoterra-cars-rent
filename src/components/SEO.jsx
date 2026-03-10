@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom'
 import { useLanguage } from '../hooks/useLanguage'
 import { DEFAULT_LANGUAGE, OG_LOCALES, SUPPORTED_LANGUAGES } from '../constants/languages'
-import { SITE_NAME, SITE_URL } from '../constants/seo'
+import { SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE } from '../constants/seo'
 
 const toAbsoluteUrl = (value = '') => {
     if (!value) return SITE_URL
@@ -26,7 +26,7 @@ export default function SEO({ title, description, keywords, image, noindex = fal
     const routeSuffix = location.pathname.replace(LANG_PATH_REGEX, '') || ''
     const localizedPath = canonicalPath || buildLocalizedPath(lang, routeSuffix)
     const canonicalUrl = toAbsoluteUrl(localizedPath)
-    const imageUrl = image ? toAbsoluteUrl(image) : null
+    const imageUrl = image ? toAbsoluteUrl(image) : toAbsoluteUrl(DEFAULT_OG_IMAGE)
     const robotsContent = noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large'
     const currentLocale = OG_LOCALES[lang] || OG_LOCALES[DEFAULT_LANGUAGE]
     const alternateLocales = SUPPORTED_LANGUAGES
@@ -47,6 +47,8 @@ export default function SEO({ title, description, keywords, image, noindex = fal
         inLanguage: SUPPORTED_LANGUAGES
     }
 
+    const structuredDataItems = Array.isArray(resolvedStructuredData) ? resolvedStructuredData : [resolvedStructuredData]
+
     return (
         <Helmet htmlAttributes={{ lang }}>
             {/* Standard metadata */}
@@ -55,6 +57,7 @@ export default function SEO({ title, description, keywords, image, noindex = fal
             <meta name="robots" content={robotsContent} />
             {keywords && <meta name="keywords" content={keywords} />}
             <link rel="canonical" href={canonicalUrl} />
+            {imageUrl && <link rel="preload" as="image" href={imageUrl} />}
             {languageAlternates.map(({ languageCode, href }) => (
                 <link key={`alt-${languageCode}`} rel="alternate" hrefLang={languageCode} href={href} />
             ))}
@@ -71,6 +74,8 @@ export default function SEO({ title, description, keywords, image, noindex = fal
                 <meta key={`og-locale-${locale}`} property="og:locale:alternate" content={locale} />
             ))}
             {imageUrl && <meta property="og:image" content={imageUrl} />}
+            {imageUrl && <meta property="og:image:width" content="1200" />}
+            {imageUrl && <meta property="og:image:height" content="630" />}
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
@@ -79,11 +84,11 @@ export default function SEO({ title, description, keywords, image, noindex = fal
             {imageUrl && <meta name="twitter:image" content={imageUrl} />}
 
             {/* Structured Data */}
-            {resolvedStructuredData && (
-                <script type="application/ld+json">
-                    {JSON.stringify(resolvedStructuredData)}
+            {structuredDataItems.map((data, idx) => (
+                <script key={`sd-${idx}`} type="application/ld+json">
+                    {JSON.stringify(data)}
                 </script>
-            )}
+            ))}
         </Helmet>
     )
 }

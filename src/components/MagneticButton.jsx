@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useMagnetic } from '../hooks/useMagnetic'
 
-export default function MagneticButton({ to, children, className = '' }) {
+export default function MagneticButton({ to, href, children, className = '' }) {
     const { ref, style, handleMouseMove, handleMouseLeave } = useMagnetic(0.2)
 
     const baseClasses = `
@@ -18,13 +18,23 @@ export default function MagneticButton({ to, children, className = '' }) {
             onMouseLeave={handleMouseLeave}
             className="inline-block"
         >
-            <Link
-                to={to}
-                style={style}
-                className={`${baseClasses} ${className}`}
-            >
-                {children}
-            </Link>
+            {href ? (
+                <a
+                    href={href}
+                    style={style}
+                    className={`${baseClasses} ${className}`}
+                >
+                    {children}
+                </a>
+            ) : (
+                <Link
+                    to={to}
+                    style={style}
+                    className={`${baseClasses} ${className}`}
+                >
+                    {children}
+                </Link>
+            )}
         </div>
     )
 }

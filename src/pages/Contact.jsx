@@ -3,23 +3,27 @@ import { useTranslation } from 'react-i18next'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import SEO from '../components/SEO'
-import { SITE_URL } from '../constants/seo'
+import { SITE_URL, PAGE_KEYWORDS } from '../constants/seo'
+import { useLanguage } from '../hooks/useLanguage'
+import { BUSINESS_PHONE_RAW, BUSINESS_PHONE_DISPLAY, BUSINESS_EMAIL, BUSINESS_OPENING_HOURS } from '../constants/contact'
 
 export default function Contact() {
     const { t } = useTranslation()
-    const tempAddress = 'Motif Restaurant, Chișinău, Moldova'
-    const mapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(tempAddress)}&output=embed`
-    const mapOpenUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(tempAddress)}`
+    const { lang } = useLanguage()
+    const address = t('contact_page.address_value')
+    const mapQuery = 'Restaurant Motif, Chișinău, Moldova'
+    const mapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(mapQuery)}&output=embed`
+    const mapOpenUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapQuery)}`
     const contactStructuredData = {
         '@context': 'https://schema.org',
         '@type': 'AutomotiveBusiness',
-        name: 'AutoRent',
+        name: 'AutoTerra',
         ...(SITE_URL ? { url: SITE_URL } : {}),
-        telephone: '+37360123456',
-        email: 'info@autorent.md',
+        telephone: BUSINESS_PHONE_RAW,
+        email: BUSINESS_EMAIL,
         address: {
             '@type': 'PostalAddress',
-            streetAddress: t('contact_page.address_value'),
+            streetAddress: address,
             addressLocality: 'Chișinău',
             addressCountry: 'MD'
         },
@@ -35,8 +39,8 @@ export default function Contact() {
                     'Saturday',
                     'Sunday'
                 ],
-                opens: '08:00',
-                closes: '20:00'
+                opens: BUSINESS_OPENING_HOURS.opens,
+                closes: BUSINESS_OPENING_HOURS.closes
             }
         ]
     }
@@ -45,19 +49,19 @@ export default function Contact() {
         {
             icon: Phone,
             title: t('contact_page.phone'),
-            value: '+373 60 123 456',
-            href: 'tel:+37360123456'
+            value: BUSINESS_PHONE_DISPLAY,
+            href: `tel:${BUSINESS_PHONE_RAW}`
         },
         {
             icon: Mail,
-            title: 'Email',
-            value: 'info@autorent.md',
-            href: 'mailto:info@autorent.md'
+            title: t('contact_page.email'),
+            value: BUSINESS_EMAIL,
+            href: `mailto:${BUSINESS_EMAIL}`
         },
         {
             icon: MapPin,
             title: t('contact_page.address'),
-            value: t('contact_page.address_value')
+            value: address
         },
         {
             icon: Clock,
@@ -71,6 +75,7 @@ export default function Contact() {
             <SEO
                 title={t('contact_page.title')}
                 description={t('contact_page.subtitle')}
+                keywords={PAGE_KEYWORDS.contact[lang]}
                 structuredData={contactStructuredData}
             />
             <Header />
@@ -84,7 +89,7 @@ export default function Contact() {
 
                     <div className="grid md:grid-cols-2 gap-6">
                         {cards.map((card, idx) => (
-                            <div key={idx} className="glass-panel rounded-2xl p-6">
+                            <div key={idx} className="glass-card rounded-2xl p-6">
                                 <card.icon className="text-blue-600 mb-4" size={28} />
                                 <h3 className="font-semibold mb-2">{card.title}</h3>
                                 {card.href ? (
@@ -98,10 +103,10 @@ export default function Contact() {
                         ))}
                     </div>
 
-                    <div className="glass-panel rounded-2xl p-4 md:p-6 mt-8">
+                    <div className="glass-card rounded-2xl p-4 md:p-6 mt-8">
                         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
                             <h2 className="text-xl font-semibold text-slate-900">
-                                Google Maps
+                                {t('contact_page.google_maps')}
                             </h2>
                             <a
                                 href={mapOpenUrl}
@@ -109,11 +114,11 @@ export default function Contact() {
                                 rel="noreferrer"
                                 className="text-sm text-blue-600 hover:text-blue-700 transition-colors"
                             >
-                                {tempAddress}
+                                {address}
                             </a>
                         </div>
                         <iframe
-                            title="AutoRent temporary address map"
+                            title={t('contact_page.map_title')}
                             src={mapEmbedUrl}
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"

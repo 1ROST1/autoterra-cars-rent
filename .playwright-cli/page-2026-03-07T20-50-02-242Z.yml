@@ -1,0 +1,152 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Логотип AutoRent" [ref=e6] [cursor=pointer]:
+        - /url: /ru
+        - img "Логотип AutoRent" [ref=e8]
+      - navigation [ref=e9]:
+        - generic [ref=e10]:
+          - link "Главная" [ref=e11] [cursor=pointer]:
+            - /url: /ru
+          - link "О нас" [ref=e12] [cursor=pointer]:
+            - /url: /ru/about
+          - link "Контакты" [ref=e13] [cursor=pointer]:
+            - /url: /ru/contact
+      - generic [ref=e14]:
+        - generic [ref=e16]:
+          - button "RO" [ref=e17]
+          - button "RU" [ref=e18]
+          - button "EN" [ref=e19]
+        - link "Забронировать" [ref=e21] [cursor=pointer]:
+          - /url: tel:+37379521010
+  - generic [ref=e23]:
+    - link "Назад" [ref=e24] [cursor=pointer]:
+      - /url: /ru
+      - img [ref=e25]
+      - text: Назад
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e30] [cursor=pointer]:
+            - generic [ref=e31]:
+              - generic [ref=e32]:
+                - img "MINI Cooper D"
+              - generic [ref=e33]:
+                - img "MINI Cooper D"
+              - generic [ref=e34]:
+                - img "MINI Cooper D"
+              - generic [ref=e35]:
+                - img "MINI Cooper D"
+            - generic:
+              - generic: Нажмите, чтобы увеличить
+          - generic [ref=e36]:
+            - button [ref=e37]:
+              - img [ref=e38]
+            - button [ref=e39]:
+              - img [ref=e40]
+            - button [ref=e41]:
+              - img [ref=e42]
+            - button [ref=e43]:
+              - img [ref=e44]
+        - generic [ref=e45]:
+          - generic [ref=e46]: Дизель
+          - heading "MINI Cooper D" [level=1] [ref=e47]
+          - paragraph [ref=e48]: "2023"
+          - paragraph [ref=e49]: Компактный премиальный хэтчбек/кроссовер с экономичным дизельным мотором. Манёвренный и стильный, идеально подходит для активной городской жизни и коротких выездов за город.
+          - generic [ref=e50]:
+            - generic [ref=e51]:
+              - img [ref=e52]
+              - paragraph [ref=e54]: Двигатель
+              - paragraph [ref=e55]: 2.0 Дизель
+            - generic [ref=e56]:
+              - img [ref=e57]
+              - paragraph [ref=e60]: Мощность
+              - paragraph [ref=e61]: 150 HP
+            - generic [ref=e62]:
+              - img [ref=e63]
+              - paragraph [ref=e66]: КПП
+              - paragraph [ref=e67]: Автомат
+            - generic [ref=e68]:
+              - img [ref=e69]
+              - paragraph [ref=e74]: Места
+              - paragraph [ref=e75]: "5"
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - paragraph [ref=e80]: Цена / День
+              - generic [ref=e81]:
+                - generic [ref=e82]:
+                  - generic [ref=e83]: от
+                  - generic [ref=e84]: 40€
+                - generic [ref=e85]: / день
+              - paragraph [ref=e86]: за день при аренде от 16 дней
+            - link "Бронировать" [ref=e87] [cursor=pointer]:
+              - /url: tel:+37379521010
+              - generic [ref=e88]: Бронировать
+              - img [ref=e89]
+      - generic [ref=e91]:
+        - heading "Стоимость аренды" [level=3] [ref=e94]
+        - generic [ref=e95]:
+          - generic [ref=e98]:
+            - generic [ref=e99]: 1 день
+            - generic [ref=e100]:
+              - generic [ref=e101]: 90€
+              - generic [ref=e102]: /день
+          - generic [ref=e104]:
+            - generic [ref=e105]: 2-3 дня
+            - generic [ref=e106]:
+              - generic [ref=e107]: 60€
+              - generic [ref=e108]: /день
+            - generic [ref=e109]: "-33% скидка"
+          - generic [ref=e111]:
+            - generic [ref=e112]: 4-7 дней
+            - generic [ref=e113]:
+              - generic [ref=e114]: 50€
+              - generic [ref=e115]: /день
+            - generic [ref=e116]: "-44% скидка"
+          - generic [ref=e118]:
+            - generic [ref=e119]: 8-15 дней
+            - generic [ref=e120]:
+              - generic [ref=e121]: 45€
+              - generic [ref=e122]: /день
+            - generic [ref=e123]: "-50% скидка"
+          - generic [ref=e125]:
+            - generic [ref=e126]: 16+ дней
+            - generic [ref=e127]:
+              - generic [ref=e128]: 40€
+              - generic [ref=e129]: /день
+            - generic [ref=e130]: "-56% скидка"
+  - contentinfo [ref=e131]:
+    - generic [ref=e132]:
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - link "Логотип AutoRent" [ref=e135] [cursor=pointer]:
+            - /url: /ru
+            - img "Логотип AutoRent" [ref=e137]
+          - paragraph [ref=e138]: Премиальная аренда автомобилей в Молдове. Широкий выбор от седанов до внедорожников.
+        - generic [ref=e139]:
+          - heading "Навигация" [level=4] [ref=e140]
+          - navigation [ref=e141]:
+            - link "Главная" [ref=e142] [cursor=pointer]:
+              - /url: /ru
+            - link "О нас" [ref=e143] [cursor=pointer]:
+              - /url: /ru/about
+            - link "Контакты" [ref=e144] [cursor=pointer]:
+              - /url: /ru/contact
+        - generic [ref=e145]:
+          - heading "Контакты" [level=4] [ref=e146]
+          - generic [ref=e147]:
+            - link "+373 79 521 010" [ref=e148] [cursor=pointer]:
+              - /url: tel:+37379521010
+              - img [ref=e149]
+              - text: +373 79 521 010
+            - link "info@autorent.md" [ref=e151] [cursor=pointer]:
+              - /url: mailto:info@autorent.md
+              - img [ref=e152]
+              - text: info@autorent.md
+            - generic [ref=e155]:
+              - img [ref=e156]
+              - text: Кишинёв, Молдова
+      - generic [ref=e159]:
+        - paragraph [ref=e160]: © 2024 AutoRent. Все права защищены.
+        - link "Политика конфиденциальности" [ref=e162] [cursor=pointer]:
+          - /url: /ru/privacy

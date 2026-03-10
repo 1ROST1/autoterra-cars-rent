@@ -25,7 +25,7 @@ export default function Privacy() {
             <Header />
 
             <div className="pt-28 pb-16 px-4 flex-1">
-                <div className="max-w-3xl mx-auto glass-panel p-8 rounded-3xl">
+                <div className="max-w-3xl mx-auto glass-card p-8 rounded-3xl">
                     <h1 className="text-3xl sm:text-4xl font-bold mb-8">{t('privacy_page.title')}</h1>
 
                     <div className="space-y-8 text-slate-600">

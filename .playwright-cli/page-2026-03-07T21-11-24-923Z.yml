@@ -1,0 +1,165 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "Logo AutoRent" [ref=e7] [cursor=pointer]:
+        - /url: /ro
+        - img "Logo AutoRent" [ref=e9]
+      - button "Deschide meniul" [ref=e10]:
+        - img [ref=e11]
+    - generic:
+      - generic:
+        - generic:
+          - navigation:
+            - generic:
+              - link:
+                - /url: /ro
+                - text: Acasă
+              - link:
+                - /url: /ro/about
+                - text: Despre
+              - link:
+                - /url: /ro/contact
+                - text: Contact
+          - generic:
+            - generic:
+              - button: RO
+              - button: RU
+              - button: EN
+          - link:
+            - /url: tel:+37379521010
+            - text: Rezervă Acum
+  - generic [ref=e13]:
+    - link "Înapoi" [ref=e14] [cursor=pointer]:
+      - /url: /ro
+      - img [ref=e15]
+      - text: Înapoi
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20] [cursor=pointer]:
+            - generic [ref=e21]:
+              - generic [ref=e22]:
+                - img "Škoda Kodiaq vRS"
+              - generic [ref=e23]:
+                - img "Škoda Kodiaq vRS"
+              - generic [ref=e24]:
+                - img "Škoda Kodiaq vRS"
+              - generic [ref=e25]:
+                - img "Škoda Kodiaq vRS"
+              - generic [ref=e26]:
+                - img "Škoda Kodiaq vRS"
+            - generic:
+              - generic: Apasă pentru a mări
+          - generic [ref=e27]:
+            - button [ref=e28]:
+              - img [ref=e29]
+            - button [ref=e30]:
+              - img [ref=e31]
+            - button [ref=e32]:
+              - img [ref=e33]
+            - button [ref=e34]:
+              - img [ref=e35]
+            - button [ref=e36]:
+              - img [ref=e37]
+        - generic [ref=e38]:
+          - generic [ref=e39]: Benzină
+          - heading "Škoda Kodiaq vRS" [level=1] [ref=e40]
+          - paragraph [ref=e41]: "2024"
+          - paragraph [ref=e42]: Crossover sportiv cu un puternic motor 2.0 TSI și setări vRS specifice. Habitaclul spațios cu 5 locuri și garda la sol înaltă îl fac confortabil atât pentru oraș, cât și pentru călătorii lungi.
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - img [ref=e45]
+              - paragraph [ref=e47]: Motor
+              - paragraph [ref=e48]: 2.0 Benzină Turbo
+            - generic [ref=e49]:
+              - img [ref=e50]
+              - paragraph [ref=e53]: Putere
+              - paragraph [ref=e54]: 265 HP
+            - generic [ref=e55]:
+              - img [ref=e56]
+              - paragraph [ref=e59]: Transmisie
+              - paragraph [ref=e60]: Automată
+            - generic [ref=e61]:
+              - img [ref=e62]
+              - paragraph [ref=e67]: Locuri
+              - paragraph [ref=e68]: "5"
+          - generic [ref=e71]:
+            - generic [ref=e72]:
+              - paragraph [ref=e73]: Preț / Zi
+              - generic [ref=e74]:
+                - generic [ref=e75]:
+                  - generic [ref=e76]: de la
+                  - generic [ref=e77]: 45€
+                - generic [ref=e78]: / zi
+              - paragraph [ref=e79]: pe zi pentru închirieri de la 16 zile
+            - link "Rezervă" [ref=e80] [cursor=pointer]:
+              - /url: tel:+37379521010
+              - generic [ref=e81]: Rezervă
+              - img [ref=e82]
+      - generic [ref=e84]:
+        - heading "Prețuri de închiriere" [level=3] [ref=e87]
+        - generic [ref=e88]:
+          - generic [ref=e91]:
+            - generic [ref=e92]: 1 zi
+            - generic [ref=e93]:
+              - generic [ref=e94]: 85€
+              - generic [ref=e95]: /zi
+          - generic [ref=e97]:
+            - generic [ref=e98]: 2-3 zile
+            - generic [ref=e99]:
+              - generic [ref=e100]: 75€
+              - generic [ref=e101]: /zi
+            - generic [ref=e102]: "-12% reducere"
+          - generic [ref=e104]:
+            - generic [ref=e105]: 4-7 zile
+            - generic [ref=e106]:
+              - generic [ref=e107]: 65€
+              - generic [ref=e108]: /zi
+            - generic [ref=e109]: "-24% reducere"
+          - generic [ref=e111]:
+            - generic [ref=e112]: 8-15 zile
+            - generic [ref=e113]:
+              - generic [ref=e114]: 55€
+              - generic [ref=e115]: /zi
+            - generic [ref=e116]: "-35% reducere"
+          - generic [ref=e118]:
+            - generic [ref=e119]: 16+ zile
+            - generic [ref=e120]:
+              - generic [ref=e121]: 45€
+              - generic [ref=e122]: /zi
+            - generic [ref=e123]: "-47% reducere"
+  - contentinfo [ref=e124]:
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - link "Logo AutoRent" [ref=e128] [cursor=pointer]:
+            - /url: /ro
+            - img "Logo AutoRent" [ref=e130]
+          - paragraph [ref=e131]: Închirieri premium de automobile în Moldova. O gamă largă de sedanuri până la SUV-uri.
+        - generic [ref=e132]:
+          - heading "Navigare" [level=4] [ref=e133]
+          - navigation [ref=e134]:
+            - link "Acasă" [ref=e135] [cursor=pointer]:
+              - /url: /ro
+            - link "Despre" [ref=e136] [cursor=pointer]:
+              - /url: /ro/about
+            - link "Contact" [ref=e137] [cursor=pointer]:
+              - /url: /ro/contact
+        - generic [ref=e138]:
+          - heading "Contacte" [level=4] [ref=e139]
+          - generic [ref=e140]:
+            - link "+373 79 521 010" [ref=e141] [cursor=pointer]:
+              - /url: tel:+37379521010
+              - img [ref=e142]
+              - text: +373 79 521 010
+            - link "info@autorent.md" [ref=e144] [cursor=pointer]:
+              - /url: mailto:info@autorent.md
+              - img [ref=e145]
+              - text: info@autorent.md
+            - generic [ref=e148]:
+              - img [ref=e149]
+              - text: Chișinău, Moldova
+      - generic [ref=e152]:
+        - paragraph [ref=e153]: © 2024 AutoRent. Toate drepturile rezervate.
+        - link "Politica de confidențialitate" [ref=e155] [cursor=pointer]:
+          - /url: /ro/privacy

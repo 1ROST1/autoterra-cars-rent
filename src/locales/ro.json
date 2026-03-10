@@ -1,36 +1,31 @@
 {
     "nav": {
         "home": "Acasă",
-        "catalog": "Catalog",
         "about": "Despre",
         "contact": "Contact",
         "book_now": "Rezervă Acum",
-        "language": "Limbă",
-        "theme": "Temă"
+        "open_menu": "Deschide meniul",
+        "close_menu": "Închide meniul"
     },
     "hero": {
-        "badge": "Premium Experience",
         "title": "Închirieri auto în Moldova",
-        "description": "Cele mai bune mașini la prețuri accesibile. De la sedanuri economice la SUV-uri premium.",
-        "cta_choose": "Alege Mașina",
-        "cta_vip": "Contact VIP"
+        "description": "Cele mai bune mașini la prețuri accesibile. De la sedanuri economice la SUV-uri premium."
     },
     "car_details": {
         "not_found": "Mașină negăsită",
         "back_home": "Acasă",
-        "back": "Înapoi"
+        "back": "Înapoi",
+        "click_to_enlarge": "Apasă pentru a mări"
     },
     "filters": {
-        "all": "Toate",
         "hybrid": "Hibrid",
-        "electric": "Electric",
         "petrol": "Benzină",
         "diesel": "Diesel",
-        "engine_type": "Tip Motor"
+        "engine_type": "Tip Motor",
+        "reset": "Resetare"
     },
     "class_filters": {
         "label": "Clasă",
-        "all": "Toate",
         "economy": "Economic",
         "standard": "Standard",
         "premium": "Premium"
@@ -49,28 +44,52 @@
         "day": "zi",
         "reserve": "Rezervă",
         "details": "Detalii",
-        "seats_count": "locuri"
+        "from": "de la",
+        "seats_count": "locuri",
+        "starting_rate_note": {
+            "days_1": "pe zi pentru o închiriere de 1 zi",
+            "days_2_3": "pe zi pentru închirieri de 2-3 zile",
+            "days_4_7": "pe zi pentru închirieri de 4-7 zile",
+            "days_8_15": "pe zi pentru închirieri de 8-15 zile",
+            "days_16_plus": "pe zi pentru închirieri de la 16 zile"
+        },
+        "pricing": {
+            "title": "Prețuri de închiriere",
+            "days_1": "1 zi",
+            "days_2_3": "2-3 zile",
+            "days_4_7": "4-7 zile",
+            "days_8_15": "8-15 zile",
+            "days_16_plus": "16+ zile",
+            "negotiable": "Negociabil"
+        },
+        "discount": "reducere",
+        "alt_detail": "Închiriere {{make}} {{model}} în Moldova - AutoTerra",
+        "alt_card": "Mașina {{make}} {{model}} pentru chirie auto Moldova"
     },
     "footer": {
         "description": "Închirieri premium de automobile în Moldova. O gamă largă de sedanuri până la SUV-uri.",
         "nav_title": "Navigare",
         "contacts_title": "Contacte",
+        "popular_searches": "Căutări populare",
         "address": "Chișinău, Moldova",
         "rights": "Toate drepturile rezervate.",
         "privacy": "Politica de confidențialitate"
     },
     "contact_page": {
         "title": "Contacte",
-        "subtitle": "Contactați-ne în orice mod convenabil. Lucrăm zilnic de la 8:00 la 20:00.",
+        "subtitle": "Contactați-ne în orice mod convenabil. Lucrăm non-stop.",
         "phone": "Telefon",
+        "email": "Email",
         "address": "Adresa",
-        "address_value": "Chișinău, str. Ștefan cel Mare 1",
+        "address_value": "Restaurant Motif, Chișinău, Moldova",
         "working_hours": "Program",
-        "working_hours_value": "Zilnic: 08:00 - 20:00"
+        "working_hours_value": "Non-stop, 24/7",
+        "google_maps": "Google Maps",
+        "map_title": "Harta adresei AutoTerra"
     },
     "about_page": {
         "title": "Despre noi",
-        "subtitle": "AutoRent — serviciu sigur de închirieri auto în Moldova din 2015.",
+        "subtitle": "AutoTerra — partenerul tău de încredere pentru chirie auto în Chișinău și în toată Moldova din 2016. Oferim livrare gratuită la aeroport și servicii premium.",
         "feature1_title": "Fiabilitate",
         "feature1_text": "Toate mașinile trec prin întreținere regulată și sunt asigurate.",
         "feature2_title": "Calitate",
@@ -78,13 +97,13 @@
         "feature3_title": "Suport 24/7",
         "feature3_text": "Echipa noastră este mereu disponibilă să vă ajute.",
         "feature4_title": "Selecție mare",
-        "feature4_text": "Peste 50 de automobile de diferite clase în flota noastră."
+        "feature4_text": "Peste {{count}} de automobile de diferite clase în flota noastră."
     },
     "privacy_page": {
         "title": "Politica de confidențialitate",
         "last_update": "Ultima actualizare: Ianuarie 2024",
         "section1_title": "1. Dispoziții generale",
-        "section1_text": "Această Politică de confidențialitate definește procedura de prelucrare și protecție a datelor personale ale utilizatorilor serviciului AutoRent.",
+        "section1_text": "Această Politică de confidențialitate definește procedura de prelucrare și protecție a datelor personale ale utilizatorilor serviciului AutoTerra.",
         "section2_title": "2. Colectarea informațiilor",
         "section2_text": "Colectăm următoarele informații:",
         "section2_list": [
@@ -101,5 +120,19 @@
         "section5_text": "Site-ul utilizează fișiere cookie pentru a îmbunătăți experiența utilizatorului și a analiza traficul.",
         "section6_title": "6. Contacte",
         "section6_text": "Pentru întrebări privind confidențialitatea, contactați:"
+    },
+    "logo": {
+        "alt": "Logo AutoTerra"
+    },
+    "faq": {
+        "title": "Întrebări frecvente",
+        "q1": "Ce documente sunt necesare pentru închiriere?",
+        "a1": "Pașaport și permis de conducere. Vârsta minimă — 21 de ani, experiența de conducere — de la 2 ani.",
+        "q2": "Se poate închiria o mașină fără garanție?",
+        "a2": "Garanția depinde de clasa automobilului. Pentru clasa economică, garanția este minimă. Detalii la telefon.",
+        "q3": "Este disponibilă livrarea mașinii la aeroport?",
+        "a3": "Da, livrăm mașina la aeroportul din Chișinău și în orice punct al orașului gratuit.",
+        "q4": "Care sunt prețurile pentru închiriere auto?",
+        "a4": "Prețurile încep de la 25€/zi pentru clasa economică. Cu cât durata de închiriere este mai lungă, cu atât prețul pe zi este mai mic. Auto premium de la 45€/zi."
     }
 }

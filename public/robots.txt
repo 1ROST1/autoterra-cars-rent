@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# Add SITE_URL to generate absolute sitemap URLs
+Sitemap: https://autoterra.md/sitemap.xml

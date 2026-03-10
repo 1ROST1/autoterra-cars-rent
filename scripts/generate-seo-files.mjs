@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-const SITE_URL = (process.env.SITE_URL || '').replace(/\/+$/, '')
+const SITE_URL = (process.env.SITE_URL || 'https://autoterra.md').replace(/\/+$/, '')
 const HAS_SITE_URL = Boolean(SITE_URL)
 const DEFAULT_LANGUAGE = 'ru'
 const SUPPORTED_LANGUAGES = ['ro', 'ru', 'en']
@@ -10,20 +10,18 @@ const PUBLIC_DIR = path.join(ROOT_DIR, 'public')
 
 const staticRoutes = ['', '/about', '/contact', '/privacy']
 
-const modelGroups = [
-    ['BMW X5', 'Mercedes C-Class', 'Toyota Camry', 'Range Rover Sport', 'Audi Q8'],
-    ['Toyota Prius', 'Lexus RX', 'Honda CR-V', 'Volvo XC90 Recharge', 'BMW 330e'],
-    ['Tesla Model 3', 'Porsche Taycan', 'Audi e-tron', 'Hyundai Ioniq 5', 'Mercedes EQS']
-]
+const carsFilePath = path.join(ROOT_DIR, 'src', 'data', 'cars.js')
+const carsContent = fs.readFileSync(carsFilePath, 'utf8')
 
 const generateSlug = (name, year) => `${name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}-${year}`
 
-const carRoutes = Array.from({ length: 15 }, (_, index) => {
-    const modelName = modelGroups[index % 3][index % 5]
-    const year = 2023 + (index % 2)
-    const slug = generateSlug(modelName, year)
-    return `/car/${slug}`
-})
+const slugRegex = /slug:\s*generateSlug\(['"]([^'"]+)['"],\s*(\d+)\)/g
+const carRoutes = []
+let match
+while ((match = slugRegex.exec(carsContent)) !== null) {
+    const slug = generateSlug(match[1], parseInt(match[2]))
+    carRoutes.push(`/car/${slug}`)
+}
 
 const allRouteSuffixes = [...new Set([...staticRoutes, ...carRoutes])]
 

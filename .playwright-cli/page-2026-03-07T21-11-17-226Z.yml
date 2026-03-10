@@ -1,0 +1,85 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "Logo AutoRent" [ref=e7] [cursor=pointer]:
+        - /url: /ro
+        - img "Logo AutoRent" [ref=e9]
+      - button "Deschide meniul" [ref=e10]:
+        - img [ref=e11]
+    - generic:
+      - generic:
+        - generic:
+          - navigation:
+            - generic:
+              - link:
+                - /url: /ro
+                - text: Acasă
+              - link:
+                - /url: /ro/about
+                - text: Despre
+              - link:
+                - /url: /ro/contact
+                - text: Contact
+          - generic:
+            - generic:
+              - button: RO
+              - button: RU
+              - button: EN
+          - link:
+            - /url: tel:+37379521010
+            - text: Rezervă Acum
+  - generic [ref=e13]:
+    - heading "Despre noi" [level=1] [ref=e14]
+    - paragraph [ref=e15]: AutoRent — serviciu sigur de închirieri auto în Moldova din 2015.
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - img [ref=e18]
+        - heading "Fiabilitate" [level=3] [ref=e20]
+        - paragraph [ref=e21]: Toate mașinile trec prin întreținere regulată și sunt asigurate.
+      - generic [ref=e22]:
+        - img [ref=e23]
+        - heading "Calitate" [level=3] [ref=e26]
+        - paragraph [ref=e27]: Doar automobile moderne de la branduri mondiale de top.
+      - generic [ref=e28]:
+        - img [ref=e29]
+        - heading "Suport 24/7" [level=3] [ref=e34]
+        - paragraph [ref=e35]: Echipa noastră este mereu disponibilă să vă ajute.
+      - generic [ref=e36]:
+        - img [ref=e37]
+        - heading "Selecție mare" [level=3] [ref=e41]
+        - paragraph [ref=e42]: Peste 50 de automobile de diferite clase în flota noastră.
+  - contentinfo [ref=e43]:
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - link "Logo AutoRent" [ref=e47] [cursor=pointer]:
+            - /url: /ro
+            - img "Logo AutoRent" [ref=e49]
+          - paragraph [ref=e50]: Închirieri premium de automobile în Moldova. O gamă largă de sedanuri până la SUV-uri.
+        - generic [ref=e51]:
+          - heading "Navigare" [level=4] [ref=e52]
+          - navigation [ref=e53]:
+            - link "Acasă" [ref=e54] [cursor=pointer]:
+              - /url: /ro
+            - link "Despre" [ref=e55] [cursor=pointer]:
+              - /url: /ro/about
+            - link "Contact" [ref=e56] [cursor=pointer]:
+              - /url: /ro/contact
+        - generic [ref=e57]:
+          - heading "Contacte" [level=4] [ref=e58]
+          - generic [ref=e59]:
+            - link "+373 79 521 010" [ref=e60] [cursor=pointer]:
+              - /url: tel:+37379521010
+              - img [ref=e61]
+              - text: +373 79 521 010
+            - link "info@autorent.md" [ref=e63] [cursor=pointer]:
+              - /url: mailto:info@autorent.md
+              - img [ref=e64]
+              - text: info@autorent.md
+            - generic [ref=e67]:
+              - img [ref=e68]
+              - text: Chișinău, Moldova
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: © 2024 AutoRent. Toate drepturile rezervate.
+        - link "Politica de confidențialitate" [ref=e74] [cursor=pointer]:
+          - /url: /ro/privacy
