@@ -15,7 +15,7 @@ export default function Footer() {
                 <div className="grid md:grid-cols-4 gap-8 mb-8">
                     {/* Logo & Description */}
                     <div className="md:col-span-2">
-                        <Link to={`/${lang}`} className="block w-fit mb-6 hover:opacity-90 transition-opacity">
+                        <Link to={`/${lang}/`} className="block w-fit mb-6 hover:opacity-90 transition-opacity">
                             <Logo className="h-20 md:h-24 w-auto" />
                         </Link>
                         <p className="text-slate-600 text-sm max-w-xs mb-6">
@@ -51,13 +51,13 @@ export default function Footer() {
                     <div>
                         <h4 className="font-semibold text-slate-900 mb-4">{t('footer.nav_title')}</h4>
                         <nav className="flex flex-col gap-2">
-                            <Link to={`/${lang}`} className="text-slate-600 hover:text-blue-600 text-sm transition-colors">
+                            <Link to={`/${lang}/`} className="text-slate-600 hover:text-blue-600 text-sm transition-colors">
                                 {t('nav.home')}
                             </Link>
-                            <Link to={`/${lang}/about`} className="text-slate-600 hover:text-blue-600 text-sm transition-colors">
+                            <Link to={`/${lang}/about/`} className="text-slate-600 hover:text-blue-600 text-sm transition-colors">
                                 {t('nav.about')}
                             </Link>
-                            <Link to={`/${lang}/contact`} className="text-slate-600 hover:text-blue-600 text-sm transition-colors">
+                            <Link to={`/${lang}/contact/`} className="text-slate-600 hover:text-blue-600 text-sm transition-colors">
                                 {t('nav.contact')}
                             </Link>
                         </nav>
@@ -83,27 +83,13 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Popular Keywords (Visible for robots, nearly invisible for humans) */}
-                <div className="absolute opacity-0 pointer-events-none text-[1px] h-0 overflow-hidden select-none" aria-hidden="true">
-                    <p>{t('footer.popular_searches')}</p>
-                    <div>
-                        <span>Car Rental Chisinau</span>
-                        <span>Rent a Car Moldova</span>
-                        <span>Airport Delivery</span>
-                        <span>BMW Rental Moldova</span>
-                        <span>Mercedes Hire Chisinau</span>
-                        <span>Luxury Car Rental</span>
-                        <span>Rent a Car Chișinău Aeroport</span>
-                    </div>
-                </div>
-
                 {/* Bottom Bar */}
                 <div className="border-t border-slate-200/50 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-slate-500 text-sm">
                         &copy; {new Date().getFullYear()} AutoTerra. {t('footer.rights')}
                     </p>
                     <div>
-                        <Link to={`/${lang}/privacy`} className="text-slate-500 hover:text-blue-600 text-sm transition-colors">
+                        <Link to={`/${lang}/privacy/`} className="text-slate-500 hover:text-blue-600 text-sm transition-colors">
                             {t('footer.privacy')}
                         </Link>
                     </div>

@@ -1,0 +1,7 @@
+ErrorDocument 404 /ro/404/index.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^$ - [R=404,L]
+</IfModule>

@@ -36,25 +36,36 @@ export default function About() {
 
     return (
         <div className="min-h-screen text-slate-900 relative z-10 flex flex-col">
-            <SEO title={t('about_page.title')} description={t('about_page.subtitle')} keywords={PAGE_KEYWORDS.about[lang]} />
+            <SEO
+                title={t('about_page.meta_title')}
+                description={t('about_page.meta_description')}
+                keywords={PAGE_KEYWORDS.about[lang]}
+                absoluteTitle
+            />
             <Header />
 
-            <div className="pt-28 pb-16 px-4 flex-1">
+            <div className="page-offset-28 pb-16 px-4 flex-1">
                 <div className="max-w-4xl mx-auto">
                     <h1 className="text-3xl sm:text-4xl font-bold text-center mb-4">{t('about_page.title')}</h1>
                     <p className="text-slate-600 text-center mb-12 max-w-xl mx-auto">
                         {t('about_page.subtitle')}
                     </p>
 
-                    <div className="grid md:grid-cols-2 gap-6 mb-12">
-                        {features.map((feature, idx) => (
-                            <div key={idx} className="glass-card rounded-2xl p-6">
-                                <feature.icon className="text-blue-600 mb-4" size={28} />
-                                <h3 className="font-semibold mb-2">{feature.title}</h3>
-                                <p className="text-slate-600 text-sm">{feature.text}</p>
-                            </div>
-                        ))}
-                    </div>
+                    <section aria-labelledby="about-features-heading">
+                        <h2 id="about-features-heading" className="text-2xl font-semibold text-slate-900 text-center mb-8">
+                            {t('about_page.features_title')}
+                        </h2>
+
+                        <div className="grid md:grid-cols-2 gap-6 mb-12">
+                            {features.map((feature, idx) => (
+                                <div key={idx} className="glass-card rounded-2xl p-6">
+                                    <feature.icon className="text-blue-600 mb-4" size={28} />
+                                    <h3 className="font-semibold mb-2">{feature.title}</h3>
+                                    <p className="text-slate-600 text-sm">{feature.text}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
                 </div>
             </div>
 

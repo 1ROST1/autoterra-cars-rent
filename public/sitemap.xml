@@ -2,453 +2,393 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://autoterra.md/ro</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ro/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ru</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ru/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/" />
   </url>
   <url>
-    <loc>https://autoterra.md/en</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/en/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ro/about</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ro/about/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/about" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/about" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/about/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ru/about</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ru/about/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/about" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/about" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/about/" />
   </url>
   <url>
-    <loc>https://autoterra.md/en/about</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/en/about/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/about" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/about" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/about/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ro/contact</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ro/contact/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/contact" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/contact" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/contact" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/contact/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ru/contact</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ru/contact/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/contact" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/contact" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/contact" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/contact/" />
   </url>
   <url>
-    <loc>https://autoterra.md/en/contact</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/en/contact/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/contact" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/contact" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/contact" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/contact/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ro/privacy</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ro/privacy/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/privacy" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/privacy" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/privacy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/privacy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/privacy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/privacy/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ru/privacy</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ru/privacy/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/privacy" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/privacy" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/privacy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/privacy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/privacy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/privacy/" />
   </url>
   <url>
-    <loc>https://autoterra.md/en/privacy</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/en/privacy/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/privacy" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/privacy" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/privacy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/privacy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/privacy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/privacy/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ro/car/skoda-kodiaq-vrs-2024</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ro/car/skoda-kodiaq-vrs-2024/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/skoda-kodiaq-vrs-2024" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/skoda-kodiaq-vrs-2024" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/skoda-kodiaq-vrs-2024" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/skoda-kodiaq-vrs-2024" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/skoda-kodiaq-vrs-2024/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/skoda-kodiaq-vrs-2024/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/skoda-kodiaq-vrs-2024/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/skoda-kodiaq-vrs-2024/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ru/car/skoda-kodiaq-vrs-2024</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ru/car/skoda-kodiaq-vrs-2024/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/skoda-kodiaq-vrs-2024" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/skoda-kodiaq-vrs-2024" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/skoda-kodiaq-vrs-2024" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/skoda-kodiaq-vrs-2024" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/skoda-kodiaq-vrs-2024/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/skoda-kodiaq-vrs-2024/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/skoda-kodiaq-vrs-2024/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/skoda-kodiaq-vrs-2024/" />
   </url>
   <url>
-    <loc>https://autoterra.md/en/car/skoda-kodiaq-vrs-2024</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/en/car/skoda-kodiaq-vrs-2024/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/skoda-kodiaq-vrs-2024" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/skoda-kodiaq-vrs-2024" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/skoda-kodiaq-vrs-2024" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/skoda-kodiaq-vrs-2024" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/skoda-kodiaq-vrs-2024/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/skoda-kodiaq-vrs-2024/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/skoda-kodiaq-vrs-2024/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/skoda-kodiaq-vrs-2024/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ro/car/mini-cooper-d-2023</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ro/car/mini-cooper-d-2023/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mini-cooper-d-2023" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mini-cooper-d-2023" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mini-cooper-d-2023" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/mini-cooper-d-2023" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mini-cooper-d-2023/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mini-cooper-d-2023/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mini-cooper-d-2023/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/mini-cooper-d-2023/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ru/car/mini-cooper-d-2023</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ru/car/mini-cooper-d-2023/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mini-cooper-d-2023" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mini-cooper-d-2023" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mini-cooper-d-2023" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/mini-cooper-d-2023" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mini-cooper-d-2023/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mini-cooper-d-2023/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mini-cooper-d-2023/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/mini-cooper-d-2023/" />
   </url>
   <url>
-    <loc>https://autoterra.md/en/car/mini-cooper-d-2023</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/en/car/mini-cooper-d-2023/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mini-cooper-d-2023" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mini-cooper-d-2023" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mini-cooper-d-2023" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/mini-cooper-d-2023" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mini-cooper-d-2023/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mini-cooper-d-2023/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mini-cooper-d-2023/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/mini-cooper-d-2023/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ro/car/bmw-330e-g20-lci-2024</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ro/car/bmw-330e-g20-lci-2024/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-330e-g20-lci-2024" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-330e-g20-lci-2024" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-330e-g20-lci-2024" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/bmw-330e-g20-lci-2024" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-330e-g20-lci-2024/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-330e-g20-lci-2024/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-330e-g20-lci-2024/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/bmw-330e-g20-lci-2024/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ru/car/bmw-330e-g20-lci-2024</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ru/car/bmw-330e-g20-lci-2024/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-330e-g20-lci-2024" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-330e-g20-lci-2024" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-330e-g20-lci-2024" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/bmw-330e-g20-lci-2024" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-330e-g20-lci-2024/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-330e-g20-lci-2024/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-330e-g20-lci-2024/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/bmw-330e-g20-lci-2024/" />
   </url>
   <url>
-    <loc>https://autoterra.md/en/car/bmw-330e-g20-lci-2024</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/en/car/bmw-330e-g20-lci-2024/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-330e-g20-lci-2024" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-330e-g20-lci-2024" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-330e-g20-lci-2024" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/bmw-330e-g20-lci-2024" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-330e-g20-lci-2024/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-330e-g20-lci-2024/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-330e-g20-lci-2024/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/bmw-330e-g20-lci-2024/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ro/car/mercedes-s550e-2017</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ro/car/mercedes-s550e-2017/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mercedes-s550e-2017" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mercedes-s550e-2017" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mercedes-s550e-2017" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/mercedes-s550e-2017" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mercedes-s550e-2017/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mercedes-s550e-2017/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mercedes-s550e-2017/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/mercedes-s550e-2017/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ru/car/mercedes-s550e-2017</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ru/car/mercedes-s550e-2017/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mercedes-s550e-2017" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mercedes-s550e-2017" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mercedes-s550e-2017" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/mercedes-s550e-2017" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mercedes-s550e-2017/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mercedes-s550e-2017/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mercedes-s550e-2017/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/mercedes-s550e-2017/" />
   </url>
   <url>
-    <loc>https://autoterra.md/en/car/mercedes-s550e-2017</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/en/car/mercedes-s550e-2017/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mercedes-s550e-2017" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mercedes-s550e-2017" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mercedes-s550e-2017" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/mercedes-s550e-2017" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mercedes-s550e-2017/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mercedes-s550e-2017/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mercedes-s550e-2017/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/mercedes-s550e-2017/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ro/car/bmw-x5-xdrive25d-2018</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ro/car/bmw-x5-xdrive25d-2018/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-x5-xdrive25d-2018" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-x5-xdrive25d-2018" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-x5-xdrive25d-2018" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/bmw-x5-xdrive25d-2018" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-x5-xdrive25d-2018/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-x5-xdrive25d-2018/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-x5-xdrive25d-2018/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/bmw-x5-xdrive25d-2018/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ru/car/bmw-x5-xdrive25d-2018</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ru/car/bmw-x5-xdrive25d-2018/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-x5-xdrive25d-2018" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-x5-xdrive25d-2018" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-x5-xdrive25d-2018" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/bmw-x5-xdrive25d-2018" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-x5-xdrive25d-2018/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-x5-xdrive25d-2018/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-x5-xdrive25d-2018/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/bmw-x5-xdrive25d-2018/" />
   </url>
   <url>
-    <loc>https://autoterra.md/en/car/bmw-x5-xdrive25d-2018</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/en/car/bmw-x5-xdrive25d-2018/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-x5-xdrive25d-2018" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-x5-xdrive25d-2018" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-x5-xdrive25d-2018" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/bmw-x5-xdrive25d-2018" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-x5-xdrive25d-2018/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-x5-xdrive25d-2018/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-x5-xdrive25d-2018/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/bmw-x5-xdrive25d-2018/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ro/car/bmw-530i-xdrive-g30-2018</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ro/car/bmw-530i-xdrive-g30-2018/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-530i-xdrive-g30-2018" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-530i-xdrive-g30-2018" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-530i-xdrive-g30-2018" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/bmw-530i-xdrive-g30-2018" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-530i-xdrive-g30-2018/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-530i-xdrive-g30-2018/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-530i-xdrive-g30-2018/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/bmw-530i-xdrive-g30-2018/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ru/car/bmw-530i-xdrive-g30-2018</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ru/car/bmw-530i-xdrive-g30-2018/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-530i-xdrive-g30-2018" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-530i-xdrive-g30-2018" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-530i-xdrive-g30-2018" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/bmw-530i-xdrive-g30-2018" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-530i-xdrive-g30-2018/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-530i-xdrive-g30-2018/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-530i-xdrive-g30-2018/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/bmw-530i-xdrive-g30-2018/" />
   </url>
   <url>
-    <loc>https://autoterra.md/en/car/bmw-530i-xdrive-g30-2018</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/en/car/bmw-530i-xdrive-g30-2018/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-530i-xdrive-g30-2018" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-530i-xdrive-g30-2018" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-530i-xdrive-g30-2018" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/bmw-530i-xdrive-g30-2018" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-530i-xdrive-g30-2018/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-530i-xdrive-g30-2018/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-530i-xdrive-g30-2018/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/bmw-530i-xdrive-g30-2018/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ro/car/vw-jetta-14-tsi-2017</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ro/car/vw-jetta-14-tsi-2017/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/vw-jetta-14-tsi-2017" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2017" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/vw-jetta-14-tsi-2017" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2017" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/vw-jetta-14-tsi-2017/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2017/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/vw-jetta-14-tsi-2017/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/vw-jetta-14-tsi-2017/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ru/car/vw-jetta-14-tsi-2017</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ru/car/vw-jetta-14-tsi-2017/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/vw-jetta-14-tsi-2017" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2017" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/vw-jetta-14-tsi-2017" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2017" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/vw-jetta-14-tsi-2017/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2017/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/vw-jetta-14-tsi-2017/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/vw-jetta-14-tsi-2017/" />
   </url>
   <url>
-    <loc>https://autoterra.md/en/car/vw-jetta-14-tsi-2017</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/en/car/vw-jetta-14-tsi-2017/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/vw-jetta-14-tsi-2017" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2017" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/vw-jetta-14-tsi-2017" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2017" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/vw-jetta-14-tsi-2017/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2017/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/vw-jetta-14-tsi-2017/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/vw-jetta-14-tsi-2017/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ro/car/vw-jetta-14-tsi-2020</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ro/car/mercedes-e220-cabrio-2013/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/vw-jetta-14-tsi-2020" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2020" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/vw-jetta-14-tsi-2020" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2020" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mercedes-e220-cabrio-2013/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mercedes-e220-cabrio-2013/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mercedes-e220-cabrio-2013/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/mercedes-e220-cabrio-2013/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ru/car/vw-jetta-14-tsi-2020</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ru/car/mercedes-e220-cabrio-2013/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/vw-jetta-14-tsi-2020" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2020" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/vw-jetta-14-tsi-2020" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2020" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mercedes-e220-cabrio-2013/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mercedes-e220-cabrio-2013/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mercedes-e220-cabrio-2013/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/mercedes-e220-cabrio-2013/" />
   </url>
   <url>
-    <loc>https://autoterra.md/en/car/vw-jetta-14-tsi-2020</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/en/car/mercedes-e220-cabrio-2013/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/vw-jetta-14-tsi-2020" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2020" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/vw-jetta-14-tsi-2020" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/vw-jetta-14-tsi-2020" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mercedes-e220-cabrio-2013/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mercedes-e220-cabrio-2013/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mercedes-e220-cabrio-2013/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/mercedes-e220-cabrio-2013/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ro/car/vw-passat-20-tdi-2014</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ro/car/bmw-x6-xdrive30d-2018/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/vw-passat-20-tdi-2014" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/vw-passat-20-tdi-2014" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/vw-passat-20-tdi-2014" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/vw-passat-20-tdi-2014" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-x6-xdrive30d-2018/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-x6-xdrive30d-2018/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-x6-xdrive30d-2018/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/bmw-x6-xdrive30d-2018/" />
   </url>
   <url>
-    <loc>https://autoterra.md/ru/car/vw-passat-20-tdi-2014</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/ru/car/bmw-x6-xdrive30d-2018/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/vw-passat-20-tdi-2014" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/vw-passat-20-tdi-2014" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/vw-passat-20-tdi-2014" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/vw-passat-20-tdi-2014" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-x6-xdrive30d-2018/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-x6-xdrive30d-2018/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-x6-xdrive30d-2018/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/bmw-x6-xdrive30d-2018/" />
   </url>
   <url>
-    <loc>https://autoterra.md/en/car/vw-passat-20-tdi-2014</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://autoterra.md/en/car/bmw-x6-xdrive30d-2018/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/vw-passat-20-tdi-2014" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/vw-passat-20-tdi-2014" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/vw-passat-20-tdi-2014" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/vw-passat-20-tdi-2014" />
-  </url>
-  <url>
-    <loc>https://autoterra.md/ro/car/mercedes-e220-cabrio-2013</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mercedes-e220-cabrio-2013" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mercedes-e220-cabrio-2013" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mercedes-e220-cabrio-2013" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/mercedes-e220-cabrio-2013" />
-  </url>
-  <url>
-    <loc>https://autoterra.md/ru/car/mercedes-e220-cabrio-2013</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mercedes-e220-cabrio-2013" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mercedes-e220-cabrio-2013" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mercedes-e220-cabrio-2013" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/mercedes-e220-cabrio-2013" />
-  </url>
-  <url>
-    <loc>https://autoterra.md/en/car/mercedes-e220-cabrio-2013</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/mercedes-e220-cabrio-2013" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/mercedes-e220-cabrio-2013" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/mercedes-e220-cabrio-2013" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/mercedes-e220-cabrio-2013" />
-  </url>
-  <url>
-    <loc>https://autoterra.md/ro/car/bmw-x6-xdrive30d-2018</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-x6-xdrive30d-2018" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-x6-xdrive30d-2018" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-x6-xdrive30d-2018" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/bmw-x6-xdrive30d-2018" />
-  </url>
-  <url>
-    <loc>https://autoterra.md/ru/car/bmw-x6-xdrive30d-2018</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-x6-xdrive30d-2018" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-x6-xdrive30d-2018" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-x6-xdrive30d-2018" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/bmw-x6-xdrive30d-2018" />
-  </url>
-  <url>
-    <loc>https://autoterra.md/en/car/bmw-x6-xdrive30d-2018</loc>
-    <lastmod>2026-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-x6-xdrive30d-2018" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-x6-xdrive30d-2018" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-x6-xdrive30d-2018" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ru/car/bmw-x6-xdrive30d-2018" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://autoterra.md/ro/car/bmw-x6-xdrive30d-2018/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://autoterra.md/ru/car/bmw-x6-xdrive30d-2018/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://autoterra.md/en/car/bmw-x6-xdrive30d-2018/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://autoterra.md/ro/car/bmw-x6-xdrive30d-2018/" />
   </url>
 </urlset>

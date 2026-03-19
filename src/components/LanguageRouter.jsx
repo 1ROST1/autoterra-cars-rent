@@ -8,9 +8,8 @@ export default function LanguageRouter() {
     const { i18n } = useTranslation()
     const location = useLocation()
 
-    // Redirect to default language if no lang or invalid lang
     if (!lang || !SUPPORTED_LANGUAGES.includes(lang)) {
-        return <Navigate to={`/${DEFAULT_LANGUAGE}${location.pathname}`} replace />
+        return <Navigate to={`/${DEFAULT_LANGUAGE}/404/`} replace />
     }
 
     // Sync i18n with URL language

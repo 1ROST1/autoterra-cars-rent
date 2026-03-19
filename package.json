@@ -1,12 +1,14 @@
 {
-  "name": "car-rental-romania",
+  "name": "autoterra-cars-rent",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "brand:generate": "node scripts/generate-brand-assets.mjs",
     "dev": "vite",
     "seo:generate": "node scripts/generate-seo-files.mjs",
-    "build": "npm run seo:generate && vite build",
+    "prerender": "node scripts/prerender.mjs",
+    "build": "npm run brand:generate && npm run seo:generate && vite build && npm run prerender",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -34,12 +36,5 @@
     "react-snap": "^1.23.0",
     "tailwindcss": "^4.1.18",
     "vite": "^5.0.8"
-  },
-  "reactSnap": {
-    "source": "dist",
-    "puppeteerArgs": [
-      "--no-sandbox",
-      "--disable-setuid-sandbox"
-    ]
   }
 }

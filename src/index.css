@@ -1,6 +1,34 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/outfit/outfit-400.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/outfit/outfit-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/outfit/outfit-700.woff2') format('woff2');
+}
+
 @layer base {
+    :root {
+        --safe-area-top: env(safe-area-inset-top, 0px);
+    }
+
     html {
         scroll-behavior: smooth;
     }
@@ -46,38 +74,6 @@
             0 10px 20px -5px rgba(59, 130, 246, 0.08),
             inset 0 1px 0 0 rgba(255, 255, 255, 0.9),
             inset 0 -1px 0 0 rgba(59, 130, 246, 0.1);
-    }
-
-    .sheen-effect {
-        @apply relative overflow-hidden;
-    }
-
-    .sheen-effect::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg,
-                transparent,
-                rgba(255, 255, 255, 0.4) 50%,
-                transparent);
-        transform: skewX(-25deg);
-        pointer-events: none;
-        animation: sheen 6s infinite;
-    }
-
-    @keyframes sheen {
-
-        0%,
-        100% {
-            left: -100%;
-        }
-
-        50% {
-            left: 150%;
-        }
     }
 
     .glass-button {
@@ -133,4 +129,14 @@
         background: rgba(255, 255, 255, 0.58);
     }
 
+}
+
+@layer components {
+    .page-offset-24 {
+        padding-top: calc(var(--safe-area-top) + 6rem);
+    }
+
+    .page-offset-28 {
+        padding-top: calc(var(--safe-area-top) + 7rem);
+    }
 }

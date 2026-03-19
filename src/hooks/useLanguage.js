@@ -2,6 +2,13 @@ import { useParams, useLocation, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from '../constants/languages'
 
+const normalizePathSuffix = (value = '') => {
+    if (!value) return ''
+
+    const normalized = `/${String(value).replace(/^\/+|\/+$/g, '')}`.replace(/\/{2,}/g, '/')
+    return normalized === '/' ? '' : normalized
+}
+
 export function useLanguage() {
     const { lang } = useParams()
     const location = useLocation()
@@ -13,18 +20,17 @@ export function useLanguage() {
     const switchLanguage = (newLang) => {
         if (!SUPPORTED_LANGUAGES.includes(newLang)) return
 
-        // Replace current language in path with new language
-        const pathWithoutLang = location.pathname.replace(`/${currentLang}`, '') || ''
-        const newPath = `/${newLang}${pathWithoutLang}`
+        const pathWithoutLang = location.pathname.replace(new RegExp(`^/${currentLang}(?=/|$)`), '')
+        const normalizedSuffix = normalizePathSuffix(pathWithoutLang)
+        const newPath = normalizedSuffix ? `/${newLang}${normalizedSuffix}/` : `/${newLang}/`
 
         i18n.changeLanguage(newLang)
-        navigate(newPath)
+        navigate(`${newPath}${location.search}${location.hash}`)
     }
 
-    // Create link with current language
-    const createLink = (path) => {
-        const cleanPath = path.startsWith('/') ? path.slice(1) : path
-        return `/${currentLang}/${cleanPath}`.replace(/\/+$/, '') || `/${currentLang}`
+    const createLink = (path = '') => {
+        const normalizedSuffix = normalizePathSuffix(path)
+        return normalizedSuffix ? `/${currentLang}${normalizedSuffix}/` : `/${currentLang}/`
     }
 
     return {

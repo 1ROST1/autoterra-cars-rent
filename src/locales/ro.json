@@ -9,13 +9,37 @@
     },
     "hero": {
         "title": "Închirieri auto în Moldova",
-        "description": "Cele mai bune mașini la prețuri accesibile. De la sedanuri economice la SUV-uri premium."
+        "description": "Cele mai bune mașini la prețuri accesibile. De la sedanuri economice la SUV-uri premium.",
+        "meta_title": "Închirieri auto în Chișinău și Moldova | AutoTerra",
+        "meta_description": "Închirieri auto în Chișinău și Moldova de la 25€/zi. Livrare la aeroport, tarife transparente și suport 24/7."
+    },
+    "home_page": {
+        "catalog_title": "Alege masina potrivita pentru calatoria ta",
+        "catalog_description": "Compara masinile dupa clasa, tipul motorului si pret, apoi deschide pagina cu tarife si specificatii complete.",
+        "benefits_title": "De ce clientii aleg AutoTerra in Chisinau",
+        "benefits_intro": "Am pregatit o flota pentru drumuri prin oras, transferuri de la aeroport si inchirieri pe termen lung in toata Moldova fara birocratie inutila.",
+        "benefit1_title": "Livrare la aeroport",
+        "benefit1_text": "Pregatim masina pentru sosirea ta in Chisinau si o predam fara timp pierdut la ridicare.",
+        "benefit2_title": "Conditii clare",
+        "benefit2_text": "Afisam din start tarifele pe durata inchirierii, iar pentru clasa econom oferim un depozit minim.",
+        "benefit3_title": "Asigurare si suport",
+        "benefit3_text": "Masinile sunt intretinute, asigurate si disponibile cu suport 24/7 pe toata durata inchirierii.",
+        "seo_paragraph_1": "Daca ai nevoie de chirie auto in Chisinau fara conditii ascunse, pe site poti filtra rapid flota dupa clasa si tipul motorului, compara costul pentru inchirieri scurte sau lungi si alege masina potrivita pentru traseul tau. Pentru oras sunt potrivite sedanurile economice, iar pentru calatorii in familie sau transferuri business sunt disponibile crossovere spatioase si modele premium.",
+        "seo_paragraph_2": "AutoTerra lucreaza din 2016 si pune accent pe un serviciu clar: livrare gratuita a masinii la aeroportul din Chisinau, conditii transparente de inchiriere, asistenta 24/7 si preturi mai bune pentru perioade de la cateva zile in sus. Daca ai nevoie de inchiriere auto pe termen lung in Moldova, poti verifica imediat tarifele pentru 8-15 si 16+ zile si alegi varianta potrivita fara apeluri suplimentare."
     },
     "car_details": {
         "not_found": "Mașină negăsită",
         "back_home": "Acasă",
         "back": "Înapoi",
         "click_to_enlarge": "Apasă pentru a mări"
+    },
+    "not_found_page": {
+        "eyebrow": "Eroare 404",
+        "title": "404 - Pagina nu a fost gasita",
+        "description": "Pagina ceruta nu este disponibila sau a fost mutata. Revino la pagina principala sau contacteaza-ne pentru a alege o masina.",
+        "body": "Nu am gasit aceasta pagina. Verifica adresa sau revino la catalogul de masini.",
+        "home_cta": "Mergi la catalog",
+        "contact_cta": "Contacteaza-ne"
     },
     "filters": {
         "hybrid": "Hibrid",
@@ -64,7 +88,9 @@
         },
         "discount": "reducere",
         "alt_detail": "Închiriere {{make}} {{model}} în Moldova - AutoTerra",
-        "alt_card": "Mașina {{make}} {{model}} pentru chirie auto Moldova"
+        "alt_card": "Mașina {{make}} {{model}} pentru chirie auto Moldova",
+        "seo_title": "{{make}} {{model}} de închiriat în Chișinău | AutoTerra",
+        "seo_description": "Închiriere {{make}} {{model}} în Chișinău de la {{price}}€/zi. {{power}}, {{transmission}}, {{seats}} locuri. Livrare la aeroport și rezervare 24/7."
     },
     "footer": {
         "description": "Închirieri premium de automobile în Moldova. O gamă largă de sedanuri până la SUV-uri.",
@@ -78,6 +104,10 @@
     "contact_page": {
         "title": "Contacte",
         "subtitle": "Contactați-ne în orice mod convenabil. Lucrăm non-stop.",
+        "meta_title": "Contacte AutoTerra | Închirieri auto Chișinău",
+        "meta_description": "Contactează AutoTerra pentru închirieri auto în Chișinău: +373 79 521 010, info@autoterra.md. Program 24/7 și livrare la aeroport.",
+        "details_title": "Cum ne poti contacta",
+        "details_description": "Alege cea mai rapida varianta pentru rezervare, livrare la aeroport sau clarificarea conditiilor de inchiriere.",
         "phone": "Telefon",
         "email": "Email",
         "address": "Adresa",
@@ -90,6 +120,9 @@
     "about_page": {
         "title": "Despre noi",
         "subtitle": "AutoTerra — partenerul tău de încredere pentru chirie auto în Chișinău și în toată Moldova din 2016. Oferim livrare gratuită la aeroport și servicii premium.",
+        "meta_title": "Despre AutoTerra | Închirieri auto în Moldova",
+        "meta_description": "AutoTerra oferă închirieri auto în Chișinău și Moldova din 2016. Livrare la aeroport, mașini moderne și suport 24/7.",
+        "features_title": "De ce clientii aleg AutoTerra",
         "feature1_title": "Fiabilitate",
         "feature1_text": "Toate mașinile trec prin întreținere regulată și sunt asigurate.",
         "feature2_title": "Calitate",
@@ -101,6 +134,7 @@
     },
     "privacy_page": {
         "title": "Politica de confidențialitate",
+        "description": "Afla cum AutoTerra colecteaza, foloseste si protejeaza datele personale transmise prin site si in procesul de inchiriere auto.",
         "last_update": "Ultima actualizare: Ianuarie 2024",
         "section1_title": "1. Dispoziții generale",
         "section1_text": "Această Politică de confidențialitate definește procedura de prelucrare și protecție a datelor personale ale utilizatorilor serviciului AutoTerra.",

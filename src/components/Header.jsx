@@ -27,9 +27,9 @@ export default function Header() {
 
     const activeIdx = getActiveIndex()
     const navItems = [
-        { key: 'home', to: `/${lang}` },
-        { key: 'about', to: `/${lang}/about` },
-        { key: 'contact', to: `/${lang}/contact` }
+        { key: 'home', to: `/${lang}/` },
+        { key: 'about', to: `/${lang}/about/` },
+        { key: 'contact', to: `/${lang}/contact/` }
     ]
 
     const handleMenuToggle = () => {
@@ -41,11 +41,14 @@ export default function Header() {
         switchLanguage(nextLang)
     }
 
-    return (
-        <header className="fixed top-0 left-0 right-0 z-50">
-            <div className="glass-panel !rounded-none !border-t-0 !border-l-0 !border-r-0 overflow-visible">
+        return (
+            <header className="fixed top-0 left-0 right-0 z-50">
+            <div
+                className="glass-panel !rounded-none !border-t-0 !border-l-0 !border-r-0 overflow-visible"
+                style={{ paddingTop: 'var(--safe-area-top)' }}
+            >
                 <div className="max-w-7xl mx-auto px-4 h-16 md:h-20 flex items-center justify-between w-full overflow-visible">
-                    <Link to={`/${lang}`} onClick={() => setMenuOpen(false)} className="block hover:opacity-90 transition-opacity">
+                    <Link to={`/${lang}/`} onClick={() => setMenuOpen(false)} className="block hover:opacity-90 transition-opacity">
                         <Logo />
                     </Link>
 

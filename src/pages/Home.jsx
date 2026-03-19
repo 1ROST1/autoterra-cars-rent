@@ -8,7 +8,7 @@ import FAQ from '../components/FAQ'
 import { cars, getCarStartingPrice } from '../data/cars'
 import SEO from '../components/SEO'
 import { useLanguage } from '../hooks/useLanguage'
-import { SITE_URL, PAGE_KEYWORDS, DEFAULT_OG_IMAGE } from '../constants/seo'
+import { SITE_URL, PAGE_KEYWORDS } from '../constants/seo'
 import { BUSINESS_PHONE_RAW, BUSINESS_EMAIL, SOCIAL_LINKS, BUSINESS_OPENING_HOURS } from '../constants/contact'
 
 export default function Home() {
@@ -61,7 +61,7 @@ export default function Home() {
             '@context': 'https://schema.org',
             '@type': 'AutomotiveBusiness',
             name: 'AutoTerra',
-            ...(SITE_URL ? { url: SITE_URL } : {}),
+            ...(SITE_URL ? { url: `${SITE_URL}/${lang}/` } : {}),
             description: t('hero.description'),
             areaServed: {
                 '@type': 'Country',
@@ -140,15 +140,16 @@ export default function Home() {
     return (
         <div className="min-h-screen text-slate-900 relative z-10">
             <SEO
-                title={t('hero.title')}
-                description={t('hero.description')}
+                title={t('hero.meta_title')}
+                description={t('hero.meta_description')}
                 keywords={PAGE_KEYWORDS.home[lang]}
                 structuredData={homeStructuredData}
+                absoluteTitle
             />
             <Header />
 
             {/* Hero */}
-            <section className="pt-28 pb-4 px-4">
+            <section className="page-offset-28 pb-4 px-4">
                 <div className="max-w-7xl mx-auto text-center px-4">
                     <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-10 minimalist-text accent-underline leading-tight">
                         {t('hero.title')}
@@ -162,6 +163,15 @@ export default function Home() {
             {/* Catalog */}
             <section id="catalog" className="pt-4 pb-12 px-4">
                 <div className="max-w-7xl mx-auto">
+                    <div className="max-w-3xl mx-auto text-center mb-10">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">
+                            {t('home_page.catalog_title')}
+                        </h2>
+                        <p className="text-slate-600">
+                            {t('home_page.catalog_description')}
+                        </p>
+                    </div>
+
                     {/* Filters & Sorting */}
                     <div className="flex flex-col items-center gap-6 mb-10">
                         <FilterControl
@@ -203,6 +213,37 @@ export default function Home() {
                         {filteredCars.map((car, index) => (
                             <CarCard key={car.id} car={car} index={index} />
                         ))}
+                    </div>
+                </div>
+            </section>
+
+            <section className="px-4 pb-12">
+                <div className="max-w-5xl mx-auto glass-card rounded-3xl p-6 md:p-10">
+                    <div className="max-w-3xl mb-8">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">
+                            {t('home_page.benefits_title')}
+                        </h2>
+                        <p className="text-slate-600">
+                            {t('home_page.benefits_intro')}
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-4 mb-8">
+                        {['1', '2', '3'].map((item) => (
+                            <div key={item} className="rounded-2xl border border-slate-200/70 bg-white/80 p-5 shadow-sm">
+                                <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                                    {t(`home_page.benefit${item}_title`)}
+                                </h3>
+                                <p className="text-sm text-slate-600">
+                                    {t(`home_page.benefit${item}_text`)}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="space-y-4 text-slate-600 leading-relaxed">
+                        <p>{t('home_page.seo_paragraph_1')}</p>
+                        <p>{t('home_page.seo_paragraph_2')}</p>
                     </div>
                 </div>
             </section>

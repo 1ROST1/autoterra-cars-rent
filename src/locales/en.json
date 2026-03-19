@@ -9,13 +9,37 @@
     },
     "hero": {
         "title": "Car Rental in Moldova",
-        "description": "The best cars at affordable prices. From economical sedans to premium SUVs."
+        "description": "The best cars at affordable prices. From economical sedans to premium SUVs.",
+        "meta_title": "Car Rental in Chisinau and Moldova | AutoTerra",
+        "meta_description": "Car rental in Chisinau and Moldova from €25/day. Airport delivery, transparent rates, and 24/7 support."
+    },
+    "home_page": {
+        "catalog_title": "Choose the right car for your trip",
+        "catalog_description": "Compare vehicles by class, engine type, and price, then open each page for full rates and specifications.",
+        "benefits_title": "Why travelers choose AutoTerra in Chisinau",
+        "benefits_intro": "We built the fleet for city trips, airport transfers, and longer rentals across Moldova without unnecessary friction.",
+        "benefit1_title": "Airport delivery",
+        "benefit1_text": "We prepare the car for your arrival in Chisinau and hand it over without extra waiting time.",
+        "benefit2_title": "Clear rental terms",
+        "benefit2_text": "Rates are shown upfront by rental period, and economy cars come with a minimal deposit.",
+        "benefit3_title": "Insurance and support",
+        "benefit3_text": "Cars are maintained, insured, and backed by 24/7 support throughout the rental period.",
+        "seo_paragraph_1": "If you need car rental in Chisinau without hidden terms, the site lets you filter the fleet by class and engine type, compare pricing for short and long rentals, and choose a vehicle for a specific route. Economy sedans work well for city driving, while roomier crossovers and premium models are available for family trips and business transfers.",
+        "seo_paragraph_2": "AutoTerra has worked since 2016 and focuses on straightforward service: free airport delivery in Chisinau, transparent rental terms, 24/7 assistance, and better pricing for longer bookings. If you need long-term car hire in Moldova, you can review the 8-15 day and 16+ day rates immediately and pick the right option without extra back-and-forth."
     },
     "car_details": {
         "not_found": "Car not found",
         "back_home": "Back to Home",
         "back": "Back",
         "click_to_enlarge": "Click to enlarge"
+    },
+    "not_found_page": {
+        "eyebrow": "Error 404",
+        "title": "404 - Page not found",
+        "description": "The requested page is unavailable or has moved. Return to the homepage or contact us to choose a car.",
+        "body": "We could not find this page. Check the address or return to the vehicle catalog.",
+        "home_cta": "Go to catalog",
+        "contact_cta": "Contact us"
     },
     "filters": {
         "hybrid": "Hybrid",
@@ -64,7 +88,9 @@
         },
         "discount": "discount",
         "alt_detail": "Rent {{make}} {{model}} in Moldova - AutoTerra",
-        "alt_card": "{{make}} {{model}} car for rent in Chisinau"
+        "alt_card": "{{make}} {{model}} car for rent in Chisinau",
+        "seo_title": "{{make}} {{model}} Rental in Chisinau | AutoTerra",
+        "seo_description": "Rent {{make}} {{model}} in Chisinau from €{{price}}/day. {{power}}, {{transmission}}, {{seats}} seats. Airport delivery and booking 24/7."
     },
     "footer": {
         "description": "Premium car rental in Moldova. A wide range of vehicles from sedans to SUVs.",
@@ -78,6 +104,10 @@
     "contact_page": {
         "title": "Contact",
         "subtitle": "Get in touch in any convenient way. We work 24/7.",
+        "meta_title": "AutoTerra Contact | Car Rental in Chisinau",
+        "meta_description": "Contact AutoTerra for car rental in Chisinau: +373 79 521 010, info@autoterra.md. Available 24/7 with airport delivery.",
+        "details_title": "How to contact us",
+        "details_description": "Choose the fastest way to reach our team for booking, airport delivery, or rental terms.",
         "phone": "Phone",
         "email": "Email",
         "address": "Address",
@@ -90,6 +120,9 @@
     "about_page": {
         "title": "About Us",
         "subtitle": "AutoTerra — your trusted car rental partner in Chisinau and across Moldova since 2016. We offer free airport delivery and the best rates in the city.",
+        "meta_title": "About AutoTerra | Car Rental in Moldova",
+        "meta_description": "AutoTerra has provided car rental in Chisinau and across Moldova since 2016. Airport delivery, modern vehicles, and 24/7 support.",
+        "features_title": "Why clients choose AutoTerra",
         "feature1_title": "Reliability",
         "feature1_text": "All cars go through regular maintenance and are fully insured.",
         "feature2_title": "Quality",
@@ -101,6 +134,7 @@
     },
     "privacy_page": {
         "title": "Privacy Policy",
+        "description": "Learn how AutoTerra collects, uses, and protects the personal data shared through the website and during car rental.",
         "last_update": "Last updated: January 2024",
         "section1_title": "1. General Provisions",
         "section1_text": "This Privacy Policy defines how AutoTerra processes and protects users' personal data.",

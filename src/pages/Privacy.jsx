@@ -21,10 +21,10 @@ export default function Privacy() {
 
     return (
         <div className="min-h-screen text-slate-900 relative z-10 flex flex-col">
-            <SEO title={t('privacy_page.title')} />
+            <SEO title={t('privacy_page.title')} description={t('privacy_page.description')} />
             <Header />
 
-            <div className="pt-28 pb-16 px-4 flex-1">
+            <div className="page-offset-28 pb-16 px-4 flex-1">
                 <div className="max-w-3xl mx-auto glass-card p-8 rounded-3xl">
                     <h1 className="text-3xl sm:text-4xl font-bold mb-8">{t('privacy_page.title')}</h1>
 
@@ -41,8 +41,8 @@ export default function Privacy() {
                                     </ul>
                                 )}
                                 {idx === sections.length - 1 && (
-                                    <a href="mailto:privacy@autorent.md" className="text-blue-600 hover:underline ml-1">
-                                        privacy@autorent.md
+                                    <a href="mailto:info@autoterra.md" className="text-blue-600 hover:underline ml-1">
+                                        info@autoterra.md
                                     </a>
                                 )}
                             </section>

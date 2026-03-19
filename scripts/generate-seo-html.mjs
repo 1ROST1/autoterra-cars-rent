@@ -92,9 +92,11 @@ SUPPORTED_LANGUAGES.forEach(lang => {
            `${SITE_URL}/vite.svg`, 
            {
             '@context': 'https://schema.org',
-            '@type': ['Product', 'Car'],
+            '@type': 'WebPage',
             name: `${car.make} ${car.model} ${car.year}`,
-            description: carDesc
+            description: carDesc,
+            url: `${SITE_URL}/${lang}/car/${car.slug}/`,
+            inLanguage: lang
            },
            lang
        )

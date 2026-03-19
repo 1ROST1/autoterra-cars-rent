@@ -1,1 +1,9 @@
 node_modules
+
+# macOS metadata
+.DS_Store
+
+# Local test/debug artifacts
+.playwright-cli/
+tmp/
+dist.zip

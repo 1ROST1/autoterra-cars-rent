@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, Navigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, ArrowRight, Activity, Users, Gauge, Settings, X, ChevronLeft, ChevronRight } from 'lucide-react'
@@ -21,12 +21,25 @@ export default function CarDetails() {
     // Lightbox State
     const [isLightboxOpen, setIsLightboxOpen] = useState(false)
 
+    // Swipe Handling
+    const [touchStart, setTouchStart] = useState({ x: null, y: null })
+    const [touchEnd, setTouchEnd] = useState({ x: null, y: null })
+    const [swipeOffset, setSwipeOffset] = useState({ x: 0, y: 0 })
+    const minSwipeDistance = 50
+
     useEffect(() => {
         if (car) {
             setActiveImageIndex(0)
             setIsLightboxOpen(false)
+            setTouchStart({ x: null, y: null })
+            setTouchEnd({ x: null, y: null })
+            setSwipeOffset({ x: 0, y: 0 })
         }
     }, [car])
+
+    useEffect(() => {
+        setSwipeOffset({ x: 0, y: 0 })
+    }, [activeImageIndex])
 
     // Prevent body scroll when lightbox is open
     useEffect(() => {
@@ -40,13 +53,6 @@ export default function CarDetails() {
         }
     }, [isLightboxOpen])
 
-    // Swipe Handling
-    const [touchStart, setTouchStart] = useState({ x: null, y: null })
-    const [touchEnd, setTouchEnd] = useState({ x: null, y: null })
-    const [swipeOffset, setSwipeOffset] = useState({ x: 0, y: 0 })
-
-    const minSwipeDistance = 50
-
     const onTouchStart = (e) => {
         setTouchEnd({ x: null, y: null })
         setTouchStart({ x: e.targetTouches[0].clientX, y: e.targetTouches[0].clientY })
@@ -54,7 +60,7 @@ export default function CarDetails() {
     }
 
     const onTouchMove = (e) => {
-        if (!touchStart.x || !touchStart.y) return
+        if (touchStart.x === null || touchStart.y === null) return
 
         const currentX = e.targetTouches[0].clientX
         const currentY = e.targetTouches[0].clientY
@@ -88,6 +94,8 @@ export default function CarDetails() {
 
     const onTouchEndEvent = () => {
         if (touchStart.x === null || touchEnd.x === null) {
+            setTouchStart({ x: null, y: null })
+            setTouchEnd({ x: null, y: null })
             setSwipeOffset({ x: 0, y: 0 })
             return
         }
@@ -142,15 +150,7 @@ export default function CarDetails() {
     }, [isLightboxOpen, car])
 
     if (!car) {
-        return (
-            <div className="min-h-screen text-slate-900 flex flex-col items-center justify-center relative z-10">
-                <SEO title={t('car_details.not_found')} noindex />
-                <h1 className="text-3xl font-bold mb-4">{t('car_details.not_found')}</h1>
-                <Link to={`/${lang}`} className="bg-blue-600 text-white px-6 py-2 rounded-lg">
-                    {t('car_details.back_home')}
-                </Link>
-            </div>
-        )
+        return <Navigate to={`/${lang}/404/`} replace />
     }
 
     const typeLabels = {
@@ -160,35 +160,30 @@ export default function CarDetails() {
     }
 
     const type = typeLabels[car.type] || typeLabels.petrol // Fallback to avoid crash
-    const localizedDescription = car.description[lang] || car.description.ru
-    const localizedCarUrl = `${SITE_URL}/${lang}/car/${car.slug}`
+    const localizedDescription = car.description[lang] || car.description.ro
+    const localizedCarUrl = `${SITE_URL}/${lang}/car/${car.slug}/`
+    const carPageTitle = t('car.seo_title', { make: car.make, model: car.model })
     const { key: startingRateKey, price: startingPrice } = getCarStartingRate(car)
     const startingRateNote = startingRateKey ? t(`car.starting_rate_note.${startingRateKey}`) : t('car.price_per_day')
+    const imageCount = car.images?.length || 1
+    const slideWidth = 100 / imageCount
+    const slideOffset = activeImageIndex * slideWidth
 
     // Safety check
     const activeImage = car.images ? car.images[activeImageIndex] : car.image
+    const carImageUrls = (car.images?.length ? car.images : [car.image])
+        .filter(Boolean)
+        .map(imagePath => imagePath.startsWith('http') ? imagePath : `${SITE_URL}${imagePath}`)
 
     const carStructuredData = [
         {
             '@context': 'https://schema.org',
-            '@type': 'Product',
-            name: `${car.make} ${car.model} ${car.year}`,
+            '@type': 'WebPage',
+            name: carPageTitle,
             description: localizedDescription,
-            image: car.images ? car.images.map(imagePath => imagePath.startsWith('http') ? imagePath : `${SITE_URL}${imagePath}`) : [],
-            brand: {
-                '@type': 'Brand',
-                name: car.make
-            },
-            offers: {
-                '@type': 'Offer',
-                priceCurrency: 'EUR',
-                price: String(startingPrice),
-                availability: 'https://schema.org/InStock',
-                url: localizedCarUrl
-            },
-            vehicleConfiguration: `${typeof car.specs.engine === 'object' ? (car.specs.engine[lang] || car.specs.engine.en) : car.specs.engine}, ${car.specs.power}`,
-            vehicleTransmission: typeof car.specs.transmission === 'object' ? (car.specs.transmission[lang] || car.specs.transmission.en) : car.specs.transmission,
-            seatingCapacity: car.specs.seats
+            url: localizedCarUrl,
+            inLanguage: lang,
+            image: carImageUrls
         },
         {
             '@context': 'https://schema.org',
@@ -198,7 +193,7 @@ export default function CarDetails() {
                     '@type': 'ListItem',
                     position: 1,
                     name: t('nav.home'),
-                    item: `${SITE_URL}/${lang}`
+                    item: `${SITE_URL}/${lang}/`
                 },
                 {
                     '@type': 'ListItem',
@@ -215,12 +210,20 @@ export default function CarDetails() {
     return (
         <div className="min-h-screen text-slate-900 relative z-10 flex flex-col">
             <SEO
-                title={`${car.make} ${car.model}`}
-                description={`${t('car.from')} ${startingPrice}€/${t('car.day')}. ${car.specs.power}, ${typeof car.specs.transmission === 'object' ? (car.specs.transmission[lang] || car.specs.transmission.en) : car.specs.transmission}, ${car.specs.seats} ${t('car.seats_count')}.`}
+                title={carPageTitle}
+                description={t('car.seo_description', {
+                    make: car.make,
+                    model: car.model,
+                    price: startingPrice,
+                    power: car.specs.power,
+                    transmission: typeof car.specs.transmission === 'object' ? (car.specs.transmission[lang] || car.specs.transmission.en) : car.specs.transmission,
+                    seats: car.specs.seats
+                })}
                 keywords={carKeywords}
                 image={activeImage}
-                ogType="product"
+                preloadImage
                 structuredData={carStructuredData}
+                absoluteTitle
             />
             <Header />
 
@@ -239,7 +242,7 @@ export default function CarDetails() {
 
                     {/* Main Lightbox Image View */}
                     <div
-                        className="relative w-full max-w-7xl mx-auto flex-1 flex items-center justify-center overflow-hidden"
+                        className="relative w-full max-w-7xl mx-auto flex-1 flex items-center overflow-hidden"
                         onTouchStart={onTouchStart}
                         onTouchMove={onTouchMove}
                         onTouchEnd={onTouchEndEvent}
@@ -252,15 +255,20 @@ export default function CarDetails() {
                     >
                         {car.images && car.images.length > 1 ? (
                             <div
-                                className="flex w-full h-full items-center cursor-ew-resize"
+                                className="flex h-full items-center cursor-ew-resize flex-shrink-0"
                                 onClick={(e) => e.stopPropagation()}
                                 style={{
-                                    transform: `translate(calc(-${activeImageIndex * 100}% + ${swipeOffset.x}px), ${swipeOffset.y}px)`,
+                                    width: `${imageCount * 100}%`,
+                                    transform: `translate(calc(-${slideOffset}% + ${swipeOffset.x}px), ${swipeOffset.y}px)`,
                                     transition: touchStart.x ? 'none' : 'transform 0.3s cubic-bezier(0.25, 1, 0.5, 1)'
                                 }}
                             >
                                 {car.images.map((img, i) => (
-                                    <div key={i} className="min-w-full w-full h-full flex items-center justify-center flex-shrink-0 p-2 sm:p-4 lg:p-8">
+                                    <div
+                                        key={i}
+                                        className="h-full flex items-center justify-center flex-shrink-0 p-2 sm:p-4 lg:p-8"
+                                        style={{ width: `${slideWidth}%` }}
+                                    >
                                         <img
                                             src={img}
                                             alt={t('car.alt_detail', { make: car.make, model: car.model })}
@@ -321,10 +329,10 @@ export default function CarDetails() {
                 </div>
             )}
 
-            <div className="pt-24 pb-12 px-4 flex-1">
+            <div className="page-offset-24 pb-12 px-4 flex-1">
                 <div className="max-w-5xl mx-auto">
                     {/* Back */}
-                    <Link to={`/${lang}`} className="inline-flex items-center gap-2 text-slate-400 hover:text-blue-600 mb-6 transition-colors">
+                    <Link to={`/${lang}/`} className="inline-flex items-center gap-2 text-slate-400 hover:text-blue-600 mb-6 transition-colors">
                         <ArrowLeft size={18} />
                         {t('car_details.back')}
                     </Link>
@@ -333,28 +341,34 @@ export default function CarDetails() {
                     <div className="glass-card rounded-2xl overflow-hidden">
                         <div className="grid md:grid-cols-2">
                             {/* Image */}
-                            <div className="flex flex-col">
+                            <div className="flex flex-col min-w-0">
                                 <div
-                                    className="aspect-[4/3] overflow-hidden relative cursor-pointer group"
+                                    className="aspect-[4/3] overflow-hidden relative cursor-pointer group bg-slate-100/60"
                                     onClick={() => setIsLightboxOpen(true)}
                                     onTouchStart={onTouchStart}
                                     onTouchMove={onTouchMove}
                                     onTouchEnd={onTouchEndEvent}
+                                    onTouchCancel={onTouchEndEvent}
                                 >
                                     {car.images && car.images.length > 1 ? (
                                         <div
-                                            className="flex w-full h-full"
+                                            className="flex h-full overflow-hidden"
                                             style={{
-                                                transform: `translateX(calc(-${activeImageIndex * 100}% + ${swipeOffset.x}px))`,
-                                                transition: touchStart.x ? 'none' : 'transform 0.3s ease-out'
+                                                width: `${imageCount * 100}%`,
+                                                transform: `translate3d(calc(-${slideOffset}% + ${swipeOffset.x}px), 0, 0)`,
+                                                transition: touchStart.x === null ? 'transform 0.3s ease-out' : 'none'
                                             }}
                                         >
                                             {car.images.map((img, i) => (
-                                                <div key={i} className="min-w-full h-full flex-shrink-0">
+                                                <div
+                                                    key={i}
+                                                    className="h-full flex-shrink-0 flex items-center justify-center"
+                                                    style={{ width: `${slideWidth}%` }}
+                                                >
                                                     <img
                                                         src={img}
                                                         alt={t('car.alt_detail', { make: car.make, model: car.model })}
-                                                        className="w-full h-full object-cover pointer-events-none group-hover:scale-105 transition-transform duration-700"
+                                                        className="w-full h-full object-contain pointer-events-none group-hover:scale-105 transition-transform duration-700"
                                                     />
                                                 </div>
                                             ))}
@@ -363,7 +377,7 @@ export default function CarDetails() {
                                         <img
                                             src={activeImage}
                                             alt={t('car.alt_detail', { make: car.make, model: car.model })}
-                                            className="w-full h-full object-cover pointer-events-none group-hover:scale-105 transition-transform duration-700"
+                                            className="w-full h-full object-contain pointer-events-none group-hover:scale-105 transition-transform duration-700"
                                         />
                                     )}
                                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center pointer-events-none">
@@ -373,12 +387,12 @@ export default function CarDetails() {
                                     </div>
                                 </div>
                                 {car.images && car.images.length > 1 && (
-                                    <div className="flex gap-2 p-4 bg-slate-50/50 justify-center">
+                                    <div className="flex gap-2 p-4 bg-slate-50/50 justify-start sm:justify-center overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                                         {car.images.map((img, idx) => (
                                             <button
                                                 key={idx}
                                                 onClick={() => setActiveImageIndex(idx)}
-                                                className={`w-16 h-12 rounded-lg overflow-hidden border-2 transition-all ${activeImageIndex === idx ? 'border-blue-600 scale-105' : 'border-transparent opacity-60 hover:opacity-100'}`}
+                                                className={`w-16 h-12 flex-shrink-0 rounded-lg overflow-hidden border-2 transition-all ${activeImageIndex === idx ? 'border-blue-600 scale-105' : 'border-transparent opacity-60 hover:opacity-100'}`}
                                             >
                                                 <img src={img} className="w-full h-full object-cover" />
                                             </button>
@@ -388,7 +402,7 @@ export default function CarDetails() {
                             </div>
 
                             {/* Info */}
-                            <div className="p-6 md:p-8">
+                            <div className="p-6 md:p-8 min-w-0">
                                 <span className={`inline-block ${type.color} text-white text-xs font-medium px-3 py-1 rounded-full mb-4`}>
                                     {type.label}
                                 </span>
@@ -399,7 +413,7 @@ export default function CarDetails() {
                                 <p className="text-slate-600 mb-6">{localizedDescription}</p>
 
                                 {/* Specs */}
-                                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6 bg-slate-100/80 backdrop-blur-md border border-slate-200/50 rounded-2xl p-4 shadow-inner">
+                                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6 w-full max-w-full overflow-hidden isolate bg-slate-100 border border-slate-200/60 rounded-2xl p-4 shadow-sm">
                                     <div className="flex flex-col">
                                         <Activity className="text-blue-600 mb-1.5" size={20} />
                                         <p className="text-slate-500 text-[10px] uppercase font-bold tracking-wider mb-0.5">{t('car.engine')}</p>
@@ -432,7 +446,7 @@ export default function CarDetails() {
                                 <div>
                                     <div className="flex items-center gap-3 mb-2">
                                         <span className="w-1.5 h-6 bg-gradient-to-b from-blue-500 to-blue-700 rounded-full"></span>
-                                        <h3 className="text-xl sm:text-2xl font-bold text-slate-900">{t('car.pricing.title')}</h3>
+                                        <h2 className="text-xl sm:text-2xl font-bold text-slate-900">{t('car.pricing.title')}</h2>
                                     </div>
                                     <p className="text-slate-500 text-sm sm:text-[15px]">{startingRateNote}</p>
                                 </div>

@@ -1,48 +1,62 @@
-import skodaSide1 from '../assets/cars/skoda_side1.webp';
-import skodaBack from '../assets/cars/skoda_back.webp';
-import skodaSalonSeat from '../assets/cars/skoda_salon_seat.webp';
-import skodaSalonWheel from '../assets/cars/skoda_salon_wheel.webp';
-import skodaSalonWheelSide from '../assets/cars/skoda_salon_wheel_side.webp';
+import skodaVrsFront from '../assets/cars/skoda_VRS_front.webp';
+import skodaVrsSide from '../assets/cars/skoda_VRS_side.webp';
+import skodaVrsCard from '../assets/cars/skoda_VRS_card.webp';
+import skodaVrsBack from '../assets/cars/skoda_VRS_back.webp';
+import skodaVrsSalonFull from '../assets/cars/skoda_VRS_salon_full.webp';
+import skodaVrsSalonWheel from '../assets/cars/skoda_VRS_salon_wheel.webp';
 
-// New generated images (converted to WebP for performance)
-import bmwX5_2018 from '../assets/cars/bmw_x5_2018.webp';
-import bmw530i_2018 from '../assets/cars/bmw_530i_2018.webp';
-import vwJetta2020 from '../assets/cars/vw_jetta_2020_red.webp';
-import vwPassat2014 from '../assets/cars/vw_passat_2014.webp';
+import bmwX5Front from '../assets/cars/bmw_X5_front.webp';
+import bmwX5Side from '../assets/cars/bmw_X5_side.webp';
+import bmwX5Card from '../assets/cars/bmw_X5_card.webp';
+import bmwX5Back from '../assets/cars/bmw_X5_back.webp';
+import bmwX5SalonFull from '../assets/cars/bmw_X5_salon_full.webp';
+import bmwX5SalonWheel from '../assets/cars/bmw_X5_salon_wheel.webp';
 
+import bmw530iFront from '../assets/cars/bmw_530i_front.webp';
+import bmw530iSide from '../assets/cars/bmw_530i_side.webp';
+import bmw530iCard from '../assets/cars/bmw_530i_card.webp';
+import bmw530iBack from '../assets/cars/bmw_530i_back.webp';
+import bmw530iSalonFull from '../assets/cars/bmw_530i_salon_full.webp';
+import bmw530iSalonWheel from '../assets/cars/bmw_530i_salon_wheel.webp';
 import benzSFront from '../assets/cars/benz_S_front.webp';
 import benzSBack from '../assets/cars/benz_S_back.webp';
 import benzSSide from '../assets/cars/benz_S_side.webp';
+import benzSCard from '../assets/cars/benz_S_card.webp';
 import benzSSalonFull from '../assets/cars/benz_S_salon_full.webp';
 import benzSSalonWheel from '../assets/cars/benz_S_salon_wheel.webp';
 
 import cabriFront from '../assets/cars/cabri_front.webp';
 import cabriBack from '../assets/cars/cabri_back.webp';
 import cabriSide from '../assets/cars/cabri_side.webp';
+import cabriCard from '../assets/cars/cabri_card.webp';
 import cabriSalonFull from '../assets/cars/cabri_salon_full.webp';
 import cabriSalonWheel from '../assets/cars/cabri_salon_wheel.webp';
 
 import cooperDFront from '../assets/cars/cooper_front.webp';
 import cooperDBack from '../assets/cars/cooper_back.webp';
 import cooperDSide from '../assets/cars/cooper_side.webp';
+import cooperDCard from '../assets/cars/cooper_card.webp';
 import cooperDSalonFull from '../assets/cars/cooper_salon_full.webp';
 import cooperDSalonWheel from '../assets/cars/cooper_salon_wheel.webp';
 
 import bmwGGFront from '../assets/cars/bmw_GG_front.webp';
 import bmwGGBack from '../assets/cars/bmw_GG_back.webp';
 import bmwGGSide from '../assets/cars/bmw_GG_side.webp';
+import bmwGGCard from '../assets/cars/bmw_GG_card.webp';
 import bmwGGSalonFull from '../assets/cars/bmw_GG_salon_full.webp';
 import bmwGGSalonWheel from '../assets/cars/bmw_GG_salon_wheel.webp';
 
-import bmwXFront from '../assets/cars/bmw_X_front.webp';
-import bmwXBack from '../assets/cars/bmw_X_back.webp';
-import bmwXSide from '../assets/cars/bmw_X_side.webp';
-import bmwXSalonFull from '../assets/cars/bmw_X_salon_full.webp';
-import bmwXSalonWheel from '../assets/cars/bmw_X_salon_wheel.webp';
+import bmwX6Front from '../assets/cars/bmw_X6_front.webp';
+import bmwX6Back from '../assets/cars/bmw_X6_back.webp';
+import bmwX6Side from '../assets/cars/bmw_X6_side.webp';
+import bmwX6Card from '../assets/cars/bmw_X6_card.webp';
+import bmwX6SalonFull from '../assets/cars/bmw_X6_salon_full.webp';
+import bmwX6SalonWheel from '../assets/cars/bmw_X6_salon_wheel.webp';
 
 import vwJettaFront from '../assets/cars/vw_JETTA_front.webp';
 import vwJettaBack from '../assets/cars/vw_JETTA_back.webp';
 import vwJettaSide from '../assets/cars/vw_JETTA_side.webp';
+import vwJettaCard from '../assets/cars/vw_JETTA_card.webp';
 import vwJettaSalonFull from '../assets/cars/vw_JETTA_salon_full.webp';
 import vwJettaSalonWheel from '../assets/cars/vw_JETTA_salon_wheel.webp';
 
@@ -59,8 +73,9 @@ export const cars = [
         year: 2024,
         type: 'petrol',
         class: 'premium',
-        image: skodaSide1,
-        images: [skodaSide1, skodaBack, skodaSalonSeat, skodaSalonWheel, skodaSalonWheelSide],
+        cardImage: skodaVrsCard,
+        image: skodaVrsSide,
+        images: [skodaVrsFront, skodaVrsSide, skodaVrsBack, skodaVrsSalonFull, skodaVrsSalonWheel],
         price: 85,
         rates: { days_1: 85, days_2_3: 75, days_4_7: 65, days_8_15: 55, days_16_plus: 45 },
         description: {
@@ -83,6 +98,7 @@ export const cars = [
         year: 2023,
         type: 'diesel',
         class: 'standard',
+        cardImage: cooperDCard,
         image: cooperDSide,
         images: [cooperDSide, cooperDFront, cooperDBack, cooperDSalonFull, cooperDSalonWheel],
         price: 90,
@@ -107,6 +123,7 @@ export const cars = [
         year: 2024,
         type: 'hybrid',
         class: 'premium',
+        cardImage: bmwGGCard,
         image: bmwGGSide,
         images: [bmwGGSide, bmwGGFront, bmwGGBack, bmwGGSalonFull, bmwGGSalonWheel],
         price: 90,
@@ -131,6 +148,7 @@ export const cars = [
         year: 2017,
         type: 'hybrid',
         class: 'premium',
+        cardImage: benzSCard,
         image: benzSSide,
         images: [benzSSide, benzSFront, benzSBack, benzSSalonFull, benzSSalonWheel],
         price: 150,
@@ -155,8 +173,9 @@ export const cars = [
         year: 2018,
         type: 'diesel',
         class: 'premium',
-        image: bmwX5_2018,
-        images: [bmwX5_2018],
+        cardImage: bmwX5Card,
+        image: bmwX5Side,
+        images: [bmwX5Front, bmwX5Side, bmwX5Back, bmwX5SalonFull, bmwX5SalonWheel],
         price: 100,
         rates: { days_1: 100, days_2_3: 80, days_4_7: 70, days_8_15: 60, days_16_plus: 50 },
         description: {
@@ -179,8 +198,9 @@ export const cars = [
         year: 2018,
         type: 'petrol',
         class: 'premium',
-        image: bmw530i_2018,
-        images: [bmw530i_2018],
+        cardImage: bmw530iCard,
+        image: bmw530iSide,
+        images: [bmw530iFront, bmw530iSide, bmw530iBack, bmw530iSalonFull, bmw530iSalonWheel],
         price: 130,
         rates: { days_1: 130, days_2_3: 90, days_4_7: 80, days_8_15: 70, days_16_plus: 60 },
         description: {
@@ -203,6 +223,7 @@ export const cars = [
         year: 2017,
         type: 'petrol',
         class: 'economy',
+        cardImage: vwJettaCard,
         image: vwJettaSide,
         images: [vwJettaSide, vwJettaFront, vwJettaBack, vwJettaSalonFull, vwJettaSalonWheel],
         price: 50,
@@ -220,54 +241,6 @@ export const cars = [
         }
     },
     {
-        id: 107,
-        slug: generateSlug('VW Jetta 1.4 TSI', 2020),
-        make: 'Volkswagen',
-        model: 'Jetta 1.4 TSI',
-        year: 2020,
-        type: 'petrol',
-        class: 'standard',
-        image: vwJetta2020,
-        images: [vwJetta2020],
-        price: 60,
-        rates: { days_1: 60, days_2_3: 45, days_4_7: 40, days_8_15: 35, days_16_plus: 30 },
-        description: {
-            ro: "Sedan actualizat, cu un design modern și o ergonomie îmbunătățită. Motorul economic, suspensia confortabilă și interiorul intuitiv se potrivesc celor care caută o mașină fiabilă cu 5 locuri pentru fiecare zi.",
-            ru: "Обновлённый седан с современным дизайном и улучшенной эргономикой. Экономичный двигатель, комфортная подвеска и понятный интерьер подойдут тем, кто ищет надёжный 5‑местный автомобиль на каждый день.",
-            en: "Updated sedan with a modern design and improved ergonomics. An economical engine, comfortable suspension, and intuitive interior will suit those looking for a reliable 5-seater car for every day."
-        },
-        specs: {
-            engine: { en: '1.4 Petrol Turbo', ru: '1.4 Бензин Турбо', ro: '1.4 Benzină Turbo' },
-            power: '150 HP',
-            transmission: { en: 'Automatic', ru: 'Автомат', ro: 'Automată' },
-            seats: 5
-        }
-    },
-    {
-        id: 108,
-        slug: generateSlug('VW Passat 2.0 TDI', 2014),
-        make: 'Volkswagen',
-        model: 'Passat 2.0 TDI',
-        year: 2014,
-        type: 'diesel',
-        class: 'standard',
-        image: vwPassat2014,
-        images: [vwPassat2014],
-        price: 60,
-        rates: { days_1: 60, days_2_3: 40, days_4_7: 35, days_8_15: 33, days_16_plus: 30 },
-        description: {
-            ro: "Automobil de familie clasic, cu un motor diesel economic. Habitaclul spațios, portbagajul mare și suspensia confortabilă îl fac o opțiune excelentă pentru călătorii lungi și muncă.",
-            ru: "Классический семейный автомобиль с экономичным дизельным мотором. Просторный салон, большой багажник и комфортная подвеска делают его отличным вариантом для дальних поездок и работы.",
-            en: "Classic family car with an economical diesel engine. A spacious cabin, large trunk, and comfortable suspension make it an excellent option for long trips and work."
-        },
-        specs: {
-            engine: { en: '2.0 Diesel TDI', ru: '2.0 Дизель TDI', ro: '2.0 Diesel TDI' },
-            power: '150 HP',
-            transmission: { en: 'Automatic', ru: 'Автомат', ro: 'Automată' },
-            seats: 5
-        }
-    },
-    {
         id: 109,
         slug: generateSlug('Mercedes E220 Cabrio', 2013),
         make: 'Mercedes-Benz',
@@ -275,6 +248,7 @@ export const cars = [
         year: 2013,
         type: 'diesel',
         class: 'standard',
+        cardImage: cabriCard,
         image: cabriSide,
         images: [cabriSide, cabriFront, cabriBack, cabriSalonFull, cabriSalonWheel],
         price: 120,
@@ -299,8 +273,9 @@ export const cars = [
         year: 2018,
         type: 'diesel',
         class: 'premium',
-        image: bmwXSide,
-        images: [bmwXSide, bmwXFront, bmwXBack, bmwXSalonFull, bmwXSalonWheel],
+        cardImage: bmwX6Card,
+        image: bmwX6Side,
+        images: [bmwX6Side, bmwX6Front, bmwX6Back, bmwX6SalonFull, bmwX6SalonWheel],
         price: 100,
         rates: { days_1: 100, days_2_3: 90, days_4_7: 80, days_8_15: 70, days_16_plus: 60 },
         description: {

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Calendar, Gauge, Settings, Users } from 'lucide-react'
-import { useTilt } from '../hooks/useTilt'
 import { useLanguage } from '../hooks/useLanguage'
 import { getCarStartingPrice } from '../data/cars'
 
@@ -10,7 +9,6 @@ const CLASS_COLORS = { economy: '#0ea5e9', standard: '#64748b', premium: '#a855f
 
 export default function CarCard({ car, index = 0 }) {
     const { t } = useTranslation()
-    const { ref, handleMouseMove, handleMouseLeave } = useTilt(8)
     const { lang } = useLanguage()
     const startingPrice = getCarStartingPrice(car)
 
@@ -19,19 +17,18 @@ export default function CarCard({ car, index = 0 }) {
 
     return (
         <div
-            ref={ref}
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
             className="glass-card !rounded-2xl overflow-hidden hover:border-blue-400/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10"
-            style={{ transformStyle: 'preserve-3d', transition: 'transform 0.1s ease-out' }}
         >
             {/* Image */}
             <div className="relative aspect-[4/3] overflow-hidden">
                 <img
-                    src={car.image}
+                    src={car.cardImage || car.image}
                     alt={t('car.alt_card', { make: car.make, model: car.model })}
-                    loading={index < 6 ? "eager" : "lazy"}
+                    loading={index === 0 ? "eager" : "lazy"}
+                    fetchPriority={index === 0 ? 'high' : undefined}
                     decoding="async"
+                    width="756"
+                    height="567"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <span
@@ -84,8 +81,8 @@ export default function CarCard({ car, index = 0 }) {
                         <span className="text-slate-500 text-sm">/{t('car.day')}</span>
                     </div>
                     <Link
-                        to={`/${lang}/car/${car.slug}`}
-                        className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-lg shadow-blue-500/20 sheen-effect"
+                        to={`/${lang}/car/${car.slug}/`}
+                        className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-lg shadow-blue-500/20"
                     >
                         {t('car.details')}
                     </Link>

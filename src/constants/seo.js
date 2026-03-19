@@ -1,6 +1,6 @@
 export const SITE_NAME = 'AutoTerra'
 export const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://autoterra.md').replace(/\/+$/, '')
-export const DEFAULT_OG_IMAGE = '/logo2.svg'
+export const DEFAULT_OG_IMAGE = '/logo2.png'
 
 // SEO keywords по страницам и языкам
 export const PAGE_KEYWORDS = {

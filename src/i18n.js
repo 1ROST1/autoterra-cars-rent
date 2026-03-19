@@ -30,9 +30,9 @@ i18n
             escapeValue: false // not needed for react as it escapes by default
         },
         detection: {
-            order: ['path', 'localStorage', 'navigator'],
+            order: ['path'],
             lookupFromPathIndex: 0,
-            caches: ['localStorage']
+            caches: []
         }
     });
 
